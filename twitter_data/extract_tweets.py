@@ -43,6 +43,6 @@ with open('twitter_data/extracted_data.txt', 'w') as f:
                         list_text.append(removed_emoji)
 
             if len(set(list_text)) > 0:
-                f.write('\n\n**************\n\n'.join(set(list_text)))
+                f.write('\n\n**************\n\n'.join(set(list_text[:2])))
                 f.write('\n\n**************\n\n')
             result.update({keyword: keyword_result})
