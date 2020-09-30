@@ -39,8 +39,10 @@ with open('twitter_data/extracted_data.txt', 'w') as f:
                     removed_username = id_pattern.sub('', removed_link)
                     removed_hashtags = removed_username.replace('#', '')
                     removed_emoji = emoji_pattern.sub('', removed_hashtags)
-                    list_text.append(removed_emoji)
+                    if removed_emoji.find(keyword) != -1:
+                        list_text.append(removed_emoji)
 
-            f.write('\n\n**************\n\n'.join(set(list_text)))
-            f.write('\n\n**************\n\n')
+            if len(set(list_text)) > 0:
+                f.write('\n\n**************\n\n'.join(set(list_text)))
+                f.write('\n\n**************\n\n')
             result.update({keyword: keyword_result})
