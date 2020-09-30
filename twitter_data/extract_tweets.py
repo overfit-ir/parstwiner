@@ -23,6 +23,7 @@ with open('twitter_data/extracted_data.txt', 'w') as f:
     for entity in crawled_data:
         for keyword in entity.keys():
             keyword_result = {}
+            list_text = []
             for key, tweet in entity[keyword]['globalObjects']['tweets'].items():
                 text = tweet['full_text']
                 lang = tweet['lang']
@@ -38,5 +39,8 @@ with open('twitter_data/extracted_data.txt', 'w') as f:
                     removed_username = id_pattern.sub('', removed_link)
                     removed_hashtags = removed_username.replace('#', '')
                     removed_emoji = emoji_pattern.sub('', removed_hashtags)
-                    f.write(removed_emoji + '\n\n**************\n\n')
+                    list_text.append(removed_emoji)
+
+            f.write('\n\n**************\n\n'.join(set(list_text)))
+            f.write('\n\n**************\n\n')
             result.update({keyword: keyword_result})
