@@ -19,30 +19,41 @@ with open('twitter_data/result.json') as f:
 
 # %%
 result = {}
-with open('twitter_data/extracted_data.txt', 'w') as f:
-    for entity in crawled_data:
-        for keyword in entity.keys():
-            keyword_result = {}
-            list_text = []
-            for key, tweet in entity[keyword]['globalObjects']['tweets'].items():
-                text = tweet['full_text']
-                lang = tweet['lang']
+result_to_file = []
+# with open('twitter_data/extracted_data.txt', 'w') as f:
+for entity in crawled_data:
+    for keyword in entity.keys():
+        keyword_result = {}
+        list_text = []
+        for key, tweet in entity[keyword]['globalObjects']['tweets'].items():
+            text = tweet['full_text']
+            lang = tweet['lang']
 
-                keyword_result.update(
-                    {key: {'full_text': text,
-                           'lang': lang,
-                           }
-                     }
-                )
-                if lang == 'fa':
-                    removed_link = link_pattern.sub('', text)
-                    removed_username = id_pattern.sub('', removed_link)
-                    removed_hashtags = removed_username.replace('#', '')
-                    removed_emoji = emoji_pattern.sub('', removed_hashtags)
-                    if removed_emoji.find(keyword) != -1:
-                        list_text.append(removed_emoji)
+            keyword_result.update(
+                {key: {'full_text': text,
+                       'lang': lang,
+                       }
+                 }
+            )
+            if lang == 'fa':
+                removed_link = link_pattern.sub('', text)
+                removed_username = id_pattern.sub('', removed_link)
+                removed_hashtags = removed_username.replace('#', '')
+                removed_emoji = emoji_pattern.sub('', removed_hashtags)
+                if removed_emoji.find(keyword) != -1:
+                    list_text.append(removed_emoji)
 
-            if len(set(list_text)) > 0:
-                f.write('\n\n**************\n\n'.join(set(list_text[:2])))
-                f.write('\n\n**************\n\n')
-            result.update({keyword: keyword_result})
+        if len(set(list_text)) > 0:
+            # f.write('\n\n**************\n\n'.join(set(list_text[:2])))
+            # f.write('\n\n**************\n\n')
+            result_to_file.append(set(list_text[:3]))
+        result.update({keyword: keyword_result})
+
+#%%
+result_to_file = [item for lyst in result_to_file for item in lyst]
+len(result_to_file)
+
+#%%
+set_result_to_file = list(set(result_to_file))
+with open('twitter_data/extracted_data.txt', 'w') as file:
+    file.write('\n\n**************\n\n'.join(set_result_to_file))
