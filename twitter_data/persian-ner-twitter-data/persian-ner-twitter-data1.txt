@@ -1877,7 +1877,7 @@ gypsum	O
 واکسن	O
 کدام	O
 ننگ	O
-دولت	O
+دولت	B-ORG
 را	O
 میخواهید	O
 بپوشانید	O
@@ -9535,7 +9535,7 @@ FreeSoheila	FFF
 که	O
 در	O
 حمایت	O
-دولت	O
+دولت	B-ORG
 امضا	O
 کردی	O
 و	O
@@ -11564,10 +11564,10 @@ MollahsHoney	FFF
 کارهاشونم	O
 طبیعتا	O
 متوجه	O
-دولت	O
-نهم	O
-و	O
-دهم	O
+دولت	B-ORG
+نهم	I-ORG
+و	I-ORG
+دهم	I-ORG
 هم	O
 میشه	O
 
@@ -13302,8 +13302,8 @@ injanews	FFF
 دیدار	O
 رییس	O
 اجرایی	O
-دولت	O
-افغانستان	B-LOC
+دولت	B-ORG
+افغانستان	I-LOC
 1394	O
 10	O
 15	O
@@ -21981,7 +21981,7 @@ FreeSoheila	FFF
 تنها	O
 به	O
 دوش	O
-دولت	O
+دولت	B-ORG
 نیست	O
 عده‌ای	O
 نگویند	O
@@ -23975,7 +23975,7 @@ brioche	FFF
 گرنه	O
 مجلس	B-ORG
 میتونست	O
-دولت	O
+دولت	B-ORG
 رو	O
 وقتی	O
 که	O
