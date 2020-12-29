@@ -5554,7 +5554,8 @@ developer	FFF
 جلسه	I-EVE
 از	I-EVE
 سلسله	I-EVE
-درس‌گفتارهای	I-EVE
+درس	I-EVE
+گفتارهای	I-EVE
 مجازی	I-EVE
 پیرامون	O
 دموکراسی	O
