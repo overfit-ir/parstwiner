@@ -617,7 +617,8 @@ DNA	O
 مدیر	O
 جشنواره	B-EVE
 ونیز	I-EVE
-،«	O
+،	O
+«	O
 کامرون	B-PER
 بیلی	I-PER
 »	O
@@ -630,7 +631,8 @@ DNA	O
 جشنواره	B-EVE
 فیلم	I-EVE
 تورنتو	I-EVE
-،«	O
+،	O
+«	O
 یوجین	B-PER
 فرناندز	I-PER
 »	O
