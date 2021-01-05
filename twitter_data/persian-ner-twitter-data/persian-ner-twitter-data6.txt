@@ -12329,7 +12329,9 @@ popeye	B-PER
 سپاه	I-ORG
 ،	O
 قدرتمند	O
-تعبیر‌شده‌است	O
+تعبیر‌	O
+شده	O
+است	O
 .	O
 (	O
 Irans	B-ORG
