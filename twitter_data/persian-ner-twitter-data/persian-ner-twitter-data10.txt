@@ -1055,8 +1055,8 @@ president	O
 یجمعنا	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 
 3	O
