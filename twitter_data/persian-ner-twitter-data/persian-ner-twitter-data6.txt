@@ -49,7 +49,7 @@
 داشته	O
 باشه	O
 و	O
-.	O
+...	O
 با	O
 کلی	O
 امکانات	O
@@ -329,7 +329,7 @@
 میزنم	O
 .	O
 یک	O
-oncologist	FFF
+oncologist	O
 درنظر	O
 بگیرین	O
 .	O
@@ -947,7 +947,6 @@ oncologist	FFF
 به	O
 ناشنوایان	O
 :
-.	O
 بهزیستی	B-ORG
 .	O
 آموزش	B-ORG
@@ -1709,7 +1708,7 @@ oncologist	FFF
 مریم	B-PER
 میدونه	O
 
-:))).	O
+:)))	O
 خیلی	O
 دوست	O
 دارم	O
@@ -1721,7 +1720,7 @@ oncologist	FFF
 تا	O
 پنجم	O
 ابتداییمو	O
-:))).	O
+:)))	O
 از	O
 نظر	O
 تک	O
@@ -1919,9 +1918,7 @@ GOES	O
 تو	O
 گفتی	O
 نمیرسم	O
-.	O
 !	O
-.	O
 نهایتش	O
 دارخوین	B-LOC
 ،	O
@@ -2123,7 +2120,7 @@ GOES	O
 هم	O
 هستن	O
 مثل	O
-AOC	FFF
+AOC	O
 یا	O
 رشیدا	B-PER
 طلیب	I-PER
@@ -2153,7 +2150,7 @@ AOC	FFF
 با	O
 صدور	O
 کارتهای	O
-debit	FFF
+debit	O
 برای	O
 شهروندان	O
 (	O
@@ -2361,9 +2358,9 @@ debit	FFF
 هیلز	I-LOC
 »	O
 (	O
-Ba	FFF
-Na	FFF
-Hills	FFF
+Ba	B-PER
+Na	I-PER
+Hills	I-PER
 )	O
 در	O
 دانانگ	B-LOC
@@ -3368,7 +3365,6 @@ Hills	FFF
 بوده‌اند	O
 .	O
 
-.	O
 برای	O
 من	O
 اینطوریه	O
@@ -3841,11 +3837,11 @@ Hills	FFF
 ،	O
 مثل	O
 نشان	O
-UK	FFF
+UK	B-LOC
 و	O
 آلمان	B-LOC
 و	O
-US	FFF
+US	B-LOC
 .	O
 
 قهرمان	O
@@ -4710,8 +4706,7 @@ US	FFF
 کنید	O
 .	O
 
-2	O
-2	O
+22	O
 .	O
 در	O
 این	O
@@ -4805,7 +4800,8 @@ US	FFF
 سبقت	O
 ندارم	O
 و	O
-.،	O
+...	O
+،	O
 همه	O
 به‌خاطر	O
 پرحرفی	O
@@ -5172,7 +5168,7 @@ US	FFF
 به	O
 باد	O
 بدی	O
-؟؟!!.	O
+؟؟!!	O
 خروشچف	B-PER
 .	O
 دیکتاتور	O
@@ -5275,14 +5271,14 @@ US	FFF
 به	O
 آلبانیایی	B-NAT
 :	O
-Kosovës	FFF
+Kosovës	B-LOC
 ،	O
 در	O
 صربی	B-NAT
 :	O
-Kosovo	FFF
+Kosovo	B-LOC
 ،	O
-Косово	FFF
+Косово	B-LOC
 )	O
 با	O
 نام	O
@@ -5293,18 +5289,18 @@ Kosovo	FFF
 به	O
 آلبانیایی	B-NAT
 :	O
-Republika	FFF
-e	FFF
-Kosovës	FFF
+Republika	B-LOC
+e	I-LOC
+Kosovës	I-LOC
 ،	O
 در	O
 صربی	B-NAT
 :	O
-Republika	FFF
-Kosovo	FFF
+Republika	B-LOC
+Kosovo	I-LOC
 ،	O
-Република	FFF
-Косово	FFF
+Република	B-LOC
+Косово	I-LOC
 )	O
 کشوری	O
 در	O
@@ -5721,7 +5717,7 @@ Kosovo	FFF
 لقب	O
 گروزنی	O
 (	O
-Grozny	FFF
+Grozny	O
 )	O
 داده‌اند	O
 که	O
@@ -6530,7 +6526,7 @@ Grozny	FFF
 اعتماد	O
 کرد	O
 ،	O
-gwt	FFF
+gwt	O
 هم	O
 گوگل	O
 بود	O
@@ -6555,7 +6551,7 @@ gwt	FFF
 ولی	O
 به	O
 نسبت	O
-RN	FFF
+RN	O
 خیلی	O
 بهتره	O
 .	O
@@ -7397,7 +7393,7 @@ f	O
 دوران	O
 گالیله	B-PER
 و	O
-.	O
+...	O
 که	O
 دوباره	O
 جان	O
@@ -7436,12 +7432,10 @@ f	O
 .	O
 و	O
 من	O
-.	O
 سه	O
 سال	O
 و	O
 اندی	O
-.	O
 خود	O
 را	O
 گول	O
@@ -7612,8 +7606,7 @@ f	O
 یکی	O
 از	O
 خدمه	O
-Expedition	FFF
-63	FFF
+Expedition63	B-ORG
 از	O
 مناطق	O
 بسیار	O
@@ -7889,8 +7882,8 @@ Expedition	FFF
 یانه	O
 
 گزارش	O
-IHS	FFF
-Markit	FFF
+IHS	B-ORG
+Markit	I-ORG
 از	O
 روند	O
 سیاست‌گذاری‌های	O
@@ -7983,20 +7976,20 @@ Markit	FFF
 فصل	O
 چهار	O
 :	O
-Learning	FFF
+Learning	O
 ،	O
-Fast	FFF
-and	FFF
-Slow	FFF
+Fast	O
+and	O
+Slow	O
 .	O
 و	O
 جایی	O
 که	O
 درباره	O
-making	FFF
+making	O
 -	O
-connections	FFF
-problems	FFF
+connections	O
+problems	O
 صحبت	O
 می‌کنه	O
 .	O
@@ -9069,7 +9062,6 @@ problems	FFF
 متفاوت	O
 است	O
 .	O
-Freekohi	FFF
 
 توی	O
 کل	O
@@ -9265,7 +9257,7 @@ Freekohi	FFF
 نمونه	O
 شرکت	O
 بیوتکنولوژیکی	O
-Epicyte	FFF
+Epicyte	B-ORG
 اعلام	O
 کرد	O
 به	O
@@ -9871,7 +9863,6 @@ Epicyte	FFF
 هزار	O
 تومن	O
 !!!!	O
-.	O
 دو	O
 سال	O
 و	O
@@ -10276,7 +10267,8 @@ Epicyte	FFF
 قدرت	O
 زیادی	O
 گرفته	O
-.‌بود	O
+.	O
+‌بود	O
 و	O
 همچنین	O
 کلیسا	O
@@ -10886,7 +10878,7 @@ Epicyte	FFF
 تامسون	I-ORG
 یعنی	O
 همون	O
-isi	FFF
+isi	B-ORG
 را	O
 ملاک	O
 ارتقا	O
@@ -11249,9 +11241,9 @@ isi	FFF
 کریسلر	I-PER
 سگار	I-PER
 (	O
-Elzie	FFF
-Crisler	FFF
-Segar	FFF
+Elzie	B-PER
+Crisler	I-PER
+Segar	I-PER
 )	O
 به	O
 فکر	O
@@ -11280,7 +11272,7 @@ Segar	FFF
 نام	O
 پاپوی	B-PER
 (	O
-popeye	FFF
+popeye	B-PER
 )	O
 میزنه	O
 و	O
@@ -11319,7 +11311,7 @@ popeye	FFF
 ازش	O
 
 2	O
--.	O
+-	O
 این	O
 تفکرات	O
 یک	O
@@ -11360,7 +11352,7 @@ popeye	FFF
 ،	O
 جمهوریت	O
 و	O
-.‌
+‌...
 بود	O
 
 صرب	O
@@ -11764,7 +11756,7 @@ popeye	FFF
 بشدت	O
 گستردست	O
 
-:)))).	O
+:))))	O
 آخه	O
 انتظار	O
 زیادی	O
@@ -12338,11 +12330,11 @@ popeye	FFF
 تعبیر‌شده‌است	O
 .	O
 (	O
-Irans	FFF
-powerful	FFF
-Revolutionary	FFF
-Guard	FFF
-force	FFF
+Irans	B-ORG
+powerful	I-ORG
+Revolutionary	I-ORG
+Guard	I-ORG
+force	I-ORG
 )	O
 .	O
 اما	O
@@ -12653,9 +12645,9 @@ force	FFF
 
 در	O
 آسیب	O
-C1	FFF
+C1	O
 و	O
-C2	FFF
+C2	O
 استفاده	O
 از	O
 کولار	O
@@ -12665,15 +12657,15 @@ C2	FFF
 نبوده	O
 و	O
 از	O
-Halo	FFF
-Vest	FFF
+Halo	O
+Vest	O
 استفاده	O
 می‌شود	O
 .	O
 درصدمات	O
 نخاعی	O
 بالای	O
-C4	FFF
+C4	O
 بدلیل	O
 آسیب	O
 عصب	O
@@ -12685,28 +12677,6 @@ C4	FFF
 ونتیلاتور	O
 خواهد	O
 بود	O
-.	O
-عصب	O
-فرنیک	O
-.	O
-(	O
-Phrenic	FFF
-Nerve	FFF
-)	O
-.	O
-از	O
-اعصاب	O
-گردنی	O
-سوم	O
-،	O
-چهارم	O
-،	O
-پنجم	O
-(	O
-عمدتا	O
-چهارم	O
-)	O
-منشا	O
 .	O
 
 شخص	O
@@ -12865,8 +12835,6 @@ Nerve	FFF
 صورت	O
 بگیرد
 .	O
-1	O
-2	O
 
 خبرنگار	O
 به	O
@@ -12887,16 +12855,16 @@ Nerve	FFF
 جواب	O
 میده	O
 .	O
-Because	FFF
-tent	FFF
-is	FFF
-very	FFF
-problem	FFF
-and	FFF
-یونانستان	O
-is	FFF
-not	FFF
-good	FFF
+Because	O
+tent	O
+is	O
+very	O
+problem	O
+and	O
+یونانستان	B-LOC
+is	O
+not	O
+good	O
 .	O
 نفر	O
 قبلی	O
@@ -13586,7 +13554,6 @@ good	FFF
 و	O
 ایضا	O
 اشکین	B-PER
-0098	FFF
 
 چند	O
 تاش	O
@@ -13628,7 +13595,7 @@ good	FFF
 دیالوگ	O
 نویسی	O
 و	O
-.	O
+...	O
 
 مینا	B-PER
 جون	O
@@ -14492,8 +14459,8 @@ good	FFF
 کردن	O
 .	O
 کل	O
-verilog	FFF
-vhdl	FFF
+verilog	O
+vhdl	O
 رو	O
 حذف	O
 کردن	O
@@ -14610,7 +14577,6 @@ vhdl	FFF
 رانت	O
 و	O
 خدمات	O
-.	O
 و	O
 متحول	O
 نکردن	O
@@ -14621,7 +14587,6 @@ vhdl	FFF
 ریال	O
 و	O
 گذرنامه	O
-.	O
 ؟؟؟	O
 
 اصلا	O
@@ -15590,9 +15555,11 @@ vhdl	FFF
 .	O
 به	O
 ایمیل	O
-ثبت‌شده‌در	O
-وبگاه	O
-emdad	FFF
+ثبت	O
+شده	O
+در	O
+وبگاه	B-ORG
+emdad	I-ORG
 هم	O
 اطلاع	O
 دادم	O
@@ -15932,7 +15899,7 @@ emdad	FFF
 رو	O
 .	O
 بعدشم	O
-afc	FFF
+afc	B-ORG
 قبول	O
 داره	O
 و	O
@@ -16028,8 +15995,7 @@ afc	FFF
 بازار	O
 در	O
 نماد‌های	O
-شاخص	O
-ساز	O
+شاخص‌ساز	O
 .	O
 در	O
 معاملات	O
@@ -17422,7 +17388,7 @@ afc	FFF
 دادن	O
 گوش	O
 می‌دهند	O
-.-	O
+.	O
 استفان	B-PER
 کاوی	I-PER
 .	O
@@ -17582,7 +17548,8 @@ quote	O
 ریتم	O
 قابل‌توجهی	O
 نداره	O
-.-	O
+.	O
+-	O
 قطعا	O
 بازی	O
 کردن	O
@@ -18492,7 +18459,7 @@ quote	O
 کفش	O
 اسرائیلی	B-NAT
 در	O
-دوبی	O
+دوبی	B-LOC
 .	O
 
 هشتم	O
@@ -19286,7 +19253,6 @@ quote	O
 تجویز	O
 می‌کنند	O
 ؟؟	O
-.	O
 رویای	O
 من	O
 
@@ -19340,8 +19306,8 @@ quote	O
 از	O
 عوارضش	O
 حالت	O
-moon	FFF
-face	FFF
+moon	O
+face	O
 است	O
 .	O
 
@@ -19976,7 +19942,7 @@ face	FFF
 گروه‌ها	O
 با	O
 هم	O
-اسلامگراها	O
+اسلامگراها	B-POG
 بقیه	O
 رو	O
 حذف	O
@@ -19986,7 +19952,7 @@ face	FFF
 مورد	O
 سوالتون	O
 :	O
-کوبا	O
+کوبا	B-LOC
 .	O
 دیکتاتوری	O
 رفت	O
@@ -20165,7 +20131,7 @@ face	FFF
 یا	O
 وتوسم	O
 و	O
-.	O
+...	O
 باشیم	O
 
 در‌های	O
@@ -20461,7 +20427,7 @@ face	FFF
 .	O
 منظور	O
 از	O
-FDA	FFF
+FDA	B-ORG
 سازمان	B-ORG
 غذا	I-ORG
 و	I-ORG
@@ -20470,14 +20436,12 @@ FDA	FFF
 نیست	O
 .	O
 اینجا	O
-FDA	FFF
+FDA	B-ORG
 مخفف	O
-.	O
-Cryptocurrency	FFF
-Farm	FFF
-Development	FFF
-Agency	FFF
-.	O
+Cryptocurrency	B-ORG
+Farm	I-ORG
+Development	I-ORG
+Agency	I-ORG
 آژانس	O
 توسعه	O
 مزارع	O
@@ -20489,7 +20453,9 @@ C	O
 از	O
 ابتدای	O
 عبارت	O
-حذف‌شده‌تا	O
+حذف	O
+شده	O
+تا	O
 کسی	O
 شک	O
 نکنه	O
@@ -20538,9 +20504,9 @@ C	O
 و	O
 چند	O
 نمره	O
-.!	O
+!	O
 دانشگاهی	O
-.،	O
+،	O
 خیر	O
 است	O
 دوصد	O

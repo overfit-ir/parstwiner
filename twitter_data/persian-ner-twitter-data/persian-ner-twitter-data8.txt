@@ -224,8 +224,6 @@
 دست	O
 بگیرین	O
 .	O
-GOT7	FFF
-JacksonWang	O
 
 جشن	B-EVE
 بزرگ	I-EVE
@@ -238,7 +236,6 @@ JacksonWang	O
 خجسته	O
 باد	O
 !	O
-.	O
 برخیز	O
 هان	O
 ای	O
@@ -806,7 +803,6 @@ WBS	O
 شده	O
 است	O
 :	O
-.	O
 "	O
 روزی	O
 را	O
@@ -1077,8 +1073,7 @@ WBS	O
 احترام	O
 فراوان	O
 به	O
-کوبیده	O
-ی	O
+کوبیده‌ی	O
 کبیر	O
 ،	O
 ماکارونی	O
@@ -1100,7 +1095,6 @@ WBS	O
 خورشت	O
 کرفس	O
 
-.	O
 در	O
 دامنه	O
 وسیعی	O
@@ -1125,7 +1119,7 @@ WBS	O
 از	O
 مایملک	O
 (	O
-Property	FFF
+Property	O
 )	O
 است	O
 اعم	O
@@ -1137,7 +1131,7 @@ Property	FFF
 از	O
 این	O
 رو	O
-Economics	FFF
+Economics	O
 بهترین	O
 نامی	O
 است	O
@@ -1227,7 +1221,6 @@ Economics	FFF
 کسب	O
 و	O
 یا	O
-.	O
 هستند	O
 زیر	O
 ذره	O
@@ -1406,7 +1399,7 @@ Economics	FFF
 ،	O
 غذا	O
 و	O
-.	O
+...	O
 
 ما	O
 حساس	O
@@ -1425,7 +1418,7 @@ Economics	FFF
 میزنه	O
 حساس	O
 نیست	O
-؟.	O
+؟	O
 یعنی	O
 حساسیت	O
 مال	O
@@ -1476,27 +1469,6 @@ Economics	FFF
 و	O
 برخوار	O
 اصفهان	B-LOC
-
-(	O
-عباس	B-PER
-گودرزی	I-PER
-)	O
-.	O
-اینستاگرام	B-ORG
-:	O
-.	O
-توییتر	B-ORG
-:	O
-.	O
-پلدختر	B-LOC
-(	O
-سید	B-PER
-حمیدرضا	I-PER
-کاظمی	I-PER
-)	O
-.	O
-یافت	O
-نشد	O
 
 مدارکی	O
 درز	O
@@ -1838,8 +1810,7 @@ Economics	FFF
 بزنند	O
 
 پروژه	O
-شیلی	B-LOC
-سازی	O
+شیلی‌سازی	O
 ایران	B-LOC
 .	O
 نمیدونم	O
@@ -1853,7 +1824,7 @@ Economics	FFF
 شنیدین	O
 یا	O
 نه	O
-؟.	O
+؟	O
 در	O
 دهه‌های	O
 60	O
@@ -2102,7 +2073,7 @@ Economics	FFF
 نرمال	O
 9	O
 .	O
-freesoheila	FFF
+freesoheila	O
 8	O
 .	O
 راه	O
@@ -2202,44 +2173,6 @@ better	O
 تولید	O
 نموده	O
 
-من	O
-میزنم	O
-.	O
-اسمت	O
-غزله	O
-.	O
-اسم	O
-منم	O
-غزله	O
-.	O
-بایست	O
-جونمیون	O
-.	O
-بایس	O
-منم	O
-جونمیون	O
-.*	O
-اطلاعات	O
-رو	O
-دوستم	O
-داد	O
-اگه	O
-غلطه	O
-برو	O
-یقه	O
-اونو	O
-بگیر	O
-.	O
-.	O
-فایده	O
-نداره	O
-باید	O
-برم	O
-آیدی	O
-بکو	O
-حفظ	O
-کنم	O
-
 اقای	O
 سبحانی	B-PER
 این	O
@@ -2302,7 +2235,7 @@ better	O
 .	O
 
 اپلیکیشن	O
-QILIQ	FFF
+QILIQ	O
 رو	O
 نصب	O
 کن	O
@@ -2656,7 +2589,7 @@ QILIQ	FFF
 شما	O
 ست	O
 
-comedic	FFF
+comedic	O
 relief	O
 که	O
 داخل	O
@@ -3317,13 +3250,13 @@ AFC	B-ORG
 میلیونی	O
 چاپیدن	O
 نیست	O
-؟؟.	O
+؟؟	O
 یه	O
 دارویی	O
 6	O
 تومنی	O
 چاپیدنه	O
-؟؟.	O
+؟؟	O
 داروهایی	O
 که	O
 آلان	O
@@ -3571,8 +3504,8 @@ AFC	B-ORG
 جلسه‌ای	O
 در	O
 حضور	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 در	O
 جماران	B-LOC
 تشکیل	O
@@ -3661,7 +3594,6 @@ AFC	B-ORG
 پوتین	B-PER
 هست	O
 ؟	O
-.	O
 یه	O
 عده	O
 میگن	O
@@ -3695,14 +3627,13 @@ AFC	B-ORG
 کنار	O
 ؟	O
 
-باتری	O
-ساز	O
+باتری‌ساز	O
 دیگه‌ای	O
 که	O
 بعد	O
 از	O
-Battery	FFF
-Day	FFF
+Battery	O
+Day	O
 ،	O
 در	O
 ASX	O
@@ -3714,10 +3645,10 @@ ASX	O
 و	O
 برگشت	O
 ،	O
-Novonix	FFF
+Novonix	B-ORG
 ‌بود	O
 .	O
-Novonix	O
+Novonix	B-ORG
 تولید‌کننده	O
 آند	O
 باتریها	O
@@ -3726,7 +3657,7 @@ Novonix	O
 رئیسش	O
 ،	O
 جناب	O
-Burn	FFF
+Burn	B-PER
 ،	O
 موسس	O
 شرکت	O
@@ -3827,13 +3758,12 @@ Burn	FFF
 جمله	O
 کینه	O
 بسته‌اید	O
-؟.	O
+؟	O
 خیلی	O
 جالبید	O
 به	O
 خدا	O
 !	O
-.	O
 احمدی	B-PER
 نژاد	I-PER
 
@@ -3849,7 +3779,6 @@ Burn	FFF
 ترموپیل	I-EVE
 بود	O
 !	O
-.	O
 در	O
 واقع	O
 این	O
@@ -3918,7 +3847,6 @@ Burn	FFF
 بدن	O
 ؟	O
 !	O
-.	O
 خیلی	O
 وقته	O
 ورشکستن	O
@@ -3944,7 +3872,7 @@ Burn	FFF
 برای	O
 سران	O
 فتنه	O
-!.	O
+!	O
 سفر	O
 به	O
 شمال	O
@@ -4272,7 +4200,7 @@ VIP	O
 است	O
 .	O
 شهادت	O
-امام	B-PER
+امام	O
 حسن	I-PER
 علیه	O
 السلام	O
@@ -4453,7 +4381,6 @@ VIP	O
 خود	O
 بنالید	O
 !	O
-.	O
 
 همین	O
 که	O
@@ -4494,8 +4421,7 @@ VIP	O
 شواهد	O
 دیگر	O
 شاهد	O
-مدعا	O
-ست	O
+مدعاست	O
 .	O
 شما	O
 هم	O
@@ -4695,7 +4621,7 @@ VIP	O
 شفرو	B-PER
 ندادن	O
 و	O
-.	O
+...	O
 مدیران	O
 ما	O
 هم	O
@@ -4881,7 +4807,6 @@ VIP	O
 داده	O
 است	O
 :	O
-.	O
 مینگیز	O
 فتنه	O
 میفروز	O
@@ -5357,8 +5282,7 @@ VIP	O
 این	O
 تنهایی	O
 .	O
-سایه	O
-ی	O
+سایه‌ی	O
 نارونی	O
 تا	O
 ابدیت	O
@@ -5619,7 +5543,7 @@ VIP	O
 یا	O
 اصفهان	B-LOC
 خوانده‌ای	O
-hit	FFF
+hit	O
 me	O
 up	O
 .	O
@@ -5740,18 +5664,18 @@ up	O
 (	O
 تلنگری	O
 از	O
-reddit	FFF
+reddit	B-ORG
 )	O
 :	O
 در	O
-مقایسه	O
-ی	O
+مقایسه‌ی	O
 کشورهای	O
 نوردیک	O
 با	O
 آمریکا	B-LOC
 و	O
-.،	O
+...
+،	O
 سیستم	O
 اجتماعی	O
 و	O
@@ -6027,7 +5951,6 @@ reddit	FFF
 خواهد	O
 کرد	O
 
-.	O
 سریال	O
 «	O
 سر	O
@@ -6123,9 +6046,9 @@ reddit	FFF
 با	O
 من	O
 نوعی	O
-Justice4Navid	FFF
+Justice4Navid	O
 و	O
-NIACLobbies4Mullahs	FFF
+NIACLobbies4Mullahs	O
 رو	O
 میزنی	O
 ،	O
@@ -6270,8 +6193,7 @@ NIACLobbies4Mullahs	FFF
 دانشگاه‌های	O
 دیگه	O
 توی	O
-اروپا	B-LOC
-ست	O
+اروپاست	B-LOC
 .	O
 یه	O
 کتاب	O
@@ -6306,8 +6228,8 @@ NIACLobbies4Mullahs	FFF
 )	O
 با	O
 دستگاه	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 را	O
 برای	O
 عبرت	O
@@ -6478,7 +6400,7 @@ NIACLobbies4Mullahs	FFF
 گفت	O
 بشر	O
 .	O
-BanIRSports4Navid	FFF
+BanIRSports4Navid	O
 
 جنبش	O
 کمونالیستی	O
@@ -6854,7 +6776,6 @@ BanIRSports4Navid	FFF
 وزیر	O
 بشه	O
 !	O
-.	O
 ما	O
 مردم	O
 چکاره	O
@@ -6963,7 +6884,6 @@ BanIRSports4Navid	FFF
 تمام	O
 است	O
 !	O
-.	O
 گدار	B-PER
 خیلی	O
 کم	O
@@ -7011,7 +6931,7 @@ BanIRSports4Navid	FFF
 
 توسعه	O
 دهنده‌ی	O
-Among	FFF
+Among	O
 Us	O
 ساخت	O
 نسخه‌ی	O
@@ -7087,7 +7007,7 @@ Us	O
 خواستار	O
 استقلال	O
 بودن	O
-...	O
+.	O
 برای	O
 چی	O
 باید	O
@@ -7258,7 +7178,6 @@ Us	O
 و	O
 نصر	O
 !	O
-.	O
 با	O
 که	O
 گوییم	O
@@ -7268,7 +7187,6 @@ Us	O
 و	O
 انتظار	O
 ؟	O
-.	O
 شکایت	O
 فرقت	O
 یار	O
@@ -7288,7 +7206,6 @@ Us	O
 عشوه	O
 عرش	O
 ،	O
-.	O
 ‌ای	O
 نخستین	O
 امیر	O
@@ -7296,14 +7213,12 @@ Us	O
 از	O
 نظر	O
 !	O
-.	O
 مولای	O
 من	O
 ،	O
 یوسف	O
 فاطمه	O
 !	O
-.	O
 اللهم	O
 عجل	O
 لولیک	O
@@ -7534,7 +7449,7 @@ Us	O
 نیروی	O
 نظامی	O
 نیست	O
-!.	O
+!	O
 خیلی	O
 خنده‌دار	O
 به	O
@@ -7543,7 +7458,7 @@ Us	O
 دولت	B-ORG
 پاس	O
 میدن	O
-!.	O
+!	O
 مضحکه	O
 ،	O
 هم	O
@@ -7559,7 +7474,7 @@ Us	O
 پول	O
 نمیدن	O
 بهمون	O
-!.	O
+!	O
 زبون	O
 و	O
 تریبون	O
@@ -7693,7 +7608,7 @@ Us	O
 از	O
 ظهر	O
 و	O
-.	O
+...	O
 شاید	O
 حتی	O
 این‌ها	O
@@ -7729,7 +7644,6 @@ Us	O
 خیلی	O
 کمتره	O
 !	O
-.	O
 دانشجو	O
 میشناسم	O
 با	O
@@ -7768,7 +7682,7 @@ Us	O
 جان	O
 و	O
 دلم	O
-،.	O
+،	O
 تا	O
 ابد	O
 سوز	O
@@ -7989,7 +7903,6 @@ Us	O
 نابالغی	O
 .	O
 
-.	O
 چه	O
 تصوری	O
 از	O
@@ -8368,10 +8281,7 @@ Us	O
 رختکن	O
 خبری	O
 نزدن	O
-؟	O
-!	O
-؟	O
-.	O
+؟!؟	O
 نگرانم	O
 واقعا	O
 !	O
@@ -8503,7 +8413,6 @@ Us	O
 منطق	O
 استواری	O
 !	O
-.	O
 خیلیا	O
 تو	O
 جنگ	O
@@ -8829,9 +8738,7 @@ Us	O
 صادراتش	O
 هستیم	O
 و	O
-.	O
-.	O
-.	O
+...	O
 
 کشف	O
 11	O
@@ -9029,8 +8936,8 @@ Us	O
 دست	O
 داد	O
 
-Iran	FFF
-Iranelection	O
+Iran	B-LOC
+Iranelection	B-EVE
 و	O
 صدای	O
 شیون	O
@@ -9127,8 +9034,8 @@ Iranelection	O
 حق	O
 علی	B-PER
 اکبر	I-PER
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 ع	O
 عاقبت	O
 بخیر	O
@@ -9144,8 +9051,8 @@ Iranelection	O
 حق	O
 علی	B-PER
 اکبر	I-PER
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 ع	O
 عاقبت	O
 بخیر	O
@@ -9401,7 +9308,7 @@ Iranelection	O
 اجرا	O
 داشته	O
 باشه	O
-.-	O
+.	O
 پیشنهاد	O
 خوبیه	O
 .	O
@@ -10323,7 +10230,6 @@ Iranelection	O
 هموارتر	O
 می‌شود	O
 .	O
-Freekohi	FFF
 
 «	O
 انسان	O
@@ -10883,8 +10789,8 @@ Freekohi	FFF
 نرسید	O
 پیکر	O
 معطر	O
-امام	B-PER
-مجتبی	I-PER
+امام	O
+مجتبی	B-PER
 ،	O
 با	O
 جگری	O
@@ -10918,8 +10824,7 @@ Freekohi	FFF
 اهل	O
 البیت	O
 
-2	O
-6	O
+26	O
 .	O
 مشاور	O
 کسی	O
@@ -11160,7 +11065,6 @@ Freekohi	FFF
 ادامه‌اش	O
 دهد	O
 
-...	O
 قلب	O
 امام	O
 ،	O
@@ -11211,7 +11115,7 @@ Freekohi	FFF
 وحدت	O
 حاکم	O
 است	O
-..	O
+.	O
 آیت‌الله	O
 طهرانی	B-PER
 قدس	O
@@ -11497,8 +11401,8 @@ Freekohi	FFF
 داریم	O
 راه	O
 زیارت	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 علیه	O
 السلام	O
 رو	O
@@ -11511,8 +11415,8 @@ Freekohi	FFF
 بگشاید	O
 و	O
 از	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 علیه	O
 السلام	O
 درخواست	O
@@ -11636,8 +11540,8 @@ Freekohi	FFF
 مانده	O
 به	O
 اربعین	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 علیه	O
 السلام	O
 و	O
@@ -11657,9 +11561,9 @@ Freekohi	FFF
 کریم	O
 اهل	O
 بیت	O
-امام	B-PER
-حسن	I-PER
-مجتبی	O
+امام	O
+حسن	B-PER
+مجتبی	I-PER
 علیه	O
 السلام	O
 بر	O
@@ -11683,8 +11587,8 @@ Freekohi	FFF
 صفر	O
 روز	O
 شهادت	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 علیه	O
 السلام	O
 هست	O
@@ -11904,7 +11808,6 @@ Freekohi	FFF
 عوض	O
 کرد	O
 ،	O
-.	O
 ایران	B-LOC
 به	O
 این	O
@@ -12284,7 +12187,7 @@ Freekohi	FFF
 35	O
 تومن	O
 
-".	O
+"	O
 آن‌ها	O
 با	O
 ناتیلوس	O
@@ -12598,13 +12501,6 @@ Freekohi	FFF
 ست	O
 .	O
 
-Repost	O
-..	O
-.	O
-.	O
-.	O
-.	O
-..	O
 آقا	O
 جهان	B-PER
 شما	O
@@ -12952,7 +12848,7 @@ Repost	O
 عبدالرحمان	B-PER
 برومند	I-PER
 و	O
-.	O
+...	O
 همگی	O
 مشاوران	O
 صدام	B-PER
@@ -13192,7 +13088,6 @@ Repost	O
 کمیاب	O
 هست	O
 !	O
-.	O
 این	O
 کمیابی	O
 از	O
@@ -13273,8 +13168,8 @@ Repost	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 برن	O
 قم	B-LOC
@@ -13582,7 +13477,7 @@ Repost	O
 و	O
 دوغ	O
 و	O
-.	O
+...	O
 بز	O
 درست	O
 میکنه	O
@@ -13723,8 +13618,8 @@ Repost	O
 می‌گوید	O
 :	O
 شنیدم	O
-امام	B-PER
-صادق	I-PER
+امام	O
+صادق	B-PER
 علیه	O
 السلام	O
 می‌فرمود	O
@@ -14114,7 +14009,6 @@ Repost	O
 میدونن	O
 
 عجب	O
-!!!	O
 .	O
 حاجی	O
 نگاهتون	O
@@ -14417,7 +14311,7 @@ Repost	O
 چندین	O
 سال	O
 قهرمان	O
-NBA	FFF
+NBA	B-EVE
 و	O
 مارادونا	B-PER
 چندین	O
@@ -14477,7 +14371,7 @@ NBA	FFF
 اون	O
 رو	O
 بصورت	O
-cause	FFF
+cause	O
 and	O
 effect	O
 بیان	O
@@ -14493,7 +14387,7 @@ effect	O
 افتادن	O
 در	O
 دام	O
-narrative	FFF
+narrative	O
 fallacy	O
 یا	O
 خطای	O
@@ -14539,41 +14433,6 @@ fallacy	O
 می‌کنن	O
 .	O
 
-سلام	O
-امام	O
-زمانم	O
-.	O
-خوب	O
-است	O
-ما	O
-هم	O
-مثل	O
-باران	O
-حس	O
-بگیریم	O
-.	O
-هر	O
-صبح	O
-سراغی	O
-از	O
-گل	O
-نرگس	O
-بگیریم	O
-.	O
-خبرت	O
-هست	O
-که	O
-بی‌روی	O
-تو	O
-آرامم	O
-نیست	O
-!!!	O
-.	O
-اللهم	O
-عجل	O
-لولیک	O
-الفرج	O
-
 والا	O
 ما	O
 توقعمون	O
@@ -14612,7 +14471,6 @@ fallacy	O
 قیمت	O
 میخوره	O
 !	O
-.	O
 بعد	O
 این	O
 همه	O
@@ -14778,7 +14636,7 @@ fallacy	O
 مجلس	O
 با	O
 آرمان‌های	O
-امام	O
+امام	B-PER
 فرسنگ‌ها	O
 فاصله	O
 داره	O
@@ -15858,9 +15716,9 @@ fallacy	O
 لایک‌های	O
 موزیک	O
 ویدیو	O
-HYLT	FFF
+HYLT	O
 از	O
-Siñorita	FFF
+Siñorita	B-PER
 از	O
 کامیلا	B-PER
 کابیو	I-PER
@@ -16133,7 +15991,6 @@ Siñorita	FFF
 حاج	O
 قاسم	B-PER
 .	O
-Baghdad0120	FFF
 
 سلام	O
 عزیزم	O
@@ -16222,10 +16079,10 @@ Baghdad0120	FFF
 بازیگری	O
 در	O
 نمایش	O
-Play	FFF
-It	FFF
-Again	FFF
-Sam	FFF
+Play	O
+It	O
+Again	O
+Sam	B-PER
 
 این	O
 که	O
@@ -16610,7 +16467,7 @@ Sam	FFF
 مهربون	O
 باشی	O
 و	O
-.	O
+...	O
 فعلا	O
 همین‌ها	O
 به	O
@@ -16847,7 +16704,7 @@ Sam	FFF
 گریس	B-ORG
 .	O
 نفتکش	O
-OOTT	FFF
+OOTT	O
 بنزین	O
 
 یک	O
@@ -17660,8 +17517,8 @@ OOTT	FFF
 )	O
 با	O
 حکومت	O
-گورکانیان	FF
-هند	FFF
+گورکانیان	B-POG
+هند	I-POG
 هم	O
 دشمن‌اند	O
 و	O
@@ -17721,7 +17578,7 @@ OOTT	FFF
 تیم	O
 مورد	O
 علاقه‌شون	O
-Giants	FFF
+Giants	B-ORG
 سان‌فرانسیسکو	B-LOC
 اجرا	O
 کرده	O
@@ -17746,7 +17603,7 @@ Giants	FFF
 مجازی	O
 از	O
 داخل	O
-Headquarters	FFF
+Headquarters	O
 متالیکا	B-ORG
 ویدیو	O
 گرفتن	O
@@ -18912,7 +18769,6 @@ Headquarters	FFF
 دستگاه	O
 اسپرسو	O
 !	O
-.	O
 جامعه‌ای	O
 که	O
 توی	O
@@ -19636,7 +19492,6 @@ Headquarters	FFF
 دل	O
 حکمران	O
 و	O
-.	O
 آنکس	O
 که	O
 به	O
@@ -19832,7 +19687,7 @@ Headquarters	FFF
 خگستر	O
 وپارس	O
 و	O
-.	O
+...	O
 کرد	O
 .	O
 حتما	O
@@ -20241,7 +20096,7 @@ Headquarters	FFF
 بحث	O
 آب	O
 و	O
-.	O
+...	O
 بری	O
 خوزستان	B-LOC
 میگن	O
@@ -21190,7 +21045,7 @@ Headquarters	FFF
 با	O
 مانویان	O
 و	O
-.	O
+...	O
 چه	O
 کردن	O
 ؟	O
@@ -21481,7 +21336,8 @@ Headquarters	FFF
 را	O
 مریزی	O
 دل	O
-.‌ای	O
+.	O
+‌ای	O
 نخورده	O
 مست	O
 .	O
@@ -21620,7 +21476,7 @@ Headquarters	FFF
 استان‌های	O
 غربی	O
 و	O
-.	O
+...	O
 
 نشستم	O
 توی	O
@@ -21764,8 +21620,8 @@ Headquarters	FFF
 .	O
 
 تو	O
-سایت	O
-gisaid	FFF
+سایت	B-ORG
+gisaid	I-ORG
 می‌تونید	O
 توالی‌های	O
 ارسال‌شده	O
@@ -21873,7 +21729,6 @@ gisaid	FFF
 بیماری	O
 ،	O
 پیشگیری	O
-.	O
 و	O
 رعایت	O
 پروتکل‌های	O
@@ -22724,7 +22579,7 @@ gisaid	FFF
 سال	O
 پشت	O
 هم	O
-nba	FFF
+nba	B-EVE
 رو	O
 داشت	O
 معلومه	O
@@ -22827,8 +22682,8 @@ nba	FFF
 امیرشقاقی	I-PER
 یا	O
 همون	O
-Sait	FFF
-Emir	FFF
+Sait	B-PER
+Emir	I-PER
 ه	O
 ،	O
 ساکن	O
@@ -23080,7 +22935,7 @@ Emir	FFF
 یجیب	O
 بخونه	O
 تو	O
-متروپلیتن	FFF
+متروپلیتن	B-ORG
 تیلور	B-PER
 سویفت	I-PER
 
@@ -24045,9 +23900,9 @@ Emir	FFF
 میموند	O
 .	O
 پس	O
-Just	FFF
-Do	FFF
-It	FFF
+Just	O
+Do	O
+It	O
 
 دیدار	O
 گرهارد	B-PER
@@ -24279,7 +24134,7 @@ It	FFF
 کاشیکاری	O
 مساجد	O
 و	O
-.	O
+...	O
 زیاد	O
 بکار	O
 میره	O
@@ -24868,15 +24723,11 @@ It	FFF
 توسط	O
 دو	O
 شهر	O
-Washington	FFF
+WashingtonD.C.	B-LOC
 ،	O
-D	FF
-.	O
-C	FFF
-.،	O
-Baltimore	FFF
+Baltimore	B-LOC
 ،	O
-Maryland	FFF
+Maryland	B-LOC
 
 نمایش	O
 دادن	O
@@ -24897,7 +24748,7 @@ Maryland	FFF
 داستان	O
 جالب	O
 داره	O
-بوکانان	FFF
+بوکانان	B-PER
 .	O
 میگه	O
 فرض	O
@@ -25391,8 +25242,8 @@ Maryland	FFF
 و	O
 بدونی	O
 و	O
-baby	FFF
-sitشون	FFF
+baby	O
+sitشون	O
 کنی	O
 و	O
 اگه	O
@@ -25426,4 +25277,3 @@ sitشون	FFF
 سوتی	O
 هست	O
 .	O
-

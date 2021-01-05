@@ -179,7 +179,7 @@ Justice4Navid	O
 در	O
 فریبرگ	B-LOC
 (	O
-firatnews	FFF
+firatnews	B-LOC
 )	O
 
 کوکی	B-PER
@@ -229,7 +229,6 @@ firatnews	FFF
 هفتم	O
 قدم	O
 می‌زنم	O
-Taekook	FFF
 
 صبح	O
 جمعه‌ات	O
@@ -297,9 +296,9 @@ Taekook	FFF
 شد	O
 یاد	O
 فیلم	O
-the	FFF
-three	FFF
-stooges	FFF
+the	O
+three	O
+stooges	O
 افتادم	O
 
 آخ	O
@@ -1145,7 +1144,7 @@ PHD	O
 مینمایم	O
 و	O
 من	O
-الله	FFF
+الله	O
 التوفیق	O
 محمدضیائ	B-PER
 رحیمی	I-PER
@@ -1691,7 +1690,6 @@ PHD	O
 شد	O
 اعتراضات	O
 سراسری	O
-FreeSoheila	FFF
 
 آدم	O
 از	O
@@ -1828,7 +1826,6 @@ FreeSoheila	FFF
 جوکر	B-PER
 انتخاب	O
 نماید	O
-DC	FFF
 سینما	O
 
 سینه‌موبیل	B-PER
@@ -1938,7 +1935,7 @@ DC	FFF
 و	O
 حالا	O
 نیروهای	O
-PKK	FFF
+PKK	B-POG
 در	O
 قره‌باغ	B-LOC
 اشغالی	O
@@ -3565,12 +3562,6 @@ gt	O
 قلب	O
 صورت	O
 می‌پذیرد	O
-«	O
-لهم	FFF
-قلوب	FFF
-یعقلون	FFF
-بها	FFF
-»	O
 
 و	O
 زبان	O
@@ -4458,10 +4449,11 @@ gt	O
 اسم	O
 ویزاش	O
 هست	O
-distinguished	FFF
-talented	FFF
-visa	FFF
-ویزا‌بود	O
+distinguished	O
+talented	O
+visa	O
+ویزا‌	O
+بود	O
 قبلا	O
 ولی	O
 الان	O
@@ -4505,8 +4497,6 @@ visa	FFF
 چکار	O
 میکنی	O
 لنتییییی	O
-rosé	FFF
-blackpink	FFF
 
 رهرو	O
 آن	O
@@ -5158,7 +5148,7 @@ blackpink	FFF
 اندازه‌گیری	O
 کلا	O
 متریک	O
-SI	FFF
+SI	O
 در	O
 مقابل	O
 متریک	O
@@ -6049,7 +6039,6 @@ SI	FFF
 خالیه	O
 برم	O
 بخرم	O
-got7	FFF
 
 سخنگوی	O
 شرکت	B-ORG
@@ -6882,7 +6871,7 @@ got7	FFF
 برای	O
 کمپانی	O
 معروف	O
-MAERSK	FFF
+MAERSK	B-ORG
 ساخته	O
 شده‌بود	O
 در	O
@@ -7444,7 +7433,6 @@ Quarantaine	O
 رو	O
 فریب	O
 بدید	O
-SaveHaydarGhorbani	FFF
 
 هنگام	B-LOC
 و	I-LOC
@@ -7613,35 +7601,6 @@ SaveHaydarGhorbani	FFF
 چی	O
 دارید	O
 
-رمان	O
-عاشقانه	O
-و	O
-جذاب	O
-تو	O
-سهم	O
-منی	O
-با	O
-لینک	O
-زیر	O
-میتونید	O
-به	O
-صورت	O
-آنلاین	O
-مطالعه	O
-کنید	O
-سایت	O
-داستانهای	FFF
-نازخاتون	FFF
-و	O
-کانال	O
-داستانهای	FFF
-نازخاتون	FFF
-رو	O
-به	O
-بقیه	O
-معرفی	O
-کنید	O
-
 بعد	O
 یه	O
 مدت	O
@@ -7804,9 +7763,11 @@ SaveHaydarGhorbani	FFF
 داشتی	O
 چه	O
 شد	O
-یا‌امام‌حسن	FFF
+یا‌	O
+امام	O
+حسن	B-PER
 
-جنوب	FFF
+جنوب	O
 رو	O
 نمیشه	O
 با	O
@@ -7921,7 +7882,7 @@ SaveHaydarGhorbani	FFF
 حال	O
 قبول	O
 و	O
-....	O
+...	O
 معلوم	O
 نشد	O
 دقیقا	O
@@ -8164,23 +8125,6 @@ SaveHaydarGhorbani	FFF
 شد	O
 ؟	O
 
-یا	O
-امام	FFF
-حسن	B-PER
-مجتبی‌ع	I-PER
-کلّ	O
-فرزندان	O
-زهرا	B-PER
-سفره‌دارند	O
-و	O
-کریم	O
-بین	O
-اولاد	O
-کریمش	O
-؛	O
-مجتبایش	B-PER
-بیشتر	O
-
 نیازمند	O
 یاری	O
 سبزتان	O
@@ -8226,7 +8170,8 @@ SaveHaydarGhorbani	FFF
 خودت	O
 نیست	O
 .	O
-حمیدصباغی	B-PER
+حمید	B-PER
+صباغی	B-PER
 
 وقتی	O
 به	O
@@ -8281,8 +8226,8 @@ SaveHaydarGhorbani	FFF
 ،	O
 اسممو	O
 بذارم	O
-El	FFF
-Suso	FFF
+El	B-PER
+Suso	I-PER
 .	O
 
 مقالات	O
@@ -8401,8 +8346,8 @@ blind	O
 است	O
 
 کفگیر	O
-دولت	FFF
-روحانی	FFF
+دولت	O
+روحانی	B-PER
 سالهاست	O
 به	O
 ته	O
@@ -8430,9 +8375,11 @@ blind	O
 به	O
 بخش	O
 خصوصی	O
-..؟!	O
+...	O
+؟	O
+!	O
 یااا	O
-....	O
+...	O
 کسانی	O
 دوباره	O
 پولارو	O
@@ -8440,7 +8387,9 @@ blind	O
 کردن	O
 این	O
 وسط	O
-..؟!!	O
+...	O
+؟	O
+!!	O
 
 طلا	B-PER
 مدنی	I-PER
@@ -8497,7 +8446,6 @@ blind	O
 25هزار	O
 دلاری	O
 است	O
-1	O
 
 در	O
 روز	O
@@ -8577,14 +8525,15 @@ blind	O
 نظام	O
 متمرکز	O
 در	O
-ایران‌شده‌و	FFF
+ایران	B-LOC
+شده	O
+و	O
 به	O
 کارگزاران	O
 آن	O
 تبدیل	O
 شدند	O
 .	O
-4	O
 
 من	O
 دوساله	O
@@ -8604,7 +8553,7 @@ blind	O
 بعد	O
 میره	O
 سمت	O
-Metz	FFF
+Metz	B-LOC
 بلد	O
 نیستم	O
 !	O
@@ -8652,10 +8601,6 @@ Metz	FFF
 زند	I-PER
 و	O
 ...	O
-حیف	O
-:-&	O
-lt	O
-;	O
 
 و	O
 البته	O
@@ -9357,8 +9302,8 @@ Landlocked	O
 و	O
 مقرشون	O
 در	O
-دریاچه	O
-Khövsgöl	FFF
+دریاچه	B-LOC
+Khövsgöl	I-LOC
 هست	O
 .	O
 
@@ -9368,7 +9313,8 @@ Khövsgöl	FFF
 که	O
 یه	O
 پاریس	B-LOC
-ضمیمه‌ش‌بود	O
+ضمیمه‌ش	O
+بود	O
 :))	O
 
 تحریفات	O
@@ -9491,7 +9437,7 @@ Khövsgöl	FFF
 عدم	O
 اجرای	O
 وظایف	O
-رئیس‌جمهوری	FFF
+رئیس‌جمهوری	O
 )	O
 و	O
 مجلس	B-ORG
@@ -9612,7 +9558,7 @@ Khövsgöl	FFF
 و	O
 یاسینی	B-PER
 و	O
-....	O
+...	O
 
 ما	O
 همیشه	O
@@ -9745,8 +9691,8 @@ Khövsgöl	FFF
 خواندنی	O
 دوست	O
 عزیزم	O
-Adam	FFF
-Benkato	FFF
+Adam	B-PER
+Benkato	I-PER
 درباره	O
 کتابشناسی	O
 سغدی	B-PER
@@ -9959,7 +9905,6 @@ Benkato	FFF
 فصل	O
 بایرن	B-ORG
 مونیخ	I-ORG
-SuperCup	FFF
 
 تفسیر	O
 آیه‌های	O
@@ -10583,7 +10528,8 @@ SuperCup	FFF
 فیلم	O
 دوم	O
 نسرین	B-PER
-ستوده‌بودید	B-PER	-	FFF
+ستوده	I-PER
+بودید	O
 ؟	O
 در	O
 خصوص	O
@@ -10645,7 +10591,8 @@ SuperCup	FFF
 کجای	O
 اینها	O
 به	O
-مجلس‌انقلابی	B-ORG	-	FFF
+مجلس	B-ORG
+انقلابی	O
 می‌خوره	O
 ؟	O
 دنا	O
@@ -10901,9 +10848,9 @@ SuperCup	FFF
 بقول	O
 یکی	O
 از	O
-دموکرات‌های	B-POG	-	FFF
+دموکرات‌های	B-POG
 قدیمی	O
-سنا	B-ORG	-	FFF
+سنا	B-ORG
 که	O
 نوشته‌بود	O
 بزرگترین	O
@@ -11076,7 +11023,7 @@ ISI	O
 در	O
 دور	O
 برگشت	O
-لالیگا	B-EVE	-	FFF
+لالیگا	B-EVE
 بارسلونا	B-ORG
 را	O
 در	O
@@ -11583,7 +11530,7 @@ ISI	O
 نون	O
 دونیه	O
 اقایونه	O
-..	O
+.	O
 تو	O
 تحریمه	O
 که	O
@@ -11612,7 +11559,7 @@ ISI	O
 تو	O
 بازار	O
 و	O
-.....	O
+...	O
 دور	O
 زدن	O
 تحریم	O
@@ -11704,7 +11651,7 @@ ISI	O
 مازیار	B-PER
 جبرانی	I-PER
 و	O
-....	O
+...	O
 در	O
 مورد	O
 مسائل	O
@@ -11971,7 +11918,7 @@ ISI	O
 آموز	O
 پسر	O
 در	O
-خوابگاه	B-ORG	-	FFF
+خوابگاه	B-ORG
 پیش‌قلعه	I-ORG
 مورد	O
 ضرب	O
@@ -12129,7 +12076,7 @@ ISI	O
 در	O
 شهر	O
 "	O
-فیروز	B-LOC	-	FFF
+فیروز	B-LOC
 کوی	I-LOC
 "	O
 ولایت	I-LOC
@@ -12329,7 +12276,8 @@ ISI	O
 متخصص	O
 غدد	O
 و	O
-....،	O
+...	O
+،	O
 منظور	O
 این	O
 اقشار	O
@@ -12411,7 +12359,7 @@ ISI	O
 سلمان	B-PER
 کدیور	I-PER
 و	O
-....	O
+...	O
 
 چهارمین	O
 سال	O
@@ -12427,7 +12375,6 @@ ISI	O
 15شهریور	O
 1395	O
 ...	O
-via	O
 
 یک	O
 جرعه	O
@@ -14131,7 +14078,7 @@ hearing	O
 مصاحبه	O
 با	O
 روزنامه	B-ORG
-NRC	FFF
+NRC	I-ORG
 گفت	O
 حین	O
 تحقیقات	O
@@ -15259,7 +15206,8 @@ NRC	FFF
 سیستم	O
 آمریکا	B-LOC
 بزرگ	O
-‌شده‌.	O
+‌شده‌	O
+.	O
 اینکه	O
 علایق	O
 شخصی	O
@@ -15546,7 +15494,8 @@ NRC	FFF
 محمدزاده	I-PER
 رو	O
 بخرید	O
-..؟؟؟	O
+.	O
+؟؟؟	O
 
 گلف‌ایر	B-ORG
 ،	O
@@ -16027,7 +15976,7 @@ NRC	FFF
 که	O
 هنگام	O
 فرار	O
-....	O
+...	O
 یادش	O
 آمد	O
 که	O
@@ -16942,8 +16891,8 @@ NRC	FFF
 عکس	O
 هم	O
 :	O
-Yuri	FFF
-Mashkov	FFF
+Yuri	B-PER
+Mashkov	I-PER
 از	O
 خبرگزاری	B-ORG
 ایتارتاس	I-ORG
@@ -17079,7 +17028,7 @@ Mashkov	FFF
 قبول	O
 کردند	O
 ولی	O
-....	O
+...	O
 
 زندگی	O
 نرمال	O
@@ -17120,7 +17069,8 @@ Mashkov	FFF
 سرخ	O
 ،	O
 گندمگون	O
-،...	O
+،	O
+...	O
 زندگی	O
 نرمال	O
 
@@ -18255,7 +18205,7 @@ Mashkov	FFF
 
 نه	O
 نمیدونستم	O
-..	O
+.	O
 ممنون	O
 از	O
 اطلاعاتی	O
@@ -18277,11 +18227,11 @@ Mashkov	FFF
 ایران	B-LOC
 آقایی	O
 میکنه	O
-..	O
+.	O
 منم	O
 نوشتم	O
 آقا	O
-..	O
+.	O
 پرسپولیس	B-ORG
 آقای	O
 فوتبال	O
@@ -18291,7 +18241,7 @@ Mashkov	FFF
 بر	O
 فوتبالمون	O
 دیگه	O
-..	O
+.	O
 از	O
 اون	O
 نظر	O
@@ -18698,7 +18648,7 @@ Mashkov	FFF
 بهترین	O
 هست	O
 .	O
-Panago	FFF
+Panago	B-ORG
 هم	O
 خوبه	O
 بعد	O
@@ -19116,9 +19066,6 @@ Panago	FFF
 زشت	O
 است	O
 .	O
-.	O
-.	O
-.	O
 
 ینی	O
 تباه	O
@@ -19275,7 +19222,8 @@ Panago	FFF
 آن	O
 فکر	O
 نکرده‌بود	O
-.»	O
+.	O
+»	O
 رویاهای	O
 شرقی	O
 غربی	O
@@ -19399,7 +19347,8 @@ Panago	FFF
 !	O
 یک	O
 داستان	O
-عجیبی‌بود	O
+عجیبی	O
+بود	O
 .	O
 خلاصه	O
 با	O
@@ -19609,12 +19558,12 @@ Panago	FFF
 میشکین	O
 است	O
 یا	O
-راسکولنیکف	O
+راسکولنیکف	B-PER
 یا	O
 اصلا	O
-سونیا	O
+سونیا	B-PER
 یا	O
-میخائیلف	O
+میخائیلف	B-PER
 یا	O
 ...	O
 
@@ -20035,13 +19984,7 @@ Panago	FFF
 از	O
 فضا	O
 گرفته	O
-..	O
-باحاله	O
-نگاه	O
-کنید	O
-اینم	O
-لینکش	O
-:	O
+.	O
 
 عباسعلی	B-PER
 کدخدایی	I-PER
@@ -20665,7 +20608,7 @@ Panago	FFF
 ،	O
 بلونیا	B-LOC
 ،	O
-docatti	FFF
+docatti	B-LOC
 میتونی	O
 انلاین	O
 موزه	O
@@ -20907,7 +20850,8 @@ docatti	FFF
 نه	O
 جنگ	O
 را	O
-».	O
+»	O
+.	O
 حسن	B-PER
 روحانی	I-PER
 که	O
@@ -21253,11 +21197,6 @@ docatti	FFF
 هات	O
 شه	O
 جواد	B-PER
-BETTER	FFF
-BY	FFF
-ZAYN	FFF
-better	FFF
-BetterZAYN	FFF
 
 کلا	O
 عبارت	O
@@ -21268,7 +21207,9 @@ BetterZAYN	FFF
 نام	O
 این	O
 اسلحه	O
-گرفته‌شده‌.	O
+گرفته	O
+شده‌	O
+.	O
 اشتورم	O
 گویر	O
 یا	O
@@ -21301,8 +21242,6 @@ BetterZAYN	FFF
 شمیم	B-PER
 مرادیان	I-PER
 
-کرده‌بود	O
-.	O
 ناوگان	B-ORG
 دریایی	I-ORG
 آمریکا	I-ORG
@@ -21684,7 +21623,9 @@ BetterZAYN	FFF
 اتفاقا	O
 زیاد	O
 هم	O
-ترجمه‌شده‌.	O
+ترجمه	O
+شده‌	O
+.	O
 
 2	O
 .	O
@@ -21811,7 +21752,8 @@ BetterZAYN	FFF
 باشگاه‌ها	O
 هم	O
 توصیه	O
-کرده‌بود	O
+کرده	O
+بود	O
 که	O
 از	O
 ذکر	O
@@ -21837,7 +21779,8 @@ BetterZAYN	FFF
 اف‌ث	B-ORG
 کلن	I-ORG
 اعلام	O
-شده‌بود	O
+شده	O
+بود	O
 .	O
 
 تا	O
@@ -21927,23 +21870,18 @@ BetterZAYN	FFF
 تصمیم‌گیران	O
 و	O
 طراحان	O
-2	O
 
 پیشنهاد	O
 ویژه	O
 فیلمباز	O
 .	O
-.	O
 فیلم	O
 فاطیما	O
-Fatima	FFF
 2020	O
-.	O
-.	O
 .	O
 توضیحات	O
 :	O
-Fatima	FFF
+Fatima	O
 یک	O
 فیلم	O
 درام	O
@@ -22061,14 +21999,14 @@ Fatima	FFF
 اول	O
 ریاست	O
 جمهوری‌شده‌،	O
-نظام	B-PER
-الدین	I-PER
+نظام‌الدین	B-PER
 قیصاری	I-PER
 را	O
 به	O
 پشه	O
 تشبیه	O
-کرده‌است	O
+کرده	O
+است	O
 .	O
 
 مهندسی	O
@@ -22213,7 +22151,8 @@ Fatima	FFF
 بهار
 و	O
 پاییز	O
-،..	O
+،	O
+...	O
 تبریک	O
 گفت	O
 و	O
@@ -22316,7 +22255,8 @@ Fatima	FFF
 و	O
 البته	O
 شجاعانه‌ای	O
-نخونده‌بودم	O
+نخونده	O
+بودم	O
 .	O
 نوشتن	O
 چنین	O
@@ -22341,7 +22281,9 @@ Fatima	FFF
 (	O
 باورهای	O
 غلط	O
-القائ‌شده‌)	O
+القائ	O
+شده‌	O
+)	O
 شجاعت	O
 می‌خواد	O
 .	O
@@ -22542,7 +22484,6 @@ Fatima	FFF
 ادامه	O
 می‌دهد	O
 !	O
-MicrosoftTeams	FFF
 
 دانشگاه	B-ORG
 تبریز	I-ORG
@@ -22628,7 +22569,7 @@ MicrosoftTeams	FFF
 ،	O
 همایون	B-PER
 و	O
-....	O
+...	O
 مشکلی	O
 نیست	O
 فالو	O
@@ -22720,7 +22661,9 @@ MicrosoftTeams	FFF
 زدن	O
 به	O
 چاک	O
-!».	O
+!	O
+»	O
+.	O
 به	O
 قول	O
 یکی	O
@@ -22747,4 +22690,5 @@ MicrosoftTeams	FFF
 ،	O
 تمام	O
 شدن	O
-».	O
+»	O
+.	O
