@@ -214,7 +214,7 @@ dna	O
 سپاه	B-ORG
 است	O
 حالا	O
-BBC	FFF
+BBC	B-ORG
 هم	O
 مرده‌خوری	O
 می‌کند	O
@@ -679,14 +679,12 @@ BBC	FFF
 دانشجو	O
 دوره	O
 "	O
-Digital	FFF
-Painting	FFF
+Digital	O
+Painting	O
 مقدماتی	O
 "	O
 مدرسه	B-ORG
 اینورس	I-ORG
--------------------------	O
-Artwork	FFF
 
 منظورشون	O
 فقر	O
@@ -1307,10 +1305,6 @@ pdf	O
 دیویدیان	B-POG
 در	O
 تگزاس	B-LOC
-(	O
-Waco	FFF
-incident	FFF
-)	O
 
 منتشر	O
 شد	O
@@ -1419,7 +1413,7 @@ incident	FFF
 گوینده	O
 معروف	O
 خبر	O
-ABC	FFF
+ABC	B-ORG
 جورج	B-PER
 استفانوپولوس	I-PER
 هم	O
@@ -2261,7 +2255,8 @@ gt	O
 پرنیان	B-PER
 اندیش	I-PER
 (	O
-ص1139	O
+ص	O
+1139	O
 )	O
 خیلی	O
 به	O
@@ -2416,7 +2411,8 @@ I	O
 علت	O
 نهایی	O
 و	O
-تعیین‌کننده	O
+تعیین	O
+کننده	O
 است	O
 خیلی‌ها	O
 افکار	O
@@ -2657,10 +2653,6 @@ I	O
 به	O
 سر	O
 می‌برد	O
-Freekohi	FFF
-سرباز	B-LOC
-بمپور	B-LOC
-ایرانشهر	B-LOC
 
 علی	B-PER
 کرم‌پور	I-PER
@@ -3332,7 +3324,7 @@ Freekohi	FFF
 
 صدای	B-ORG
 آمریکا	I-ORG
-voa	FFF
+voa	I-ORF
 فقط	O
 یک	O
 برنامه	O
@@ -3982,12 +3974,11 @@ voa	FFF
 تا	O
 به	O
 حال	O
-تجربه	O
-ی	O
+تجربه‌ی	O
 خرید	O
 از	O
 آمازون	B-ORG
-uk	FFF
+uk	I-ORG
 رو	O
 داشته	O
 یه	O
@@ -4039,7 +4030,8 @@ uk	O
 (	O
 حتی	O
 کمکی	O
-)-	O
+)	O
+-	O
 رضا	B-PER
 حقیقی	I-PER
 -	O
@@ -4656,11 +4648,11 @@ gt	O
 بلاکچین‌های	O
 بر	O
 پایه	O
-PoS	FFF
+PoS	O
 توکن‌های	O
-Non	FFF
+Non	O
 -	O
-Fungible	FFF
+Fungible	O
 رو	O
 پشتیبانی	O
 میکنن	O
@@ -4668,13 +4660,13 @@ Fungible	FFF
 خب	O
 معمولا	O
 هزینه	O
-mint	FFF
+mint	O
 کردن	O
 اون	O
 توکن‌ها	O
 و	O
 کلا	O
-transaction	FFF
+transaction	O
 رو	O
 اون	O
 بلاکچینا	O
@@ -4687,16 +4679,16 @@ transaction	FFF
 اتریوم	O
 و	O
 راهکارهای	O
-Layer2	FFF
+Layer2	O
 هست	O
-NEAR	FFF
+NEAR	O
 و	O
-Cosmos	FFF
+Cosmos	O
 و	O
-Tron	FFF
+Tron	O
 و	O
 همگی	O
-NFT	FFF
+NFT	O
 دارن	O
 
 راستش	O
@@ -4879,8 +4871,8 @@ NFT	FFF
 ما	O
 .	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER
@@ -5489,7 +5481,7 @@ LUFC	O
 کار	O
 بکشم	O
 با	O
-developer	FFF
+developer	O
 کودن	O
 بلغارستانی	B-NAT
 سر	O
@@ -5788,7 +5780,7 @@ developer	FFF
 کار	O
 اقتباس	O
 بود	O
-Inshala	FFF
+Inshala	O
 رو	O
 برای	O
 یک	O
@@ -5960,7 +5952,6 @@ Inshala	FFF
 جمهوریخواه	B-POG
 بزنیم	O
 .	O
-BanIRfinancialsystems	FFF
 
 کسی	O
 که	O
@@ -6821,8 +6812,7 @@ BanIRfinancialsystems	FFF
 و	O
 بازرسی	O
 برای	O
-قیمت	O
-هاش	O
+قیمت‌هاش	O
 نیست	O
 بدبختی	O
 بخشی	O
@@ -7001,9 +6991,9 @@ BanIRfinancialsystems	FFF
 کردیم	O
 و	O
 از	O
-understanding	FFF
+understanding	O
 و	O
-forgiveness	FFF
+forgiveness	O
 گفتیم	O
 و	O
 پانتومیم	O
@@ -7162,7 +7152,6 @@ forgiveness	FFF
 بین‌المجالس	I-ORG
 جهانی	I-ORG
 .	O
-trtdari	FFF
 
 زمان	O
 زیادی	O
@@ -7469,12 +7458,8 @@ trtdari	FFF
 نه	O
 تو	O
 پوستر	O
-دنجر‌بود	O
-SUPERJUNIOR	FFF
-westandwithkimheechul	FFF
-SuperJuniorDnE	FFF
-BAD	FFF
-BLOOD	FFF
+دنجر	O
+‌بود	O
 
 بله	O
 درسته	O
@@ -7541,7 +7526,8 @@ BLOOD	FFF
 دیپلماسی	O
 است	O
 
-نوشدارو	O
+نوش	O
+دارو	O
 بعد	O
 مرگ	O
 سهراب	B-PER
@@ -7550,11 +7536,15 @@ BLOOD	FFF
 بشه	O
 این	O
 صدای	O
-ضبط‌شده‌چرا	O
+ضبط	O
+شده	O
+چرا	O
 قبل	O
 از	O
 اعدام	O
-منتشر‌نشده‌این	O
+منتشر	O
+‌نشده	O
+این	O
 فایل	O
 دست	O
 چه	O
@@ -7566,8 +7556,8 @@ BLOOD	FFF
 نجات	O
 جان	O
 نوید	B-PER
-استفاده‌نشده‌Justice4Navid	FFF
-BanIRSports4Navid	FFF
+استفاده	O
+نشده‌	O
 
 وزارت	B-ORG
 تجارت	I-ORG
@@ -8162,9 +8152,8 @@ BanIRSports4Navid	FFF
 میکنم	O
 از	O
 این	O
-خوش	O
-خط	O
-تر‌بودم	O
+خوش‌خط‌تر	O
+‌بودم	O
 ))))	O
 *	O
 دوم	O
@@ -8283,7 +8272,7 @@ BanIRSports4Navid	FFF
 کنم	O
 کسی	O
 تو	O
-یوییس	FFF
+یوییس	B-LOC
 مریض	O
 شه	O
 
@@ -8521,9 +8510,6 @@ BanIRSports4Navid	FFF
 بلوکه‌شده‌بر	O
 میگرده	O
 
-New	FFF
-post	FFF
-in	FFF
 نشریه	B-ORG
 خانواده	I-ORG
 نور	I-ORG
@@ -8728,12 +8714,14 @@ in	FFF
 نمیدونم	O
 اما	O
 تو	O
-ایرانم	FFF
+ایرانم	B-LOC
 قبلا	O
 از	O
 خیلیا	O
-بدتر‌بودم	O
-جاش‌بود	O
+بدتر	O
+‌بودم	O
+جاش	O
+بود	O
 بهتم	O
 نشون	O
 میدادم	O
@@ -8806,7 +8794,6 @@ in	FFF
 بوده	O
 مزدور	O
 کثیف	O
-FreeSoheila	FFF
 
 مهاجرت	O
 داستان	O
@@ -9322,7 +9309,8 @@ FreeSoheila	FFF
 در	O
 مدلهای	O
 قدیمی	O
-آلپینیست‌بود	O
+آلپینیست	O
+بود	O
 )	O
 احتیاج	O
 چندانی	O
@@ -9667,8 +9655,8 @@ FreeSoheila	FFF
 بهداشتی‌های	O
 حرم	O
 آقام	O
-امام	B-PER
-رضا	I-PER
+امام	O
+رضا	B-PER
 هم	O
 میفتم	O
 
@@ -10033,8 +10021,8 @@ FreeSoheila	FFF
 «	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 ؛	O
 ما	O
 حوادث	O
@@ -10047,8 +10035,8 @@ FreeSoheila	FFF
 »	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 حب	O
 الحسین	O
 یجمعنا	O
@@ -10143,8 +10131,7 @@ FreeSoheila	O
 اعدام	O
 قابل	O
 توجه	O
-برعنداز	O
-ها	O
+برعنداز‌ها	O
 
 عالیه	O
 مخصوصا	O
@@ -10534,14 +10521,14 @@ FreeSoheila	O
 
 امروز	O
 مبحث	O
-Data	FFF
-Visualization	FFF
+Data	O
+Visualization	O
 از	O
 جذابترین	O
 مباحث	O
 مرتبط	O
 با	O
-ICT	FFF
+ICT	O
 است	O
 و	O
 بر	O
@@ -10564,8 +10551,8 @@ ICT	FFF
 کهن	O
 ترین	O
 نمونه‌های	O
-Data	FFF
-Visualization	FFF
+Data	O
+Visualization	O
 را	O
 مشاهده	O
 می‌کنیم	O
@@ -10728,8 +10715,6 @@ PYG	O
 بیدگنه	B-LOC
 رو	O
 میزنه	O
-BritishMoney	FFF
-MollahsHoney	FFF
 
 سردار	O
 علی	B-PER
@@ -12045,17 +12030,24 @@ MollahsHoney	FFF
 
 امرسون	B-ORG
 کالج	I-ORG
+:	O
 در	O
 مناطق	O
 شهری	O
 (	O
-٥3به37درصد	O
+53	O
+به	O
+37	O
+درصد	O
 )	O
 و	O
 حومه	O
 شهرها	O
 (	O
-49به4٥درصد	O
+49	O
+به	O
+45	O
+درصد	O
 )	O
 بایدن	B-PER
 پیشتاز	O
@@ -12064,7 +12056,10 @@ MollahsHoney	FFF
 مناطق	O
 روستایی	O
 (	O
-٥6به36درصد	O
+56	O
+به	O
+36	O
+درصد	O
 )	O
 ترامپ	B-PER
 جلودار	O
@@ -12094,7 +12089,8 @@ MollahsHoney	FFF
 میدان	O
 نبرد	O
 شاهد	O
-خواهیم‌بود	O
+خواهیم	O
+بود	O
 انتخابات	B-EVE
 آمریکا	I-EVE
 
@@ -12280,8 +12276,8 @@ MollahsHoney	FFF
 کربلا	B-LOC
 (	O
 یعنی	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 و	O
 اصحاب	O
 ایشان	O
@@ -12417,9 +12413,9 @@ MollahsHoney	FFF
 بیانکاماریا	B-PER
 اسکارچا	I-PER
 امورتّی	I-PER
-Biancamaria	FFF
-Scarcia	FFF
-Amoretti	FFF
+Biancamaria	I-PER
+Scarcia	I-PER
+Amoretti	I-PER
 (	O
 1938	O
 -	O
@@ -12807,7 +12803,8 @@ Amoretti	FFF
 با	O
 این	O
 عکسات	O
-'(	O
+'	O
+(	O
 
 پرسپولیس	B-ORG
 قهرمان	O
@@ -13314,7 +13311,7 @@ acinaces	O
 است	O
 -	O
 خبرگزاری	O
-injanews	FFF
+injanews	B-ORG
 اخبار	O
 ایران	B-LOC
 و	O
@@ -14036,7 +14033,6 @@ injanews	FFF
 و	O
 شوهر	O
 عراقی	O
-IRAQ	FFF
 
 مقاله	O
 "	O
@@ -14235,7 +14231,9 @@ IRAQ	FFF
 این	O
 حمله	O
 قبلا	O
-گفته‌شده‌است	O
+گفته	O
+شده	O
+است	O
 )	O
 طبق	O
 کیهان‌شناسی	O
@@ -14406,8 +14404,8 @@ IRAQ	FFF
 یجمعنا	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 گفتم	O
 امسال	O
 هم	O
@@ -14432,8 +14430,7 @@ IRAQ	FFF
 سرویس	O
 میشدم	O
 با	O
-عطسه	O
-هام	O
+عطسه‌هام	O
 حالا	O
 که	O
 دیگه	O
@@ -14474,7 +14471,7 @@ IRAQ	FFF
 
 اپلیکیشنی	O
 مثل	O
-Grammarly	FFF
+Grammarly	B-ORG
 خیلی	O
 مدل	O
 خوبیه	O
@@ -14883,7 +14880,9 @@ Grammarly	FFF
 جام	O
 قهرمانی	O
 معتبر	O
-کسب‌شده‌توسط	O
+کسب	O
+شده	O
+توسط	O
 بازیکنان	O
 آلمانی	B-NAT
 تاریخ	O
@@ -14906,7 +14905,7 @@ Grammarly	FFF
 مثل	O
 لینکدین	B-ORG
 و	O
-indeed	FFF
+indeed	B-ORG
 
 دلم	O
 رو	O
@@ -15109,11 +15108,11 @@ indeed	FFF
 موقع	O
 فیزیک	O
 خوندن	O
-پیانوهارو	O
+پیانوها	O
+رو	O
 میریختم	O
 توی	O
-نسبیت	O
-ها	O
+نسبیت‌ها	O
 
 کشتی‌های	O
 بریتانیا	B-LOC
@@ -15318,8 +15317,8 @@ indeed	FFF
 یجمعنا	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 همچنین	O
 پدران	O
@@ -15402,12 +15401,18 @@ indeed	FFF
 استان	O
 مرکزی	B-LOC
 
-دموکراسی	O
-خواه	O
-و	O
-ضد	O
-یهودستیزی	O
-JBDA	FFF
+لالا	B-PER
+زوسکیند	I-PER
+،	O
+موسسه	B-ORG
+آموزشی	I-ORG
+یهودی	I-ORG
+دموکراسی	I-ORG
+خواه	I-ORG
+و	I-ORG
+ضد	I-ORG
+یهودستیزی	I-ORG
+JBDA	I-ORG
 گروفسور	O
 دکتر	O
 لارس	B-PER
@@ -17477,7 +17482,9 @@ ICT	I-ORG
 روز	O
 شنبه	O
 (	O
-5مهرماه	O
+5	O
+مهر	O
+ماه	O
 )	O
 واکسن	O
 آنفلوآنزا	O
@@ -18614,8 +18621,8 @@ ICT	I-ORG
 ولادت	O
 با	O
 سعادت	O
-امام	B-PER
-موسیٰ	I-PER
+امام	O
+موسیٰ	B-PER
 کاظم	I-PER
 ع	O
 
@@ -19034,8 +19041,7 @@ ICT	I-ORG
 بهتون	O
 نشون	O
 بدم	O
-گوشی	O
-هاشون	O
+گوشی‌هاشون	O
 برای	O
 شاد	O
 اصلا	O
@@ -19178,7 +19184,6 @@ ICT	I-ORG
 زمین	O
 گیر	O
 کرد	O
-VivaBarca	FFF
 
 در	O
 تاریخ	O
@@ -20265,12 +20270,6 @@ I	O
 جام‌ها	O
 رو	O
 برد	O
-Bayern	FFF
-Munich	FFF
-vs	FFF
-Sevilla	FFF
-FC	FFF
-SuperCup	FFF
 
 قبل	O
 از	O
@@ -20611,7 +20610,7 @@ SuperCup	FFF
 7	O
 صفر	O
 1442	O
-Freitag	FFF
+Freitag	O
 25	O
 09	O
 2020	O
@@ -20625,8 +20624,8 @@ Freitag	FFF
 است	O
 با	O
 شهادت	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 (	O
 ع	O
@@ -20634,8 +20633,6 @@ Freitag	FFF
 حسینیه	B-LOC
 منتظران	I-LOC
 ظهور	I-LOC
-Solothurn	FFF
-Schweiz	FFF
 
 پرده	O
 پنجم	O
@@ -20727,8 +20724,7 @@ Schweiz	FFF
 نداشت	O
 چیزی	O
 از	O
-نداشته	O
-های	O
+نداشته‌های	O
 بی‌بی‌سی	B-ORG
 کم	O
 نمیکرد	O
@@ -21223,8 +21219,8 @@ Schweiz	FFF
 سالروز	O
 شهادت	O
 مظلومانه	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 المجتبی	I-PER
 علیه	O
 السلام	O
@@ -21531,9 +21527,6 @@ Schweiz	FFF
 زنده	O
 هستیم	O
 
-New	FFF
-post	FFF
-in	FFF
 بورس	O
 دلار	O
 طلا	O
@@ -21616,7 +21609,6 @@ in	FFF
 در	O
 خطر	O
 است	O
-FreeSoheila	FFF
 
 دونالد	B-PER
 ترامپ	I-PER
@@ -21856,7 +21848,8 @@ FreeSoheila	FFF
 مسیر	O
 قدس	B-LOC
 قرار	O
-گرفته‌بود	O
+گرفته	O
+بود	O
 بی‌تقصیرها	O
 امام	O
 امت	O
@@ -21879,7 +21872,8 @@ FreeSoheila	FFF
 (	O
 اصلاح‌طلبان	B-POG
 امروز	O
-)،	O
+)	O
+،	O
 برادران	O
 چپول	O
 ضد	O
@@ -22395,15 +22389,14 @@ FreeSoheila	FFF
 فولاد	B-ORG
 مبارکه	I-ORG
 
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 «	O
 علیه	O
 السلام	O
 »	O
-نعمت	O
-های	O
+نعمت‌های	O
 خداوند	O
 یک	O
 آزمون	O
@@ -22435,8 +22428,8 @@ FreeSoheila	FFF
 کریم	O
 اهل	O
 البیت	O
-امام	B-PER
-الحسن	I-PER
+امام	O
+الحسن	B-PER
 المجتبی	I-PER
 
 چهل	O
@@ -22499,8 +22492,6 @@ FreeSoheila	FFF
 تیزر	O
 بعدی	O
 میاد	O
-ExaARMY	FFF
-ExaBFF	FFF
 
 به	O
 وقت	O
@@ -22934,8 +22925,7 @@ ExaBFF	FFF
 فریدمن	I-PER
 هم	O
 یهودی‌بود	O
-کتاب	O
-هاش	O
+کتاب‌هاش	O
 کسی	O
 نخونه	O
 
@@ -23003,18 +22993,6 @@ ExaBFF	FFF
 علی	I-LOC
 بازار	I-LOC
 تبریز	I-LOC
-Haj	FFF
-Safar	FFF
-Ali	FFF
-Mosque	FFF
-،	O
-Tabriz	FFF
-Bazaar	FFF
-حاج	O
-صفرعلی	O
-عکس	O
-مهران	B-PER
-چراغچی	I-PER
 
 برنامه	O
 تک	O
@@ -23076,13 +23054,15 @@ Bazaar	FFF
 مطالعاتی	O
 که	O
 من	O
-چندسال	O
+چند	O
+سال	O
 پیش	O
 داشتم	O
-اینطور‌بود	O
+اینطور	O
+‌بود	O
 اطلاعی	O
 از	O
-Minoan‌ها	FFF
+Minoan‌ها	O
 ندارم	O
 (	O
 فقط	O
@@ -23330,7 +23310,6 @@ Minoan‌ها	FFF
 حوزه	O
 انتخابیه	O
 دهلران	B-LOC
-KurdPress	FFF
 
 زنگنه	B-PER
 با	O
@@ -23377,8 +23356,8 @@ KurdPress	FFF
 نداره	O
 
 چیپست	O
-A14	FFF
-Bionic	FFF
+A14	O
+Bionic	O
 اپل	B-ORG
 معرفی	O
 شد	O
@@ -23638,13 +23617,13 @@ official	O
 (	O
 به	O
 فرانسوی	B-NAT
-Qu	FFF
+Qu	O
 '	O
-ils	FFF
-mangent	FFF
-de	FFF
-la	FFF
-brioche	FFF
+ils	O
+mangent	O
+de	O
+la	O
+brioche	O
 )	O
 نقل‌قولی	O
 منتسب	O
@@ -24393,7 +24372,7 @@ brioche	FFF
 واقعا	O
 بروجرد	B-LOC
 درام	O
-(***********	O
+(	O
 
 درسته	O
 مومن	O
@@ -24415,8 +24394,8 @@ brioche	FFF
 اصلا	O
 مومن	O
 نیست	O
-امام	B-PER
-صادق	I-PER
+امام	O
+صادق	B-PER
 (	O
 ع	O
 )	O
