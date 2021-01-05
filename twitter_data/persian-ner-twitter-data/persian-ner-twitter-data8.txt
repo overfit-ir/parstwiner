@@ -224,8 +224,6 @@
 دست	O
 بگیرین	O
 .	O
-GOT7	FFF
-JacksonWang	O
 
 جشن	B-EVE
 بزرگ	I-EVE
@@ -1121,7 +1119,7 @@ WBS	O
 از	O
 مایملک	O
 (	O
-Property	FFF
+Property	O
 )	O
 است	O
 اعم	O
@@ -1133,7 +1131,7 @@ Property	FFF
 از	O
 این	O
 رو	O
-Economics	FFF
+Economics	O
 بهترین	O
 نامی	O
 است	O
@@ -2075,7 +2073,7 @@ Economics	FFF
 نرمال	O
 9	O
 .	O
-freesoheila	FFF
+freesoheila	O
 8	O
 .	O
 راه	O
@@ -2237,7 +2235,7 @@ better	O
 .	O
 
 اپلیکیشن	O
-QILIQ	FFF
+QILIQ	O
 رو	O
 نصب	O
 کن	O
@@ -2591,7 +2589,7 @@ QILIQ	FFF
 شما	O
 ست	O
 
-comedic	FFF
+comedic	O
 relief	O
 که	O
 داخل	O
@@ -3629,14 +3627,13 @@ AFC	B-ORG
 کنار	O
 ؟	O
 
-باتری	O
-ساز	O
+باتری‌ساز	O
 دیگه‌ای	O
 که	O
 بعد	O
 از	O
-Battery	FFF
-Day	FFF
+Battery	O
+Day	O
 ،	O
 در	O
 ASX	O
@@ -3648,10 +3645,10 @@ ASX	O
 و	O
 برگشت	O
 ،	O
-Novonix	FFF
+Novonix	B-ORG
 ‌بود	O
 .	O
-Novonix	O
+Novonix	B-ORG
 تولید‌کننده	O
 آند	O
 باتریها	O
@@ -3660,7 +3657,7 @@ Novonix	O
 رئیسش	O
 ،	O
 جناب	O
-Burn	FFF
+Burn	B-PER
 ،	O
 موسس	O
 شرکت	O
@@ -5546,7 +5543,7 @@ VIP	O
 یا	O
 اصفهان	B-LOC
 خوانده‌ای	O
-hit	FFF
+hit	O
 me	O
 up	O
 .	O
@@ -5667,7 +5664,7 @@ up	O
 (	O
 تلنگری	O
 از	O
-reddit	FFF
+reddit	B-ORG
 )	O
 :	O
 در	O
@@ -6049,9 +6046,9 @@ reddit	FFF
 با	O
 من	O
 نوعی	O
-Justice4Navid	FFF
+Justice4Navid	O
 و	O
-NIACLobbies4Mullahs	FFF
+NIACLobbies4Mullahs	O
 رو	O
 میزنی	O
 ،	O
@@ -6403,7 +6400,7 @@ NIACLobbies4Mullahs	FFF
 گفت	O
 بشر	O
 .	O
-BanIRSports4Navid	FFF
+BanIRSports4Navid	O
 
 جنبش	O
 کمونالیستی	O
@@ -6934,7 +6931,7 @@ BanIRSports4Navid	FFF
 
 توسعه	O
 دهنده‌ی	O
-Among	FFF
+Among	O
 Us	O
 ساخت	O
 نسخه‌ی	O
@@ -8939,8 +8936,8 @@ Us	O
 دست	O
 داد	O
 
-Iran	FFF
-Iranelection	O
+Iran	B-LOC
+Iranelection	B-EVE
 و	O
 صدای	O
 شیون	O
@@ -10233,7 +10230,6 @@ Iranelection	O
 هموارتر	O
 می‌شود	O
 .	O
-Freekohi	FFF
 
 «	O
 انسان	O
@@ -14315,7 +14311,7 @@ Freekohi	FFF
 چندین	O
 سال	O
 قهرمان	O
-NBA	FFF
+NBA	B-EVE
 و	O
 مارادونا	B-PER
 چندین	O
@@ -14375,7 +14371,7 @@ NBA	FFF
 اون	O
 رو	O
 بصورت	O
-cause	FFF
+cause	O
 and	O
 effect	O
 بیان	O
@@ -14391,7 +14387,7 @@ effect	O
 افتادن	O
 در	O
 دام	O
-narrative	FFF
+narrative	O
 fallacy	O
 یا	O
 خطای	O
@@ -15755,9 +15751,9 @@ fallacy	O
 لایک‌های	O
 موزیک	O
 ویدیو	O
-HYLT	FFF
+HYLT	O
 از	O
-Siñorita	FFF
+Siñorita	B-PER
 از	O
 کامیلا	B-PER
 کابیو	I-PER
@@ -16030,7 +16026,6 @@ Siñorita	FFF
 حاج	O
 قاسم	B-PER
 .	O
-Baghdad0120	FFF
 
 سلام	O
 عزیزم	O
@@ -16119,10 +16114,10 @@ Baghdad0120	FFF
 بازیگری	O
 در	O
 نمایش	O
-Play	FFF
-It	FFF
-Again	FFF
-Sam	FFF
+Play	O
+It	O
+Again	O
+Sam	B-PER
 
 این	O
 که	O
@@ -16744,7 +16739,7 @@ Sam	FFF
 گریس	B-ORG
 .	O
 نفتکش	O
-OOTT	FFF
+OOTT	O
 بنزین	O
 
 یک	O
@@ -17557,8 +17552,8 @@ OOTT	FFF
 )	O
 با	O
 حکومت	O
-گورکانیان	FF
-هند	FFF
+گورکانیان	B-POG
+هند	I-POG
 هم	O
 دشمن‌اند	O
 و	O
@@ -17618,7 +17613,7 @@ OOTT	FFF
 تیم	O
 مورد	O
 علاقه‌شون	O
-Giants	FFF
+Giants	B-ORG
 سان‌فرانسیسکو	B-LOC
 اجرا	O
 کرده	O
@@ -17643,7 +17638,7 @@ Giants	FFF
 مجازی	O
 از	O
 داخل	O
-Headquarters	FFF
+Headquarters	O
 متالیکا	B-ORG
 ویدیو	O
 گرفتن	O
@@ -21660,8 +21655,8 @@ Headquarters	FFF
 .	O
 
 تو	O
-سایت	O
-gisaid	FFF
+سایت	B-ORG
+gisaid	I-ORG
 می‌تونید	O
 توالی‌های	O
 ارسال‌شده	O
@@ -22619,7 +22614,7 @@ gisaid	FFF
 سال	O
 پشت	O
 هم	O
-nba	FFF
+nba	B-EVE
 رو	O
 داشت	O
 معلومه	O
@@ -22722,8 +22717,8 @@ nba	FFF
 امیرشقاقی	I-PER
 یا	O
 همون	O
-Sait	FFF
-Emir	FFF
+Sait	B-PER
+Emir	I-PER
 ه	O
 ،	O
 ساکن	O
@@ -22975,7 +22970,7 @@ Emir	FFF
 یجیب	O
 بخونه	O
 تو	O
-متروپلیتن	FFF
+متروپلیتن	B-ORG
 تیلور	B-PER
 سویفت	I-PER
 
@@ -23940,9 +23935,9 @@ Emir	FFF
 میموند	O
 .	O
 پس	O
-Just	FFF
-Do	FFF
-It	FFF
+Just	O
+Do	O
+It	O
 
 دیدار	O
 گرهارد	B-PER
@@ -24763,15 +24758,11 @@ It	FFF
 توسط	O
 دو	O
 شهر	O
-Washington	FFF
+WashingtonD.C.	B-LOC
 ،	O
-D	FF
-.	O
-C	FFF
-.،	O
-Baltimore	FFF
+Baltimore	B-LOC
 ،	O
-Maryland	FFF
+Maryland	B-LOC
 
 نمایش	O
 دادن	O
@@ -24792,7 +24783,7 @@ Maryland	FFF
 داستان	O
 جالب	O
 داره	O
-بوکانان	FFF
+بوکانان	B-PER
 .	O
 میگه	O
 فرض	O
@@ -25286,8 +25277,8 @@ Maryland	FFF
 و	O
 بدونی	O
 و	O
-baby	FFF
-sitشون	FFF
+baby	O
+sitشون	O
 کنی	O
 و	O
 اگه	O

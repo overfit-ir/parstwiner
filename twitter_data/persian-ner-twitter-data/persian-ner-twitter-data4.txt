@@ -713,8 +713,8 @@ DNA	O
 غربیهاست	O
 .	O
 
-Ali	FFF
-Ece	FFF
+Ali	B-PER
+Ece	I-PER
 واقعا	O
 باسوادترینشونه	O
 .	O
@@ -858,7 +858,7 @@ Ece	FFF
 »	O
 -	O
 خبرگزاری	B-ORG
-injanews	FFFF
+injanews	I-ORG
 اخبار	O
 ایران	B-LOC
 و	O
@@ -1123,8 +1123,8 @@ injanews	FFFF
 اصلی	O
 سریال	O
 یا	O
-The	FFF
-Boys	FFF
+The	O
+Boys	O
 .	O
 به	O
 نظرم	O
@@ -1958,8 +1958,8 @@ player	O
 جلد	O
 اول	O
 کتاب	O
-Best	FFF
-Karate	FFF
+Best	O
+Karate	O
 .	O
 کاراته	O
 را	O
@@ -3348,7 +3348,7 @@ gt	O
 بود	O
 با	O
 وی‌پی‌ان	O
-speedify	FFF
+speedify	B-ORG
 میتونی	O
 بسازی	O
 همه	O
@@ -4906,8 +4906,8 @@ coronavirus	O
 هم	O
 بگیر	O
 همون	O
-John	FFF
-Doe	FFF
+John	B-PER
+Doe	I-PER
 و	O
 شماره	O
 کارت	O
@@ -5841,7 +5841,7 @@ Doe	FFF
 
 من	O
 خودم	O
-آنر9xپرو	FFF
+آنر9xپرو	O
 دارم	O
 الان	O
 فکر	O
@@ -5887,7 +5887,7 @@ Doe	FFF
 خوشتون	O
 نیاد	O
 .	O
-آنر8x	FFF
+آنر8x	O
 رو	O
 دوستم	O
 داره	O
@@ -6785,7 +6785,7 @@ Doe	FFF
 
 در	O
 دهه	O
-1960	FFF
+1960	O
 مشخص	O
 شد	O
 که	O
@@ -6802,7 +6802,7 @@ Doe	FFF
 به	O
 ویروس	O
 نوع	O
-40	FFF
+40	O
 سیمیان	O
 آلوده	O
 بوده‌اند	O
@@ -6894,7 +6894,7 @@ Doe	FFF
 اینکارو	O
 کرد	O
 .	O
-19	FFF
+19	O
 سالگی	O
 چادری	O
 شدم	O
@@ -6950,7 +6950,7 @@ Doe	FFF
 مگاپیکسلی	O
 از	O
 ترکیب	O
-9	FFF
+9	O
 شات	O
 عمودی	O
 و	O
@@ -7071,7 +7071,7 @@ Doe	FFF
 خانه‌ای	O
 امن	O
 برای	O
-1400	FFF
+1400	O
 قلاده	O
 سگ	O
 بی‌خانمان	O
@@ -7253,11 +7253,11 @@ Doe	FFF
 ملی	I-ORG
 از	O
 هر	O
-10	FFF
+10	O
 نفر	O
-6	FFF
+6	O
 -	O
-7	FFF
+7	O
 نفر	O
 مشغول	O
 خواندن	O
@@ -7464,7 +7464,7 @@ Doe	FFF
 
 وقتی	O
 که	O
-4	FFF
+4	O
 تا	O
 انتقاد	O
 در	O
@@ -7595,14 +7595,14 @@ Doe	FFF
 اول	O
 قرار	O
 ‌بود	O
-20	FFF
+20	O
 قسمت	O
 باشه	O
 بعد	O
 شد	O
-30	FFF
+30	O
 بعد	O
-40	FFF
+40	O
 
 در	O
 عصر	O
@@ -8032,7 +8032,7 @@ Doe	FFF
 اونور	O
 به	O
 لینکلن	B-ORG
-4	FFF
+4	O
 تا	O
 زدیم	O
 که	O
@@ -8093,7 +8093,7 @@ Doe	FFF
 دارم	O
 .	O
 امروز	O
-80	FFF
+80	O
 ساله	O
 شد	O
 .	O
@@ -9087,7 +9087,7 @@ Doe	FFF
 بزنیم	O
 
 توی	O
-2	FFF
+2	O
 دقیقه	O
 از	O
 تهرانپارس	B-LOC
@@ -9155,7 +9155,7 @@ Doe	FFF
 آمد	O
 که	O
 حاضرند	O
-75	FFF
+75	O
 میلیارد	O
 دلار	O
 برای	O
@@ -9386,7 +9386,7 @@ Doe	FFF
 در	O
 قبال	O
 خرید	O
-S400	FFF
+S400	O
 .	O
 روزنامه	B-ORG
 ملی	I-ORG
@@ -9404,7 +9404,7 @@ S400	FFF
 پدافند	O
 موشکی	O
 اس	O
-400	FFF
+400	O
 را	O
 فعال	O
 نکند	O
@@ -9526,16 +9526,16 @@ S400	FFF
 .	O
 (	O
 زاده	O
-3	FFF
+3	O
 مهر	O
-1311	FFF
+1311	O
 لشت	B-LOC
 نشا	I-LOC
 گیلان	I-LOC
 درگذشته	O
 23	O
 فروردین	O
-1391	FFF
+1391	O
 رشت	B-LOC
 )	O
 خواننده	O
@@ -9589,7 +9589,7 @@ S400	FFF
 نوع	O
 در	O
 قرن	O
-2	FFF
+2	O
 هجری	O
 بود	O
 .	O
@@ -9707,7 +9707,7 @@ S400	FFF
 .	O
 در	O
 اکتبر	O
-1965	FFF
+1965	O
 ژنرالهای	O
 ارتش	O
 در	O
@@ -9729,7 +9729,7 @@ S400	FFF
 آلمان	B-LOC
 در	O
 کشتار	O
-500.000	FFF
+500.000	O
 کمونیست	O
 !	O
 
@@ -9949,7 +9949,7 @@ S400	FFF
 
 سر	O
 هم	O
-10	FFF
+10	O
 بار	O
 نرفتمه	O
 :	O
@@ -10508,7 +10508,7 @@ S400	FFF
 البته	O
 درد	O
 تقریبا	O
-90٪	FFF
+90٪	O
 معمار‌های	O
 معاصر	O
 ایران	B-LOC
@@ -10518,7 +10518,7 @@ S400	FFF
 این	O
 پروژه	O
 مخلوط	O
-RCR	FFF
+RCR	O
 و	O
 رایت	O
 و	O
@@ -10910,7 +10910,7 @@ RCR	FFF
 بتواند	O
 تا	O
 سال	O
-2035	FFF
+2035	O
 اولین	O
 هواپیمای	O
 مسافربری	O
@@ -10944,7 +10944,7 @@ RCR	FFF
 بویل	I-PER
 
 امروز	O
-25	FFF
+25	O
 سپتامبر	O
 روز	O
 جهانی	O
@@ -10988,9 +10988,9 @@ RCR	FFF
 بدون	O
 رنج	O
 .	O
-pray	FFF
-for	FFF
-peace	FFF
+pray	O
+for	O
+peace	O
 .	O
 رویایی	O
 دارم	O
@@ -11094,7 +11094,7 @@ peace	FFF
 بازیکنی	O
 تو	O
 پرسپولیس	B-ORG
-4	FFF
+4	O
 گله	O
 نشده	O
 بود	O
@@ -11204,7 +11204,6 @@ peace	FFF
 بهش	O
 شدیدا	O
 :)	O
-EXO	FFF
 
 ذهنم	O
 پراکنده‌س	O
@@ -11257,7 +11256,7 @@ EXO	FFF
 زیر	O
 به	O
 فهرست	O
-SDN	FFF
+SDN	O
 دفتر	O
 کنترل	O
 دارایی‌های	O
@@ -11341,11 +11340,11 @@ SDN	FFF
 اولی	O
 هم	O
 یه	O
-homage	FFF
+homage	O
 به	O
-a	FFF
-new	FFF
-hope	FFF
+a	O
+new	O
+hope	O
 ‌بود	O
 و	O
 ایده	O
@@ -11623,10 +11622,6 @@ hope	FFF
 سوهو	B-PER
 باشین	O
 !	O
-.	O
-SUHO	FFF
-EXO	FFF
-.	O
 
 یا	O
 الان	O
@@ -11967,7 +11962,7 @@ EXO	FFF
 مدیترانه	B-LOC
 با	O
 همزمان	O
-7	FFF
+7	O
 هواپیمای	O
 اطلاعاتی	O
 ناتو	B-ORG
@@ -12267,9 +12262,9 @@ EXO	FFF
 به	O
 روایت	O
 رسمی	O
-illegal	FFF
-boat	FFF
-arrivals	FFF
+illegal	O
+boat	O
+arrivals	O
 نگفتن	O
 به	O
 پناهجوها	O
@@ -12450,7 +12445,7 @@ arrivals	FFF
 و	O
 از	O
 حدود	O
-12	FFF
+12	O
 سال	O
 پیش	O
 وارد	O
@@ -12680,7 +12675,7 @@ arrivals	FFF
 ویتنام	I-ORG
 بیش	O
 از	O
-300	FFF
+300	O
 هزار	O
 کاندوم	O
 مستعمل	O
@@ -12738,9 +12733,9 @@ arrivals	FFF
 چنین	O
 روزی	O
 ،	O
-14	FFF
+14	O
 اگوست	O
-1980	FFF
+1980	O
 ،	O
 پس	O
 از	O
@@ -12750,7 +12745,7 @@ arrivals	FFF
 به	O
 افزایش	O
 تقریبا	O
-60	FFF
+60	O
 درصدی	O
 قیمت	O
 گوشت	O
@@ -12758,7 +12753,7 @@ arrivals	FFF
 دولت	O
 سرمایه‌داری	O
 لهستان	B-LOC
-16000	FFF
+16000	O
 کارگر	O
 ،	O
 کارخانه‌ی	B-ORG
@@ -12774,7 +12769,7 @@ arrivals	FFF
 این	O
 پول	O
 نفتهای	O
-هورالعظیم	FFF
+هورالعظیم	B-LOC
 و	O
 گاز	O
 پارس	B-LOC
@@ -12808,7 +12803,7 @@ arrivals	FFF
 ،	O
 اون	O
 بچه	O
-4	FFF
+4	O
 ساله	O
 که	O
 تو	O
@@ -13017,14 +13012,14 @@ arrivals	FFF
 تاریخ	O
 شروع	O
 :	O
-30	FFF
+30	O
 اردیبهشت	O
-1395	FFF
+1395	O
 از	O
 ساعت	O
-10	FFF
+10	O
 :	O
-30	FFF
+30	O
 .	O
 بریم	O
 ایوند	B-ORG
@@ -13114,7 +13109,7 @@ arrivals	FFF
 دست	O
 می‌کنند	O
 و	O
-Viral	FFF
+Viral	O
 میشه	O
 !!!	O
 این	O
@@ -13262,7 +13257,6 @@ Viral	FFF
 جان	O
 باختند	O
 .	O
-WhoAreTaliban	FFF
 
 نمیدونم	O
 چرا	O
@@ -13334,14 +13328,14 @@ WhoAreTaliban	FFF
 داخلی	O
 .	O
 
-21	FFF
+21	O
 فروردین	O
 سال	O
-1343	FFF
+1343	O
 (	O
-10	FFF
+10	O
 آوریل	O
-1964	FFF
+1964	O
 )‌	O
 بود	O
 که	O
@@ -13578,8 +13572,6 @@ WhoAreTaliban	FFF
 حبس	O
 کرده‌اند	O
 .	O
-FreeZakzaky	FFF
-Nigeriasapartheidregime	FFF
 
 در	O
 ایران	B-LOC
@@ -13996,7 +13988,7 @@ Nigeriasapartheidregime	FFF
 دو	O
 سه	O
 روزه	O
-بلزی‌ها	FFF
+بلزی‌ها	O
 رو	O
 میبینم	O
 قشنگ	O
@@ -14261,7 +14253,7 @@ Nigeriasapartheidregime	FFF
 آلمان	B-LOC
 مناطقی	O
 در	O
-11	FFF
+11	O
 کشور	O
 اروپایی	NAT
 را	O
@@ -14578,7 +14570,7 @@ Nigeriasapartheidregime	FFF
 کن	O
 هم‌وطن	O
 
-200	FFF
+200	O
 کیلو	O
 برای	O
 حمل	O
@@ -14849,7 +14841,7 @@ Nigeriasapartheidregime	FFF
 شب	O
 بعد	O
 از	O
-20	FFF
+20	O
 سال	O
 با	O
 من	O
@@ -15210,7 +15202,6 @@ Nigeriasapartheidregime	FFF
 عطیه	O
 باشد	O
 .	O
-matchpoint	FFF
 
 بوسیدمش	O
 در	O
@@ -15240,7 +15231,7 @@ matchpoint	FFF
 را	O
 از	O
 اسفند	O
-57	FFF
+57	O
 (	O
 چند	O
 روز	O
@@ -15254,7 +15245,7 @@ matchpoint	FFF
 و	O
 از	O
 اردیبهشت	O
-58	FFF
+58	O
 بصورت	O
 منسجم	O
 و	O
@@ -15821,7 +15812,7 @@ matchpoint	FFF
 یک	O
 مسابقه	O
 دو	O
-100	FFF
+100	O
 متر	O
 زیر	O
 20	O
@@ -15853,7 +15844,7 @@ matchpoint	FFF
 میان	O
 ،	O
 حدود	O
-10	FFF
+10	O
 درصد	O
 از	O
 حضرات	O
@@ -16594,10 +16585,6 @@ matchpoint	FFF
 و	O
 ناموس	O
 میترسم	O
-.	O
-EXO	FFF
-IS	FFF
-NINE	FFF
 .	O
 
 منظور	O
@@ -17675,7 +17662,7 @@ NINE	FFF
 متاسفانه	O
 یه	O
 حالت	O
-dirty	FFF
+dirty	O
 خاصی	O
 دارن	O
 و	O
@@ -21010,7 +20997,7 @@ dirty	FFF
 بزرگ	O
 پس	O
 از	O
-2575	FFF
+2575	O
 سال	O
 به	O
 حرکت	O
@@ -21396,10 +21383,6 @@ dirty	FFF
 میشم	O
 ممنون	O
 .	O
-mana	FFF
-arch	FFF
-gallery	FFF
-.	O
 
 کاش	O
 یک	O
@@ -21433,9 +21416,9 @@ gallery	FFF
 و	O
 دنیادوستمان	O
 !	O
-عند	FFF
-ربهم	FFF
-یرزقون	FFF
+عند	O
+ربهم	O
+یرزقون	O
 .	O
 شهدا	O
 گمنام	O

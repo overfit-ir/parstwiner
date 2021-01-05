@@ -179,7 +179,7 @@ Justice4Navid	O
 در	O
 فریبرگ	B-LOC
 (	O
-firatnews	FFF
+firatnews	B-LOC
 )	O
 
 کوکی	B-PER
@@ -229,7 +229,6 @@ firatnews	FFF
 هفتم	O
 قدم	O
 می‌زنم	O
-Taekook	FFF
 
 صبح	O
 جمعه‌ات	O
@@ -297,9 +296,9 @@ Taekook	FFF
 شد	O
 یاد	O
 فیلم	O
-the	FFF
-three	FFF
-stooges	FFF
+the	O
+three	O
+stooges	O
 افتادم	O
 
 آخ	O
@@ -1145,7 +1144,7 @@ PHD	O
 مینمایم	O
 و	O
 من	O
-الله	FFF
+الله	O
 التوفیق	O
 محمدضیائ	B-PER
 رحیمی	I-PER
@@ -1691,7 +1690,6 @@ PHD	O
 شد	O
 اعتراضات	O
 سراسری	O
-FreeSoheila	FFF
 
 آدم	O
 از	O
@@ -1828,7 +1826,6 @@ FreeSoheila	FFF
 جوکر	B-PER
 انتخاب	O
 نماید	O
-DC	FFF
 سینما	O
 
 سینه‌موبیل	B-PER
@@ -1938,7 +1935,7 @@ DC	FFF
 و	O
 حالا	O
 نیروهای	O
-PKK	FFF
+PKK	B-POG
 در	O
 قره‌باغ	B-LOC
 اشغالی	O
@@ -3565,12 +3562,6 @@ gt	O
 قلب	O
 صورت	O
 می‌پذیرد	O
-«	O
-لهم	FFF
-قلوب	FFF
-یعقلون	FFF
-بها	FFF
-»	O
 
 و	O
 زبان	O
@@ -4458,10 +4449,11 @@ gt	O
 اسم	O
 ویزاش	O
 هست	O
-distinguished	FFF
-talented	FFF
-visa	FFF
-ویزا‌بود	O
+distinguished	O
+talented	O
+visa	O
+ویزا‌	O
+بود	O
 قبلا	O
 ولی	O
 الان	O
@@ -4505,8 +4497,6 @@ visa	FFF
 چکار	O
 میکنی	O
 لنتییییی	O
-rosé	FFF
-blackpink	FFF
 
 رهرو	O
 آن	O
@@ -5158,7 +5148,7 @@ blackpink	FFF
 اندازه‌گیری	O
 کلا	O
 متریک	O
-SI	FFF
+SI	O
 در	O
 مقابل	O
 متریک	O
@@ -6049,7 +6039,6 @@ SI	FFF
 خالیه	O
 برم	O
 بخرم	O
-got7	FFF
 
 سخنگوی	O
 شرکت	B-ORG
@@ -6882,7 +6871,7 @@ got7	FFF
 برای	O
 کمپانی	O
 معروف	O
-MAERSK	FFF
+MAERSK	B-ORG
 ساخته	O
 شده‌بود	O
 در	O
@@ -7444,7 +7433,6 @@ Quarantaine	O
 رو	O
 فریب	O
 بدید	O
-SaveHaydarGhorbani	FFF
 
 هنگام	B-LOC
 و	I-LOC
@@ -7613,35 +7601,6 @@ SaveHaydarGhorbani	FFF
 چی	O
 دارید	O
 
-رمان	O
-عاشقانه	O
-و	O
-جذاب	O
-تو	O
-سهم	O
-منی	O
-با	O
-لینک	O
-زیر	O
-میتونید	O
-به	O
-صورت	O
-آنلاین	O
-مطالعه	O
-کنید	O
-سایت	O
-داستانهای	FFF
-نازخاتون	FFF
-و	O
-کانال	O
-داستانهای	FFF
-نازخاتون	FFF
-رو	O
-به	O
-بقیه	O
-معرفی	O
-کنید	O
-
 بعد	O
 یه	O
 مدت	O
@@ -7804,9 +7763,11 @@ SaveHaydarGhorbani	FFF
 داشتی	O
 چه	O
 شد	O
-یا‌امام‌حسن	FFF
+یا‌	O
+امام	O
+حسن	B-PER
 
-جنوب	FFF
+جنوب	O
 رو	O
 نمیشه	O
 با	O
@@ -8164,23 +8125,6 @@ SaveHaydarGhorbani	FFF
 شد	O
 ؟	O
 
-یا	O
-امام	FFF
-حسن	B-PER
-مجتبی‌ع	I-PER
-کلّ	O
-فرزندان	O
-زهرا	B-PER
-سفره‌دارند	O
-و	O
-کریم	O
-بین	O
-اولاد	O
-کریمش	O
-؛	O
-مجتبایش	B-PER
-بیشتر	O
-
 نیازمند	O
 یاری	O
 سبزتان	O
@@ -8282,8 +8226,8 @@ SaveHaydarGhorbani	FFF
 ،	O
 اسممو	O
 بذارم	O
-El	FFF
-Suso	FFF
+El	B-PER
+Suso	I-PER
 .	O
 
 مقالات	O
@@ -8402,8 +8346,8 @@ blind	O
 است	O
 
 کفگیر	O
-دولت	FFF
-روحانی	FFF
+دولت	O
+روحانی	B-PER
 سالهاست	O
 به	O
 ته	O
@@ -8581,7 +8525,9 @@ blind	O
 نظام	O
 متمرکز	O
 در	O
-ایران‌شده‌و	FFF
+ایران	B-LOC
+شده	O
+و	O
 به	O
 کارگزاران	O
 آن	O
@@ -8607,7 +8553,7 @@ blind	O
 بعد	O
 میره	O
 سمت	O
-Metz	FFF
+Metz	B-LOC
 بلد	O
 نیستم	O
 !	O
@@ -9356,8 +9302,8 @@ Landlocked	O
 و	O
 مقرشون	O
 در	O
-دریاچه	O
-Khövsgöl	FFF
+دریاچه	B-LOC
+Khövsgöl	I-LOC
 هست	O
 .	O
 
@@ -9367,7 +9313,8 @@ Khövsgöl	FFF
 که	O
 یه	O
 پاریس	B-LOC
-ضمیمه‌ش‌بود	O
+ضمیمه‌ش	O
+بود	O
 :))	O
 
 تحریفات	O
@@ -9490,7 +9437,7 @@ Khövsgöl	FFF
 عدم	O
 اجرای	O
 وظایف	O
-رئیس‌جمهوری	FFF
+رئیس‌جمهوری	O
 )	O
 و	O
 مجلس	B-ORG
@@ -9744,8 +9691,8 @@ Khövsgöl	FFF
 خواندنی	O
 دوست	O
 عزیزم	O
-Adam	FFF
-Benkato	FFF
+Adam	B-PER
+Benkato	I-PER
 درباره	O
 کتابشناسی	O
 سغدی	B-PER
@@ -9958,7 +9905,6 @@ Benkato	FFF
 فصل	O
 بایرن	B-ORG
 مونیخ	I-ORG
-SuperCup	FFF
 
 تفسیر	O
 آیه‌های	O
@@ -10582,7 +10528,8 @@ SuperCup	FFF
 فیلم	O
 دوم	O
 نسرین	B-PER
-ستوده‌بودید	B-PER	-	FFF
+ستوده	I-PER
+بودید	O
 ؟	O
 در	O
 خصوص	O
@@ -10644,7 +10591,8 @@ SuperCup	FFF
 کجای	O
 اینها	O
 به	O
-مجلس‌انقلابی	B-ORG	-	FFF
+مجلس	B-ORG
+انقلابی	O
 می‌خوره	O
 ؟	O
 دنا	O
@@ -10900,9 +10848,9 @@ SuperCup	FFF
 بقول	O
 یکی	O
 از	O
-دموکرات‌های	B-POG	-	FFF
+دموکرات‌های	B-POG
 قدیمی	O
-سنا	B-ORG	-	FFF
+سنا	B-ORG
 که	O
 نوشته‌بود	O
 بزرگترین	O
@@ -11075,7 +11023,7 @@ ISI	O
 در	O
 دور	O
 برگشت	O
-لالیگا	B-EVE	-	FFF
+لالیگا	B-EVE
 بارسلونا	B-ORG
 را	O
 در	O
@@ -11970,7 +11918,7 @@ ISI	O
 آموز	O
 پسر	O
 در	O
-خوابگاه	B-ORG	-	FFF
+خوابگاه	B-ORG
 پیش‌قلعه	I-ORG
 مورد	O
 ضرب	O
@@ -12128,7 +12076,7 @@ ISI	O
 در	O
 شهر	O
 "	O
-فیروز	B-LOC	-	FFF
+فیروز	B-LOC
 کوی	I-LOC
 "	O
 ولایت	I-LOC
@@ -14131,7 +14079,7 @@ hearing	O
 مصاحبه	O
 با	O
 روزنامه	B-ORG
-NRC	FFF
+NRC	I-ORG
 گفت	O
 حین	O
 تحقیقات	O
@@ -16944,8 +16892,8 @@ NRC	FFF
 عکس	O
 هم	O
 :	O
-Yuri	FFF
-Mashkov	FFF
+Yuri	B-PER
+Mashkov	I-PER
 از	O
 خبرگزاری	B-ORG
 ایتارتاس	I-ORG
@@ -18701,7 +18649,7 @@ Mashkov	FFF
 بهترین	O
 هست	O
 .	O
-Panago	FFF
+Panago	B-ORG
 هم	O
 خوبه	O
 بعد	O
@@ -20661,7 +20609,7 @@ Panago	FFF
 ،	O
 بلونیا	B-LOC
 ،	O
-docatti	FFF
+docatti	B-LOC
 میتونی	O
 انلاین	O
 موزه	O
@@ -21250,11 +21198,6 @@ docatti	FFF
 هات	O
 شه	O
 جواد	B-PER
-BETTER	FFF
-BY	FFF
-ZAYN	FFF
-better	FFF
-BetterZAYN	FFF
 
 کلا	O
 عبارت	O
@@ -21935,12 +21878,11 @@ BetterZAYN	FFF
 .	O
 فیلم	O
 فاطیما	O
-Fatima	FFF
 2020	O
 .	O
 توضیحات	O
 :	O
-Fatima	FFF
+Fatima	O
 یک	O
 فیلم	O
 درام	O
@@ -22543,7 +22485,6 @@ Fatima	FFF
 ادامه	O
 می‌دهد	O
 !	O
-MicrosoftTeams	FFF
 
 دانشگاه	B-ORG
 تبریز	I-ORG

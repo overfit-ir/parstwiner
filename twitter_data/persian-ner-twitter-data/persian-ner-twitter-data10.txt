@@ -545,7 +545,7 @@
 سال	O
 2000	O
 ما	O
-incumbent	FFF
+incumbent	O
 president	O
 نداشتیم	O
 ولی	O
@@ -3247,11 +3247,6 @@ president	O
 دیپورتیوو	B-ORG
 لاکرونیا	I-ORG
 .	O
-Covid19Out	FFF
-کروناویروس	O
-در	O
-خانه	O
-بمانیم	O
 
 معمولا	O
 یه	O
@@ -3788,7 +3783,6 @@ CIS	O
 مدیری	I-PER
 قسمت	O
 اول	O
-via	FFF
 
 این	O
 رشته	O
@@ -4410,7 +4404,6 @@ in	O
 مسخرست	O
 واقعا	O
 .	O
-FreeSoheila	FFF
 
 فرازی	O
 از	O
@@ -4902,19 +4895,6 @@ FreeSoheila	FFF
 را	O
 نمی‌جوید	O
 .	O
-عجبت	FFF
-لمن	O
-ینشد	O
-ضالّته	O
-وقد	O
-اضلّ	O
-نفسه	O
-فلا	O
-یطلبها	O
-!	O
-غررالحکم	O
-حدیث	O
-6266	O
 
 ای	O
 شهید	O
@@ -5119,18 +5099,6 @@ FreeSoheila	FFF
 مرسی	O
 .	O
 
-Great	FFF
-American	O
-Comeback	O
-.	O
-President	O
-Trump	O
-Visited	O
-.	O
-Jacksonville	O
-،	O
-Florida	O
-.	O
 ویدیویی	O
 از	O
 جمعیت	O
@@ -6015,7 +5983,7 @@ Florida	O
 
 احتمالا	O
 فیلم	O
-Original	FFF
+Original	O
 sin	O
 رو	O
 میگی	O
@@ -8110,10 +8078,10 @@ sin	O
 جهانی	O
 ،	O
 در	O
-مجله	O
-«	O
-sunday	FFF
-herald	O
+مجله	B-ORG
+«	I-ORG
+sunday	I-ORG
+herald	I-ORG
 »	O
 مصور	O
 ،	O
@@ -8330,7 +8298,6 @@ herald	O
 الحسین	O
 یجمعنا	O
 .	O
-Hussain	FFF
 
 چه	O
 لاتزیوی	B-ORG
@@ -8545,15 +8512,14 @@ Hussain	FFF
 هستند	O
 .	O
 پست	O
-اداره	O
-کننده	O
-اطلاعات	O
-ملی	O
-Director	FFF
+اداره‌کننده	O
+اطلاعات	B-ORG
+ملی	I-ORG
+Director	O
 of	O
 the	O
-National	O
-Counterintelligence	O
+National	B-ORG
+Counterintelligence	I-ORG
 یک	O
 وزارت	O
 در	O
