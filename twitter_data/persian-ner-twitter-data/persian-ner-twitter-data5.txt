@@ -8483,8 +8483,7 @@ magicryptobulls	FFF
 بی‌حاصل	O
 حسینی	B-PER
 و	O
-زینل‌زاده‌	B-PER
-ها	O
+زینل‌زاده‌ها	B-PER
 .	O
 حتی	O
 با	O
