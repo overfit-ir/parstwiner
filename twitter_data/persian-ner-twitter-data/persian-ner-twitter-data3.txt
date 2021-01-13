@@ -2133,8 +2133,8 @@ HPCA	FFF
 :	O
 صادق	B-PER
 طباطبایی	I-PER
-امام	B-PER
-موسی	I-PER
+امام	O
+موسی	B-PER
 صدر	I-PER
 صادق	B-PER
 قطب	I-PER
@@ -2452,8 +2452,8 @@ HPCA	FFF
 عسل	O
 
 به	O
-امام	B-PER
-محمد	I-PER
+امام	O
+محمد	B-PER
 بن	I-PER
 حسن	I-PER
 شیبانی	I-PER

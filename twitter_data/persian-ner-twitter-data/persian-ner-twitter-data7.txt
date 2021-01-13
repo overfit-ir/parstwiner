@@ -2453,8 +2453,8 @@ cosmointel	FFF
 گذاشتن	O
 
 خود	O
-امام	B-PER
-رضا	I-PER
+امام	O
+رضا	B-PER
 رو	O
 هفته	O
 دوم	O
@@ -4336,8 +4336,8 @@ word	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER
@@ -5645,8 +5645,8 @@ P500	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 لبیک	O
 یا	O
@@ -11955,8 +11955,8 @@ SaveHaydarGhorbani	O
 سبط	O
 اکبر	O
 ،	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 علیه	O
 السلام	O
@@ -11966,8 +11966,8 @@ SaveHaydarGhorbani	O
 .	O
 آستان	O
 مقدس	O
-امامزاده	B-PER
-صالح	I-PER
+امامزاده	O
+صالح	B-PER
 علیه	O
 السلام	O
 .	O
@@ -12074,8 +12074,8 @@ SaveHaydarGhorbani	O
 مدیاهای	O
 جهل	O
 
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 علیه	O
 السلام	O
@@ -12112,8 +12112,8 @@ SaveHaydarGhorbani	O
 11	O
 .	O
 شهادت	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 تسلیت	O
 .	O
@@ -13763,8 +13763,8 @@ SaveHaydarGhorbani	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 حب	O
 الحسین	B-PER
 یجمعنا	O
@@ -15367,8 +15367,8 @@ UI	O
 پناه	O
 اسلام	O
 و	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 هستیم	O
 ".	O
 متاسفانه	O
@@ -17183,8 +17183,8 @@ call	O
 نزدیک	O
 شدن	O
 به	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 در	O
 نوفل‌لوشاتو	B-LOC
 نداشته	O
@@ -20384,7 +20384,7 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 میکمیم	O
 بزرگانی	O
 مثل	O
-امام	B-PER
+امام	O
 خمینی	I-PER
 رو	O
 نماز	O
@@ -21483,12 +21483,12 @@ gt	O
 بهت	O
 
 داروی	O
-امام	B-PER
-کاظم	I-PER
+امام	O
+کاظم	B-PER
 و	O
 جامع	O
-امام	B-PER
-رضا	I-PER
+امام	O
+رضا	B-PER
 قطعا	O
 جواب	O
 میده	O
@@ -22046,8 +22046,8 @@ Taxi	O
 است	O
 .	O
 
-امام	B-PER
-علی	I-PER
+امام	O
+علی	B-PER
 (	O
 ع	O
 )	O
@@ -25929,8 +25929,8 @@ Kurdistan	FFF
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER

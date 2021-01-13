@@ -4381,8 +4381,8 @@ dominos	O
 تیر	O
 بارون	O
 
-امام	B-PER
-صادق	I-PER
+امام	O
+صادق	B-PER
 علیه‌السلام	O
 می‌فرمایند	O
 :.	O
@@ -5855,8 +5855,8 @@ iMat	I-EVE
 
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER
@@ -6645,11 +6645,11 @@ X5000	O
 ست	O
 نه	O
 انکار	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 یا	O
-حضرت	B-PER
-عباس	I-PER
+حضرت	O
+عباس	B-PER
 
 خوب	O
 شما	O
@@ -8785,8 +8785,8 @@ Kicker	FFF
 «	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 »	O
 و	O
 اعتقاد	O
@@ -8798,8 +8798,8 @@ Kicker	FFF
 تمسک	O
 به	O
 فرهنگ	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 (	O
 ع	O
 )	O
@@ -8814,8 +8814,8 @@ Kicker	FFF
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 رابین	B-PER
 هود	I-PER
@@ -9801,8 +9801,8 @@ pictures	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER
@@ -9844,8 +9844,8 @@ pictures	O
 رهبری	B-PER
 هم	O
 مثل	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 هر	O
 جا	O
 نیاز	O
@@ -9919,8 +9919,8 @@ Condo	FFF
 گدایی	O
 نیستم	O
 .	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 
 موقع	O
 جدایی	O
@@ -11919,8 +11919,8 @@ IPC	O
 .	O
 
 شهادت	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 (	O
 علیه	O
@@ -13062,8 +13062,8 @@ IPC	O
 امشب	O
 شام	O
 غریبان	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 مسجد	B-LOC
 بردفورد	I-LOC
 شام	O
@@ -28093,7 +28093,7 @@ Act	O
 علی	B-PER
 اکبر	I-PER
 امام	O
-رضا	O
+رضا	B-PER
 .	O
 روز	O
 اول	O
@@ -28106,8 +28106,8 @@ Act	O
 جوادمان	O
 کردند	O
 .	O
-امام	B-PER
-جواد	I-PER
+امام	O
+جواد	B-PER
 .	O
 اهل	O
 بیت	O

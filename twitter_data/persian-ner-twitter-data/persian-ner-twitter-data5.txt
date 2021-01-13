@@ -5807,8 +5807,8 @@ km	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 چیزی	O
 که	O
@@ -13026,8 +13026,8 @@ Elbit	I-ORG
 فکر	O
 کردم	O
 منظورشون	O
-امام	B-PER
-حسینه	I-PER
+امام	O
+حسینه	B-PER
 بعد	O
 فهمیدم	O
 اون	O
@@ -16149,8 +16149,8 @@ EmamHasanJan	FFF
 اینک	O
 به	O
 سوی	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 می‌رود	O
 .	O
 حب	O
@@ -16159,8 +16159,8 @@ EmamHasanJan	FFF
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 
 دیوونه	O
@@ -16398,8 +16398,8 @@ EmamHasanJan	FFF
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 مهم	O
 خروج	O
@@ -19721,8 +19721,8 @@ FinCEN	O
 پیشنهاد	O
 داده	O
 
-امام	B-PER
-خامنه‌ای	I-PER
+امام	O
+خامنه‌ای	B-PER
 عزیز	O
 .	O
 ابوالحسن	B-PER
@@ -19741,8 +19741,8 @@ FinCEN	O
 :	O
 اگر	O
 ایشان	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 (	O
 ره	O
 )	O
@@ -21862,8 +21862,8 @@ vvmiran	FFF
 دفاع	B-EVE
 مقدس	I-EVE
 توسط	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 (	O
 ره	O
 )	O
@@ -23750,8 +23750,8 @@ G4	O
 مثلا	O
 رفته	O
 حرم	O
-امام	B-PER
-رضا	I-PER
+امام	O
+رضا	B-PER
 (	O
 ع	O
 )	O
@@ -23862,8 +23862,8 @@ G4	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 فاکتورهای	O
 بیشماری	O
@@ -25865,8 +25865,8 @@ Martínez	O
 اینک	O
 به	O
 سوی	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 می‌رود	O
 .	O
 حب	O
@@ -25875,8 +25875,8 @@ Martínez	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 پیش	O
 از	O
