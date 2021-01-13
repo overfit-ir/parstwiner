@@ -955,7 +955,7 @@
 را	O
 دوست	O
 می‌دارد	O
-؟.	O
+؟	O
 شما	O
 را	O
 می‌گویم	O
@@ -1352,7 +1352,6 @@ cosmointel	FFF
 قرار	O
 داریم	O
 ؟	O
-.	O
 جدا	O
 از	O
 هر	O
@@ -1400,7 +1399,8 @@ cosmointel	FFF
 کوسه	O
 راه	O
 می‌رود	O
-!:	O
+!	O
+:	O
 محمود	B-PER
 حاج‌زمان	I-PER
 :	O
@@ -1561,7 +1561,7 @@ cosmointel	FFF
 پنهان	O
 اوریدیس	O
 گوسمائو	O
-.(	O
+(	O
 برنده	O
 جایزه	B-EVE
 بهترین	I-EVE
@@ -1570,7 +1570,8 @@ cosmointel	FFF
 نوعی	I-EVE
 نگاه	I-EVE
 کن	I-EVE
-).	O
+)	O
+.	O
 کانال	O
 سینما	B-ORG
 دریمینگ	I-ORG
@@ -1873,7 +1874,7 @@ cosmointel	FFF
 رو	O
 دقت	O
 کنید	O
-؟.	O
+؟	O
 هر	O
 کی	O
 برا	O
@@ -1909,7 +1910,7 @@ cosmointel	FFF
 !	O
 فریب	O
 نخورید	O
-!.	O
+!	O
 دوما	O
 ایشون	O
 می‌خواست	O
@@ -2149,7 +2150,7 @@ cosmointel	FFF
 350	O
 .	O
 
-:)))).	O
+:))))	O
 عزیزم	O
 ،	O
 حدودای	O
@@ -2256,7 +2257,7 @@ cosmointel	FFF
 رو	O
 مجلس	O
 بزاره	O
-!.	O
+!	O
 بن‌بست	O
 سیاسی	O
 
@@ -2337,7 +2338,9 @@ cosmointel	FFF
 رو	O
 هم	O
 فهمیدیم	O
-!!!	O
+!	O
+!	O
+!	O
 
 امارات	B-LOC
 از	O
@@ -2386,7 +2389,8 @@ cosmointel	FFF
 ترکیه	I-ORG
 ،	O
 گفت	O
-:«	O
+:	O
+«	O
 از	O
 شب	O
 گذشته	O
@@ -2473,7 +2477,7 @@ cosmointel	FFF
 100	O
 هزار	O
 تنی	O
-؟.	O
+؟	O
 روزنامه	O
 آلمانی	B-NAT
 «	O
@@ -2568,7 +2572,8 @@ cosmointel	FFF
 مصدق	B-PER
 شعار	O
 می‌دادند	O
-.»	O
+.	O
+»	O
 
 اولین	O
 ماشینم	O
@@ -2744,7 +2749,7 @@ cosmointel	FFF
 وزارت	O
 خونه	O
 داریم	O
-!.	O
+!	O
 مثلا	O
 ؛	O
 رفاه	O
@@ -2936,7 +2941,7 @@ cosmointel	FFF
 
 فدا	O
 سرم	O
-،.	O
+،	O
 شماها	O
 که	O
 ظاهربین	O
@@ -3073,7 +3078,7 @@ cosmointel	FFF
 یاد	O
 چیزی	O
 افتادم	O
-.(	O
+(	O
 نقل	O
 به	O
 مضمون	O
@@ -3196,7 +3201,8 @@ cosmointel	FFF
 تن	O
 بار	O
 زده	O
-؟!.	O
+؟	O
+!	O
 از	O
 سال	O
 1959	O
@@ -3295,7 +3301,9 @@ word	O
 چرا	O
 همه	O
 میخندن	O
-!!!.	O
+!	O
+!	O
+!	O
 بابا	O
 با	O
 یه	O
@@ -3365,7 +3373,6 @@ word	O
 خود	O
 نبرید	O
 !	O
-.	O
 لحظه	O
 سقوط	O
 وحشتناک	O
@@ -3564,7 +3571,9 @@ word	O
 عامل	O
 ضعف	O
 حافظه	O
-.!."	O
+.	O
+!	O
+"	O
 دکتر	O
 «	O
 براجش	B-PER
@@ -3608,7 +3617,7 @@ word	O
 درآمدترین	O
 بیزنس‌های	O
 جهان	O
-،.	O
+،	O
 بی‌دلیل	O
 نمیتونه	O
 باشه	O
@@ -3626,7 +3635,7 @@ word	O
 ،	O
 پس	O
 چیه	O
-؟.	O
+؟	O
 
 روزگار	O
 میگذرد	O
@@ -3784,7 +3793,7 @@ word	O
 رو	O
 دوست	O
 دارم	O
-؟.	O
+؟	O
 این	O
 رشته	O
 توییت	O
@@ -3817,7 +3826,8 @@ word	O
 را	O
 فالو	O
 میکنه	O
-؟؟	O
+؟	O
+؟	O
 
 دکل	O
 مال	O
@@ -4113,7 +4123,6 @@ word	O
 موشه	B-PER
 دایان	I-PER
 !	O
-.	O
 ببینید	O
 برخی	O
 از	O
@@ -4138,7 +4147,8 @@ word	O
 و	O
 یا	O
 برده	O
-!!	O
+!	O
+!	O
 
 ملیتا	O
 مسلمانن	O
@@ -4228,19 +4238,24 @@ word	O
 مفید	I-PER
 )	O
 میگه	O
-((	O
+(	O
+(	O
 سید	O
 ولمون	O
 کن	O
-!)).	O
+!	O
+)	O
+)	O
 با	O
 این	O
 جمله‌ی	O
-((	O
+(	O
+(	O
 سید	O
 ولمون	O
 کن	O
-))	O
+)	O
+)	O
 توو	O
 این	O
 داستان	O
@@ -4429,7 +4444,6 @@ word	O
 کم	O
 البته	O
 !	O
-.	O
 ولی	O
 بخاطر	O
 میان	O
@@ -4634,7 +4648,8 @@ D	O
 مغزتو	O
 هم	O
 نداشت	O
-».	O
+»	O
+.	O
 دست‌نویس	O
 
 هافبک‌ها	O
@@ -4660,7 +4675,7 @@ D	O
 بی‌کیفیت	O
 اونا	O
 میشدن	O
-!.	O
+!	O
 از	O
 اونطرف	O
 قادر	O
@@ -4673,7 +4688,7 @@ D	O
 رو	O
 تغذیه	O
 کنن	O
-!.	O
+!	O
 الشارجه	B-ORG
 یکی	O
 از	O
@@ -4687,7 +4702,7 @@ D	O
 این	O
 دوره	O
 دیدم	O
-!.	O
+!	O
 دوتا	O
 مدافع	O
 مرکزیش	O
@@ -4801,16 +4816,15 @@ D	O
 میکنه	O
 طرف	O
 ؟	O
-.	O
 من	O
 :	O
 عیده	O
 چیه	O
-؟.	O
+؟	O
 عید	O
 قربان	O
 دیگه	O
-!.	O
+!	O
 من	O
 :	O
 چرا	O
@@ -4950,7 +4964,7 @@ P500	O
 درصد	O
 بازدهی	O
 منفی	O
-!.	O
+!	O
 شاخص	O
 سازی	O
 به	O
@@ -5130,7 +5144,7 @@ P500	O
 دقیقه	O
 119	O
 رئال	B-ORG
-؟.	O
+؟	O
 دنی	B-PER
 کارواخال	B-PER
 
@@ -5254,11 +5268,13 @@ P500	O
 اصلا	O
 کتاب	O
 میخونن	O
-؟!	O
+؟	O
+!	O
 اصلا	O
 سواد	O
 دارن	O
-؟!	O
+؟	O
+!	O
 شوآفه	O
 !	O
 و	O
@@ -5517,7 +5533,10 @@ P500	O
 چه	O
 قدر	O
 می‌گذره	O
-!!!؟.	O
+!	O
+!	O
+!	O
+؟	O
 انگار	O
 اون	O
 مال	O
@@ -6281,17 +6300,17 @@ P500	O
 مرغ	O
 (	O
 پروتئین	O
-).	O
+)	O
 اووکادو	O
 (	O
 چربی	O
 سالم	O
-).	O
+)	O
 کینوا	O
 (	O
 پروتئین	O
 گیاهی	O
-).	O
+)	O
 بادام	O
 خیس	O
 خورده	O
@@ -6325,7 +6344,7 @@ P500	O
 نه	O
 این	O
 چیزا	O
-!.	O
+!	O
 کرونا	O
 .	O
 موج	O
@@ -6376,7 +6395,8 @@ P500	O
 از	O
 سی	O
 سال	O
-؟!	O
+؟	O
+!	O
 انگار	O
 که	O
 هیچ	O
@@ -6509,7 +6529,9 @@ P500	O
 و	O
 نظارت	O
 شما	O
-؟».	O
+؟	O
+»	O
+.	O
 
 یادداشت	O
 اخیرم	O
@@ -6674,14 +6696,14 @@ P500	O
 خالی	O
 رد	O
 نمی‌کنند	O
-!».	O
+!	O
+»	O
 دیار	O
 باکری	B-PER
 
 بیلبوردش	O
 هست	O
 ،	O
-.	O
 عکس	O
 گل	O
 خرزهره	O
@@ -6904,7 +6926,8 @@ gprs	O
 را	O
 آغاز	O
 کنند	O
-.»	O
+.	O
+»	O
 
 در	O
 کارگاه	O
@@ -7048,7 +7071,7 @@ gprs	O
 .	O
 فرمایشتون	O
 درسته	O
-!.	O
+!	O
 اما	O
 جاییکه	O
 من	O
@@ -7479,7 +7502,9 @@ gprs	O
 ظاهر	O
 خواهی	O
 شد	O
-.!؟	O
+.	O
+!	O
+؟	O
 
 این	O
 قسمت	O
@@ -7540,7 +7565,8 @@ gprs	O
 هندی‌ها	B-NAT
 بازی	O
 رو	O
-برده‌بودند	O
+برده	O
+بودند	O
 ،	O
 جناح	B-PER
 اسم	O
@@ -7590,7 +7616,8 @@ gprs	O
 با	O
 چش	O
 ببینوم	O
-.».	O
+.	O
+»	O
 تصویر	O
 :	O
 صندلی‌های	O
@@ -7810,7 +7837,7 @@ departures	O
 بسیار	O
 خواندنی	O
 درباره	O
-:.	O
+:	O
 روشهایی	O
 که	O
 ترامپ	B-PER
@@ -7838,10 +7865,14 @@ departures	O
 قانون	O
 اساسی	O
 آمریکا	B-LOC
+در	O
+زمینه	O
+انتخاب	O
+رئیس	O
+جمهور	O
 ،	O
-.	O
-1	O
-2	O
+تقلب	O
+کنند	O
 .	O
 
 امروز	O
@@ -7916,7 +7947,7 @@ departures	O
 ،	O
 حتی	O
 میلیاردرها	O
-!.	O
+!	O
 اون	O
 روزهایی	O
 که	O
@@ -7980,7 +8011,7 @@ departures	O
 شدن	O
 فحش	O
 بدیم	O
-!.	O
+!	O
 خارج	O
 از	O
 قاب	O
@@ -8464,7 +8495,8 @@ departures	O
 «	O
 افسانه‌ی	O
 زنبورها	O
-»،	O
+»	O
+،	O
 که	O
 متاسفانه	O
 هرگز	O
@@ -9165,8 +9197,7 @@ departures	O
 سبد	O
 ترامپ	B-PER
 و	O
-جمهوری	B-POG
-خواها	I-POG
+جمهوری‌خواها	B-POG
 نگذارید	O
 !	O
 ستاد	O
@@ -9254,7 +9285,7 @@ departures	O
 ترویز	O
 رو	O
 دیدی	O
-؟.	O
+؟	O
 بیلیش	B-PER
 به	O
 ند	B-PER
@@ -9397,7 +9428,7 @@ departures	O
 
 ابریشم	O
 بود	O
-؟.	O
+؟	O
 دو	O
 سه	O
 تا	O
@@ -9837,7 +9868,7 @@ BBC	B-ORG
 قبض	O
 برام	O
 اومده	O
-!.	O
+!	O
 کاش	O
 بگیرم	O
 بخوابم	O
@@ -9884,13 +9915,15 @@ BBC	B-ORG
 لطیف	O
 دارند	O
 نخوانند	O
-!!	O
+!	O
+!	O
 .	O
 مگه	O
 غیر	O
 از	O
 واقعیته	O
-؟!	O
+؟	O
+!	O
 با	O
 ننوشتنش	O
 فقط	O
@@ -10108,7 +10141,8 @@ BBC	B-ORG
 اون	B-PER
 عذرخواهی	O
 کرد	O
-.«	O
+.	O
+«	O
 کیم	B-PER
 جونگ	I-PER
 اون	I-PER
@@ -10268,7 +10302,7 @@ BBC	B-ORG
 اطلاعاتی	O
 )	O
 و	O
-.	O
+...	O
 که	O
 در	O
 اصل	O
@@ -10294,7 +10328,6 @@ BBC	B-ORG
 نظر	O
 دارند	O
 ؟	O
-.	O
 SaveHaydarGhorbani	O
 
 این	O
@@ -10793,7 +10826,7 @@ SaveHaydarGhorbani	O
 کرونا	O
 نوشته‌اند	O
 :	O
-.«	O
+«	O
 مشکل	O
 ریوی	O
 و	O
@@ -10851,7 +10884,7 @@ SaveHaydarGhorbani	O
 ره‌بر	B-PER
 (	O
 1393	O
-):.	O
+):	O
 این	O
 دانشگاه	B-ORG
 فرهنگیان	I-ORG
@@ -11535,12 +11568,10 @@ SaveHaydarGhorbani	O
 عزیز	B-PER
 نسین	I-PER
 میباشد	O
-؟.	O
+؟	O
 خرمرده	O
-.	O
 حقه	O
 باز	O
-.	O
 و	O
 صدها	O
 داستان	O
@@ -11813,7 +11844,8 @@ SaveHaydarGhorbani	O
 هم	O
 برابر	O
 کنم	O
-!!	O
+!	O
+!	O
 خیلی‌ها	O
 اینو	O
 باور	O
@@ -12031,11 +12063,11 @@ SaveHaydarGhorbani	O
 می‌توانسته	O
 بی‌طرف	O
 باشد	O
-؟.	O
+؟	O
 لطفا	O
 یاوه	O
 نبافید	O
-!.	O
+!	O
 رونوشت	O
 به	O
 همه‌ی	O
@@ -12310,7 +12342,7 @@ SaveHaydarGhorbani	O
 نوروزی	O
 پپسی	B-ORG
 است	O
-:.	O
+:	O
 «	O
 پپسی	B-ORG
 کولا	I-ORG
@@ -12325,7 +12357,6 @@ SaveHaydarGhorbani	O
 شد	O
 .	O
 »	O
-.	O
 
 ازتون	O
 توی	O
@@ -12660,7 +12691,6 @@ SaveHaydarGhorbani	O
 شکمو	O
 نبودم	O
 !	O
-.	O
 تا	O
 این	O
 حد	O
@@ -12924,7 +12954,7 @@ SaveHaydarGhorbani	O
 جمهور	O
 اجرایی	O
 نمیشه	O
-؟.	O
+؟	O
 چرا	O
 نباید	O
 رئیس	O
@@ -12936,7 +12966,11 @@ SaveHaydarGhorbani	O
 اقتصادی	O
 نباید	O
 باشه	O
-!!!؟؟	O
+!	O
+!	O
+!	O
+؟	O
+؟	O
 
 پس	O
 خرید	O
@@ -13188,7 +13222,9 @@ SaveHaydarGhorbani	O
 هم	O
 استفاده	O
 میکنید	O
-؟؟؟	O
+؟	O
+؟	O
+؟	O
 ایا	O
 اینها	O
 در	O
@@ -13202,7 +13238,9 @@ SaveHaydarGhorbani	O
 خلاف	O
 نظام	O
 نیستند	O
-؟؟؟	O
+؟	O
+؟	O
+؟	O
 پس	O
 چرا	O
 برای	O
@@ -13214,7 +13252,9 @@ SaveHaydarGhorbani	O
 شکن	O
 استفاده	O
 میکنید	O
-؟؟؟	O
+؟	O
+؟	O
+؟	O
 
 درگذشت	O
 قاضی	O
@@ -13254,7 +13294,8 @@ SaveHaydarGhorbani	O
 «	O
 کریستوفر	B-PER
 رای	I-PER
-»،	O
+»	O
+،	O
 رئیس	O
 اف‌بی‌آی	B-ORG
 :	O
@@ -13404,7 +13445,7 @@ SaveHaydarGhorbani	O
 حال	O
 انفجار	O
 است	O
-.!	O
+!	O
 
 من	O
 بدترم	O
@@ -13449,7 +13490,6 @@ SaveHaydarGhorbani	O
 آماده‌ی	O
 صادرات	O
 !	O
-.	O
 حیف	O
 که	O
 ایرانخودرو	B-ORG
@@ -13642,7 +13682,7 @@ SaveHaydarGhorbani	O
 تا	O
 دستور	O
 بدن	O
-!.	O
+!	O
 اصا	O
 بشین	O
 تا	O
@@ -13681,7 +13721,7 @@ SaveHaydarGhorbani	O
 به	O
 اینجا	O
 می‌رسید	O
-،.	O
+،	O
 بی‌تاب	O
 می‌شدم	O
 که	O
@@ -13690,7 +13730,7 @@ SaveHaydarGhorbani	O
 هم	O
 صدا	O
 میزنی	O
-؟.	O
+؟	O
 امسال	O
 هم	O
 کوله‌ام	O
@@ -13714,7 +13754,7 @@ SaveHaydarGhorbani	O
 .	O
 مولا	O
 جان	O
-!.	O
+!	O
 باز	O
 هم	O
 قبولم	O
@@ -13782,7 +13822,7 @@ SaveHaydarGhorbani	O
 بغل	O
 کنید	O
 همدیگرو	O
-،.	O
+،	O
 هعی	O
 بغل	O
 کنید	O
@@ -13876,7 +13916,7 @@ SaveHaydarGhorbani	O
 رو	O
 پس	O
 می‌زنن	O
-!.	O
+!	O
 یعنی	O
 تو	O
 وقتی	O
@@ -14098,7 +14138,8 @@ SaveHaydarGhorbani	O
 گرفته	O
 ،	O
 برنمی‌گرده	O
-.».	O
+.	O
+»	O
 اما	O
 مشخصه	O
 که	O
@@ -14152,12 +14193,15 @@ SaveHaydarGhorbani	O
 "	O
 سرویس	O
 بهداشتی‌تون	O
-کجاست	O
+کجا	O
+ست	O
 ؟	O
-.-	O
+.	O
+-	O
 دیپورتیوو	B-ORG
 لاکرونیا	I-ORG
-".(	O
+"	O
+(	O
 من	O
 هنوزم	O
 به	O
@@ -14325,7 +14369,9 @@ SaveHaydarGhorbani	O
 کشور	O
 یک	O
 شهرستانه	O
-؟؟؟.	O
+؟	O
+؟	O
+؟	O
 در	O
 تقسیمات	O
 کشوری	O
@@ -14477,7 +14523,7 @@ SaveHaydarGhorbani	O
 و	O
 پشم	O
 کنن	O
-.(	O
+(	O
 باصدای	O
 بلند	O
 پشمام	O
@@ -14533,7 +14579,7 @@ SaveHaydarGhorbani	O
 به	O
 کجا	O
 رسید	O
-؟.	O
+؟	O
 خوابی	O
 که	O
 در	O
@@ -14756,7 +14802,8 @@ SaveHaydarGhorbani	O
 از	O
 بین	O
 برود	O
-.!.	O
+.	O
+!	O
 مرگ	O
 بر	O
 آمریکا	B-LOC
@@ -14822,7 +14869,7 @@ SaveHaydarGhorbani	O
 چاپ	O
 می‌کنه	O
 پشم‌ریزون	O
-:)).	O
+:))	O
 منتها	O
 من	O
 یه	O
@@ -14878,7 +14925,7 @@ UI	O
 آموزشی	O
 موعود	O
 مبیاشد	O
-،.	O
+،	O
 تلاش	O
 و	O
 درخشیش	O
@@ -14892,7 +14939,7 @@ UI	O
 تروریستی	O
 داعیش	B-POG
 است	O
-،.	O
+،	O
 از	O
 بین	O
 خون	O
@@ -14988,7 +15035,8 @@ UI	O
 ‌بود	O
 و	O
 بی‌تجربه	O
-!!	O
+!	O
+!	O
 ولی	O
 سال	O
 63	O
@@ -15021,7 +15069,7 @@ UI	O
 رو	O
 کسب	O
 کردن	O
-!.	O
+!	O
 گور	O
 بابای	O
 ‌بی‌بی‌سی	B-ORG
@@ -15283,7 +15331,7 @@ UI	O
 در	O
 داشته	O
 باشد	O
-؟.‌	O
+؟‌	O
 ای	O
 کاش	O
 کسی	O
@@ -15347,7 +15395,7 @@ UI	O
 از	O
 غیر	O
 یهودیان	O
-).	O
+)	O
 بسیاری	O
 از	O
 یهودیان	O
@@ -15666,7 +15714,14 @@ UI	O
 طرفدار	O
 مستضعفین	O
 هستند	O
-؟؟؟!!!!!	O
+؟	O
+؟	O
+؟	O
+!	O
+!	O
+!	O
+!	O
+!	O
 
 خودت	O
 دل‌درد	O
@@ -15684,7 +15739,7 @@ UI	O
 دارن	O
 این	O
 دوتا	O
-؟.	O
+؟	O
 من	O
 تو	O
 ذهنم	O
@@ -15746,7 +15801,11 @@ UI	O
 آبادان	B-LOC
 را	O
 بزنیم	O
-؟!!!!	O
+؟	O
+!	O
+!	O
+!	O
+!	O
 
 یکی	O
 از	O
@@ -15825,7 +15884,7 @@ call	O
 به	O
 دست	O
 شود	O
-،.	O
+،	O
 اوضاع	O
 جامعه	O
 و	O
@@ -15863,7 +15922,7 @@ call	O
 شعور	O
 توهین	O
 دیده	O
-،.	O
+،	O
 که	O
 در	O
 بطن	O
@@ -15890,7 +15949,8 @@ call	O
 طرف	O
 خانهٔ	O
 سوان	O
-»،	O
+»	O
+،	O
 اولین	O
 جلد	O
 رمان	O
@@ -16311,7 +16371,7 @@ call	O
 از	O
 که	O
 آموختی	O
-؟.	O
+؟	O
 از	O
 آیوی	O
 
@@ -16416,7 +16476,9 @@ call	O
 سال	O
 طول	O
 میکشد	O
-!.«	O
+!	O
+.	O
+«	O
 سلام	O
 و	O
 درود	O
@@ -16428,7 +16490,7 @@ call	O
 ،	O
 یادشان	O
 گرامی	O
-».	O
+»	O
 هفته	B-EVE
 دفاع	I-EVE
 مقدس	I-EVE
@@ -16544,7 +16606,9 @@ call	O
 کیلویی	O
 17000	O
 تومن	O
-!!!.	O
+!	O
+!	O
+!	O
 حباب	O
 مسکن	O
 مگر	O
@@ -16561,7 +16625,7 @@ call	O
 و	O
 بنا	O
 هست	O
-؟.	O
+؟	O
 یعنی	O
 با	O
 اون	O
@@ -16947,7 +17011,7 @@ call	O
 این	O
 متحجرین	O
 متعصب	O
-؟.	O
+؟	O
 بجای	O
 بچه‌داری	O
 این	O
@@ -16956,8 +17020,8 @@ call	O
 عروسک	O
 بازی	O
 میکرد	O
-.!.	O
 .	O
+!	O
 زن	O
 100	O
 ساله	O
@@ -16995,7 +17059,8 @@ call	O
 استاد	O
 پلی	O
 میکنم	O
-!:)	O
+!	O
+:)	O
 
 در	O
 دهه‌های	O
@@ -17066,7 +17131,8 @@ call	O
 منبع	O
 هم	O
 میکنن	O
-.(	O
+.	O
+(	O
 اسمش	O
 قاعده	O
 بازیه	O
@@ -17087,7 +17153,7 @@ call	O
 بیشتر	O
 مطالعه	O
 کن	O
-).	O
+)	O
 شما	O
 بنویسید	O
 کثیف	O
@@ -17193,7 +17259,7 @@ call	O
 ز	O
 ما	O
 سجود	O
-؟.	O
+؟	O
 بر	O
 مرغزار	O
 دیلم	O
@@ -17267,7 +17333,7 @@ call	O
 پس	O
 مردم	O
 چی	O
-؟.	O
+؟	O
 تموم	O
 شد	O
 بگو	O
@@ -17345,7 +17411,9 @@ call	O
 گفت	O
 بقررر	O
 ماخانی	O
-؟؟؟	O
+؟	O
+؟	O
+؟	O
 
 این	O
 که	O
@@ -17815,16 +17883,15 @@ exposition	O
 .	O
 Iranian	FFF
 Poll	FFF
-:.	O
+:	O
 Biden	O
 69	O
 %	O
 (	O
 38	O
-).	O
+)	O
 Trump	O
 31	O
-.	O
 کسانی	O
 که	O
 زیر	O
@@ -18079,7 +18146,9 @@ via	O
 میکنه	O
 امون	O
 خدا	O
-؟!!	O
+؟	O
+!	O
+!	O
 
 چن	O
 سال	O
@@ -18213,7 +18282,7 @@ via	O
 خلاصه‌ای	O
 اهدا	O
 کنید	O
-؟.	O
+؟	O
 متشکر	O
 !	O
 
@@ -18430,7 +18499,6 @@ via	O
 عمل	O
 کردی	O
 !	O
-.	O
 پ	O
 .	O
 ن	O
@@ -18480,7 +18548,8 @@ via	O
 هسته	O
 آنست	O
 !	O
-هرکدامشان	O
+هر	O
+کدامشان	O
 در	O
 جای	O
 خویش	O
@@ -18795,7 +18864,7 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 و	O
 شما	O
 نابغه‌ای	O
-؟.	O
+؟	O
 داوینچی	B-PER
 عصر	O
 ما	O
@@ -18865,7 +18934,8 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 میگی	O
 نمیدونم	O
 چیه	O
-؟؟	O
+؟	O
+؟	O
 
 استاد	O
 مهدی	B-PER
@@ -19081,10 +19151,10 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 خنده	O
 که	O
 امروز	O
-،.	O
+،	O
 دریغش	O
 کردیم	O
-،.	O
+،	O
 آخرین	O
 فرصت	O
 خندیدن	O
@@ -19093,7 +19163,7 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 هر	O
 کجا	O
 خندیدیم	O
-،.	O
+،	O
 زندگی	O
 هم	O
 آنجاست	O
@@ -19153,7 +19223,8 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 را	O
 فراموش	O
 نکنید	O
-!».	O
+!	O
+»	O
 دیار	O
 باکری	B-PER
 
@@ -19244,7 +19315,8 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 همین	O
 "	O
 چینه‌چیتا	B-ORG
-"،	O
+"	O
+،	O
 یک	O
 مدرسه	O
 سینمایی	O
@@ -19392,7 +19464,7 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 نظرسنجی‌های	O
 دانشگاه	B-ORG
 مریلند	I-ORG
-!.	O
+!	O
 درد	O
 تو	O
 این	O
@@ -19484,7 +19556,8 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 کسی	O
 توضیح	O
 نمی‌ده	O
-؟!	O
+؟	O
+!	O
 روحانی	B-PER
 ،	O
 نمکی	B-PER
@@ -19496,7 +19569,8 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 رییسی	B-PER
 چرا	O
 ساکتین	O
-؟!	O
+؟	O
+!	O
 این	O
 پول	O
 مستقیم	O
@@ -19516,7 +19590,8 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 این	O
 پول	O
 لعنتیا	O
-؟؟	O
+؟	O
+؟	O
 
 من	O
 مثل	O
@@ -20125,7 +20200,7 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 از	O
 بین	O
 نمیره	O
-!.	O
+!	O
 خدایا	O
 همه	O
 جام	O
@@ -20386,7 +20461,8 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 زیرپیرنی	O
 آقادا	O
 پوشیدی	O
-؟"	O
+؟	O
+"	O
 
 ساغرم	O
 شکسته‌ای	O
@@ -20535,7 +20611,7 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 ،	O
 فقط	O
 بعضیاش	O
-:.	O
+:	O
 ابعاد	O
 و	O
 فاصله‌ها	O
@@ -20548,7 +20624,7 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 و	O
 کلا	O
 تکامل	O
-).	O
+)	O
 دنیای	O
 کوانتوم	O
 (	O
@@ -20692,14 +20768,16 @@ art	O
 صنایع‌دستی	O
 و	O
 عکاسی	O
-.).	O
+)
+.	O
 
 پس	O
 از	O
 اجرای	O
 برجام	B-EVE
 لغو	O
-شده‌بودند	O
+شده	O
+بودند	O
 ،	O
 استقبال	O
 کرد	O
@@ -20792,7 +20870,7 @@ art	O
 محمدرضا	O
 ‌ست	O
 :	O
-:))))))).	O
+:))))))	O
 فکر	O
 کن	O
 اسم	O
@@ -21318,7 +21396,7 @@ BanIRSports4Navid	O
 سمت	O
 ما	O
 لذت‌بخشه	O
-:)).	O
+:))	O
 یک‌ساله	O
 که	O
 گذرم	O
@@ -21359,7 +21437,7 @@ BanIRSports4Navid	O
 دیگه	O
 اوکی	O
 میشه	O
-!.	O
+!	O
 BETTER	FFF
 BY	O
 ZAYN	O
@@ -21530,7 +21608,8 @@ gt	O
 شما	O
 رو	O
 می‌خونن	O
-.».	O
+.	O
+»	O
 مرسی	O
 از	O
 خبر	O
@@ -21742,7 +21821,8 @@ gt	O
 تو	O
 گیر	O
 کنی	O
-؟؟	O
+؟	O
+؟	O
 
 سهیلا	B-PER
 حجاب	I-PER
@@ -21785,7 +21865,7 @@ gt	O
 دیدم	O
 آره	O
 .	O
-:)))).	O
+:)))	O
 عجالتا	O
 اینا	O
 رو	O
@@ -22324,7 +22404,8 @@ Taxi	O
 نشون	O
 پلیس	O
 بدین	O
-؟؟	O
+؟	O
+؟	O
 یا	O
 لاقل	O
 نشون	O
@@ -22791,7 +22872,8 @@ Taxi	O
 صدقه	O
 سر	O
 رژیمه	O
-؟!	O
+؟	O
+!	O
 این	O
 رژیم	O
 به	O
@@ -22976,7 +23058,8 @@ doubt	O
 روحانی	B-PER
 دادن	O
 چیه	O
-؟!.	O
+؟	O
+!	O
 در	O
 دوره‌ای	O
 که	O
@@ -22988,7 +23071,8 @@ doubt	O
 نژاد	I-PER
 دادن	O
 چی	O
-؟!.	O
+؟	O
+!	O
 
 به	O
 همون	O
@@ -23042,7 +23126,7 @@ doubt	O
 یونانی‌ها	B-NAT
 دروغگو	O
 هستند	O
-!.	O
+!	O
 پس	O
 یونانیها	B-NAT
 راستگو	O
@@ -23056,7 +23140,7 @@ doubt	O
 پس	O
 راستگو	O
 ست	O
-!.	O
+!	O
 پس	O
 راست	O
 میگه	O
@@ -23229,7 +23313,7 @@ doubt	O
 .	O
 مشروح	O
 خبر	O
-».	O
+»	O
 استان	O
 فارس	B-LOC
 .	O
@@ -23286,7 +23370,7 @@ doubt	O
 به	O
 رهبر	B-PER
 انقلاب	I-PER
-؟.	O
+؟	O
 کانال	O
 اقتصادی	O
 محسن	B-PER
@@ -23629,7 +23713,7 @@ doubt	O
 آسانسور	O
 چیش	O
 می‌شه	O
-؟.	O
+؟	O
 به	O
 اندازه‌ی	O
 وزنش	O
@@ -23649,7 +23733,7 @@ doubt	O
 رفیق	O
 سعید	B-PER
 سلطانپور	I-PER
-.،	O
+،	O
 شاعر	O
 انقلابی	O
 مارکسیست	B-POG
@@ -23700,7 +23784,7 @@ doubt	O
 چه	O
 رفته	O
 است	O
-؟.	O
+؟	O
 سوسیالیسم	O
 .	O
 مارکسیسم	O
@@ -23734,7 +23818,7 @@ doubt	O
 میاد	O
 واسه	O
 گل	O
-:)).	O
+:))	O
 تیمی	O
 کوچیک	O
 از	O
@@ -23826,7 +23910,7 @@ doubt	O
 و	O
 هم‌وطنانم	O
 بخیر	O
-!.	O
+!	O
 اولین	O
 روز	O
 پس	O
@@ -23935,7 +24019,8 @@ doubt	O
 در	O
 عکس	O
 میبینید	O
-؟!.	O
+؟	O
+!	O
 این	O
 تست	O
 به	O
@@ -23990,7 +24075,8 @@ doubt	O
 (	O
 David	FFF
 Kelly	O
-)،	O
+)	O
+،	O
 کارشناس	O
 انگلیسی	B-NAT
 تسلیحات	O
@@ -24019,7 +24105,7 @@ Hill	O
 شد	O
 .	O
 چرا	O
-؟.	O
+؟	O
 چون	O
 جنایات	O
 انگلیس	B-LOC
@@ -24139,7 +24225,7 @@ Hill	O
 تو	O
 خواهد	O
 بخشید	O
-!.	O
+!	O
 زن	O
 آنچه	O
 را	O
@@ -24206,7 +24292,7 @@ Hill	O
 جا	O
 که	O
 می‌فرماید	O
-:.	O
+:	O
 «	O
 مهدی	B-PER
 ما	O
@@ -24258,11 +24344,13 @@ Hill	O
 
 تیم	O
 بپاشه	O
-؟؟	O
+؟	O
+؟	O
 با	O
 1	O
 گل	O
-؟؟	O
+؟	O
+؟	O
 پس	O
 هنر	O
 مربی	O
@@ -24293,7 +24381,8 @@ Hill	O
 4	O
 تا	O
 زدیم	O
-!!	O
+!	O
+!	O
 از	O
 کره	B-ORG
 2	O
@@ -24528,7 +24617,7 @@ pounder	O
 (	O
 گفته	O
 بودم	O
-).	O
+)	O
 امشب	O
 دیدم	O
 با	O
@@ -24598,7 +24687,7 @@ pounder	O
 را	O
 دوست	O
 می‌دارد	O
-؟.	O
+؟	O
 شما	O
 را	O
 می‌گویم	O
@@ -24755,7 +24844,6 @@ pounder	O
 حساب	O
 نمیشد	O
 ؟	O
-.	O
 از	O
 رشته	O
 توئیت	O
@@ -24809,8 +24897,10 @@ pounder	O
 و	O
 واکسن	O
 آمریکایی	B-NAT
-!!.	O
-ایناهم	O
+!	O
+!	O
+اینا	O
+هم	O
 جای	O
 شک	O
 داره	O
@@ -25197,7 +25287,7 @@ pounder	O
 اینهمه	O
 بهش	O
 برسن	O
-!.	O
+!	O
 اما	O
 ایشالله	O
 حسرت	O
@@ -25326,7 +25416,7 @@ pounder	O
 اینا	O
 پول	O
 بفرسته	O
-؟.	O
+؟	O
 قبلش	O
 هم	O
 اوباما	B-PER
@@ -25389,7 +25479,7 @@ pounder	O
 تسلطتان	O
 خارج	O
 کنند	O
-!.	O
+!	O
 حاکمیت	O
 گروه‌های	O
 مسلح	O
@@ -25410,7 +25500,7 @@ pounder	O
 موضوع	O
 خانه	O
 هوشمند	O
-).	O
+)	O
 بخش	O
 اول	O
 این	O
@@ -25433,7 +25523,7 @@ pounder	O
 اینترنت	O
 اشیا	O
 ایران	B-LOC
-)،	O
+)	O
 
 "	O
 جو	B-PER
@@ -25530,7 +25620,7 @@ pounder	O
 :‌	O
 ای	O
 مردم	O
-!.	O
+!	O
 خود	O
 را	O
 محکم	O
@@ -25626,17 +25716,17 @@ pounder	O
 حالا	O
 عاشق	O
 شدی	O
-؟.	O
+؟	O
 تیرسیاس	B-PER
 :	O
 عشق	O
 خطرناکه	O
 خانوم	O
-!.	O
+!	O
 آنتیگونه	B-PER
 :	O
 چرا	O
-؟.	O
+؟	O
 تیرسیاس	B-PER
 :	O
 چون	O
@@ -25813,7 +25903,8 @@ Kurdistan	FFF
 بافت	O
 قدیم	O
 اون	O
-منطقه‌ست	O
+منطقه	O
+ست	O
 :)))	O
 
 گل	O
@@ -26003,7 +26094,7 @@ ICC	O
 که	O
 برد	O
 خانه	O
-؟.	O
+؟	O
 صد	O
 بار	O
 تو	O
@@ -26075,7 +26166,7 @@ ICC	O
 که	O
 اونم	O
 پکید	O
-!.	O
+!	O
 تا	O
 وقتی	O
 جمهوری	B-LOC
@@ -26093,7 +26184,7 @@ ICC	O
 چه	O
 خارج	O
 ایران	B-LOC
-!.	O
+!	O
 
 یووه	O
 توییت	O
@@ -26360,7 +26451,8 @@ Tasnim	FFF
 (	O
 پدر	O
 آلمانی	B-NAT
-)،	O
+)	O
+،	O
 خانواده‌ای	O
 دارد	O
 و	O
@@ -26582,7 +26674,19 @@ D	O
 پولی	O
 نداشته	O
 چرا	O
-؟؟؟؟؟؟؟؟؟؟؟؟؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
+؟	O
 سوال	O
 کل	O
 مردم	O
@@ -26769,7 +26873,7 @@ D	O
 معماری	O
 و	O
 شهرسازی	O
-).	O
+)	O
 به	O
 نظرم	O
 اما	O
@@ -26880,7 +26984,6 @@ D	O
 برای	O
 استعفا	O
 ؟	O
-.	O
 احسان	B-PER
 امینی	I-PER
 کارمند	O
@@ -27334,7 +27437,7 @@ D	O
 سال	O
 پیش	O
 داره	O
-؟.	O
+؟	O
 همین	O
 درباره	O
 بقیه	O
@@ -27379,7 +27482,8 @@ D	O
 بگین	O
 فوتبالیستها	O
 همه	O
-!!	O
+!	O
+!	O
 مدارک	O
 دانشگاهی	O
 و	O
@@ -27579,7 +27683,7 @@ D	O
 هیچش	O
 کران	O
 نمی‌بینم	O
-،.	O
+،	O
 دواش	O
 جز	O
 می	O
@@ -27630,7 +27734,8 @@ D	O
 زده	O
 شده	O
 مثلا	O
-؟!	O
+؟	O
+!	O
 قوم	O
 بختیاری	B-NAT
 صاحب	O
@@ -27678,7 +27783,8 @@ D	O
 تفرقه	O
 فوت	O
 مبکنید	O
-؟!	O
+؟	O
+!	O
 
 بدون	O
 شک	O
@@ -27703,7 +27809,7 @@ D	O
 تحلیلش	O
 رو	O
 ندیدم	O
-؟.	O
+؟	O
 فکر	O
 کنم	O
 این‌قدر	O
