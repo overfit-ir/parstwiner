@@ -1148,20 +1148,6 @@
 کشیده	O
 بود	O
 
-اصل	O
-ظلم	O
-ظالمان	O
-از	O
-دیو	O
-‌بود	O
-.	O
-mataheri	FFF
-.	O
-cosmointel	FFF
-.	O
-محمدعلی	B-PER
-طاهری	I-PER
-
 هدف	O
 کشته‌سازی	O
 نبوده	O
@@ -1507,7 +1493,6 @@ cosmointel	FFF
 در	O
 ترکیه	B-LOC
 !	O
-.	O
 در	O
 استان	O
 شمالی	O
@@ -2454,8 +2439,8 @@ cosmointel	FFF
 گذاشتن	O
 
 خود	O
-امام	B-PER
-رضا	I-PER
+امام	O
+رضا	B-PER
 رو	O
 هفته	O
 دوم	O
@@ -2667,8 +2652,7 @@ cosmointel	FFF
 بهترین	O
 و	O
 سود	O
-ده	O
-ترین	O
+ده‌ترین	O
 حکومت	O
 است	O
 و	O
@@ -2832,8 +2816,7 @@ cosmointel	FFF
 قلب	O
 مان	O
 را	O
-فروزان	O
-تر	O
+فروزان‌تر	O
 کنیم	O
 تا	O
 چراغ	O
@@ -3228,10 +3211,6 @@ cosmointel	FFF
 ارسال	O
 عکس	O
 .	O
-@	O
-Tehran	FFF
-،	O
-Iran	O
 
 السلام	O
 علی	O
@@ -4339,8 +4318,8 @@ word	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER
@@ -4692,8 +4671,7 @@ D	O
 الشارجه	B-ORG
 یکی	O
 از	O
-ضعیف	O
-ترین	O
+ضعیف‌ترین	O
 تیم‌هایی	O
 بود	O
 که	O
@@ -5157,7 +5135,8 @@ P500	O
 نیمه	O
 3	O
 تا	O
-زده‌بود	O
+زده	O
+بود	O
 .	O
 عه	O
 اولین	O
@@ -5648,8 +5627,8 @@ P500	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 لبیک	O
 یا	O
@@ -10092,7 +10071,8 @@ BBC	B-ORG
 دیگه	O
 چون	O
 دیر	O
-شده‌بود	O
+شده	O
+بود	O
 همه	O
 جا	O
 بسته	O
@@ -11957,8 +11937,8 @@ SaveHaydarGhorbani	O
 سبط	O
 اکبر	O
 ،	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 علیه	O
 السلام	O
@@ -11968,8 +11948,8 @@ SaveHaydarGhorbani	O
 .	O
 آستان	O
 مقدس	O
-امامزاده	B-PER
-صالح	I-PER
+امامزاده	O
+صالح	B-PER
 علیه	O
 السلام	O
 .	O
@@ -12076,8 +12056,8 @@ SaveHaydarGhorbani	O
 مدیاهای	O
 جهل	O
 
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 علیه	O
 السلام	O
@@ -12114,8 +12094,8 @@ SaveHaydarGhorbani	O
 11	O
 .	O
 شهادت	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 تسلیت	O
 .	O
@@ -12381,9 +12361,7 @@ SaveHaydarGhorbani	O
 
 یکی	O
 از	O
-با	O
-سواد	O
-ترین	O
+باسوادترین	O
 آدمایی	O
 که	O
 میشناسم	O
@@ -12452,8 +12430,7 @@ SaveHaydarGhorbani	O
 هم	O
 از	O
 تو	O
-باسواد	O
-تر	O
+باسوادتر	O
 هستیم	O
 و	O
 هم	O
@@ -12509,7 +12486,8 @@ SaveHaydarGhorbani	O
 انگار	O
 زمان	O
 متوقف	O
-شده‌بود	O
+شده	O
+بود	O
 و	O
 رفته	O
 بودی	O
@@ -12745,8 +12723,7 @@ SaveHaydarGhorbani	O
 .	O
 تا	O
 در	O
-زیبا	O
-ترین	O
+زیباترین	O
 تاریخ	O
 تقویم	O
 .	O
@@ -13768,8 +13745,8 @@ SaveHaydarGhorbani	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 حب	O
 الحسین	B-PER
 یجمعنا	O
@@ -14587,7 +14564,8 @@ SaveHaydarGhorbani	O
 جانبازان	O
 قطع	O
 نخاعی	O
-دیده‌بودید	O
+دیده	O
+بودید	O
 ،	O
 تعبیر	O
 شد	O
@@ -14683,7 +14661,8 @@ SaveHaydarGhorbani	O
 .	O
 تو	O
 خاطراتش	O
-گفته‌بود	O
+گفته	O
+بود	O
 که	O
 وقتی	O
 مارادونا	B-PER
@@ -15370,8 +15349,8 @@ UI	O
 پناه	O
 اسلام	O
 و	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 هستیم	O
 ".	O
 متاسفانه	O
@@ -15703,7 +15682,8 @@ UI	O
 مشهور	O
 یا	O
 بدنام	O
-شده‌بود	O
+شده	O
+بود	O
 در	O
 تاریخ	O
 ادبیات	O
@@ -15811,7 +15791,7 @@ UI	O
 از	O
 قسمت‌های	O
 مستند	O
-Terrorism	FFF
+Terrorism	O
 close	O
 call	O
 با	O
@@ -16108,8 +16088,7 @@ call	O
 باور	O
 کنید	O
 خیلی	O
-ساده	O
-تر	O
+ساده‌تر	O
 هست	O
 .	O
 یه	O
@@ -17115,8 +17094,7 @@ call	O
 نورمن	B-PER
 تامس	I-PER
 
-کثیف	O
-ترین	O
+کثیف‌ترین	O
 جمله‌ای	O
 که	O
 راجع	O
@@ -17156,8 +17134,7 @@ call	O
 )	O
 شما	O
 بنویسید	O
-کثیف	O
-ترین	O
+کثیف‌ترین	O
 جمله‌ای	O
 که	O
 شنیدین	O
@@ -17188,8 +17165,8 @@ call	O
 نزدیک	O
 شدن	O
 به	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 در	O
 نوفل‌لوشاتو	B-LOC
 نداشته	O
@@ -17475,8 +17452,7 @@ woodkid	O
 
 اینجور	O
 مقایسه	O
-چرت	O
-ترین	O
+چرت‌ترین	O
 هستش	O
 مثلا	O
 لستر	B-ORG
@@ -17655,10 +17631,12 @@ Teach	O
 Yourself	O
 Logic	O
 معرفی‌ش	O
-کرده‌بود	O
+کرده	O
+بود	O
 و	O
 تعریف	O
-کرده‌بود	O
+کرده	O
+بود	O
 .	O
 حالا	O
 من	O
@@ -17881,16 +17859,16 @@ exposition	O
 شرکت	O
 کردند	O
 .	O
-Iranian	FFF
-Poll	FFF
+Iranian	B-NAT
+Poll	O
 :	O
-Biden	O
+Biden	B-PER
 69	O
 %	O
 (	O
 38	O
 )	O
-Trump	O
+Trump	B-PER
 31	O
 کسانی	O
 که	O
@@ -17905,7 +17883,6 @@ Trump	O
 ایران	B-LOC
 نیستند	O
 .	O
-nevertrump	FFF
 
 من	O
 اینو	O
@@ -17919,7 +17896,8 @@ nevertrump	FFF
 بلای	O
 آتلانتیک	B-LOC
 رو	O
-داده‌بود	O
+داده	O
+بود	O
 .	O
 
 تولدم	O
@@ -18382,7 +18360,8 @@ via	O
 اشک	O
 چشمام	O
 رو	O
-گرقته‌بود	O
+گرقته	O
+بود	O
 و	O
 سیبل	O
 رو	O
@@ -18772,8 +18751,8 @@ via	O
 متغییرا	O
 اینجوری	O
 میشد	O
-:.	O
-nearestTeammateToNearestOpponnentNearestToBall	FFF
+:	O
+nearestTeammateToNearestOpponnentNearestToBall	O
 .	O
 ولی	O
 خوبیش	O
@@ -20386,7 +20365,7 @@ nearestTeammateToNearestOpponnentNearestToBall	FFF
 میکمیم	O
 بزرگانی	O
 مثل	O
-امام	B-PER
+امام	O
 خمینی	I-PER
 رو	O
 نماز	O
@@ -21389,9 +21368,6 @@ AI	O
 »	O
 می‌گیرند	O
 .	O
-Justice4Navid	FFF
-.	O
-BanIRSports4Navid	O
 
 سمت	O
 ما	O
@@ -21438,10 +21414,6 @@ BanIRSports4Navid	O
 اوکی	O
 میشه	O
 !	O
-BETTER	FFF
-BY	O
-ZAYN	O
-.	O
 
 اون‌هایی	O
 که	O
@@ -21485,12 +21457,12 @@ gt	O
 بهت	O
 
 داروی	O
-امام	B-PER
-کاظم	I-PER
+امام	O
+کاظم	B-PER
 و	O
 جامع	O
-امام	B-PER
-رضا	I-PER
+امام	O
+رضا	B-PER
 قطعا	O
 جواب	O
 میده	O
@@ -21591,7 +21563,8 @@ gt	O
 از	O
 اول	O
 بهش	O
-گفته‌بودم	O
+گفته	O
+بودم	O
 جوانمرد	O
 باش	O
 :	O
@@ -22047,8 +22020,8 @@ Taxi	O
 است	O
 .	O
 
-امام	B-PER
-علی	I-PER
+امام	O
+علی	B-PER
 (	O
 ع	O
 )	O
@@ -22449,8 +22422,7 @@ Taxi	O
 مسئولان	O
 خواسته	O
 در	O
-کوتاه	O
-ترین	O
+کوتاه‌ترین	O
 زمان	O
 ممکن	O
 شرایط	O
@@ -24073,8 +24045,8 @@ doubt	O
 دیوید	B-PER
 کلی	I-PER
 (	O
-David	FFF
-Kelly	O
+David	B-PER
+Kelly	I-PER
 )	O
 ،	O
 کارشناس	O
@@ -24551,7 +24523,7 @@ Hill	O
 اول	O
 من	O
 همیشه	O
-Quarter	FFF
+Quarter	O
 pounder	O
 مک	B-ORG
 دونالد	I-ORG
@@ -24628,8 +24600,7 @@ pounder	O
 بازی	O
 میکنن	O
 .	O
-کیوت	O
-ترین	O
+کیوت‌ترین	O
 صحنه‌ای	O
 بود	O
 که	O
@@ -25847,7 +25818,7 @@ B	O
 اوجالان	B-LOC
 در	O
 فریبرگ	O
-Kurdistan	FFF
+Kurdistan	B-LOC
 
 منم	O
 موافقم	O
@@ -25932,8 +25903,8 @@ Kurdistan	FFF
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER
@@ -26189,8 +26160,8 @@ ICC	O
 یووه	O
 توییت	O
 :	O
-Guardian	FFF
-:.	O
+Guardian	B-ORG
+:	O
 اوله	B-PER
 گونار	I-PER
 سولشر	I-PER
@@ -26433,7 +26404,6 @@ Guardian	FFF
 بین‌الملل	O
 تسنیم	O
 -	O
-Tasnim	FFF
 
 چقدر	O
 فرهنگستان	O
@@ -26571,8 +26541,8 @@ Tasnim	FFF
 نکنید	O
 .	O
 
-Arthur	FFF
-Demarest	O
+Arthur	B-PER
+Demarest	I-PER
 ،	O
 PH	O
 .	O
@@ -26951,8 +26921,7 @@ D	O
 البته	O
 ترکیه	B-LOC
 یکم	O
-محدود	O
-تر	O
+محدودتر	O
 ار	O
 اروپاس	B-LOC
 ترکیه‌ام	B-LOC

@@ -498,7 +498,6 @@ $	O
 ست	O
 نه	O
 پلاستیک	O
-Centurion	FFF
 
 بزرگوارید	O
 دوست	O
@@ -1507,7 +1506,6 @@ SOS	B-ORG
 کارل	B-PER
 مارکس	I-PER
 ماتریالیست	O
-materialsm	FFF
 
 چون	O
 به	O
@@ -1618,7 +1616,8 @@ materialsm	FFF
 انقلاب	O
 ،	O
 اقتصاد	O
-کنترل‌شده‌و	O
+کنترل‌شده	O
+و	O
 دولتی	O
 ،	O
 دخالت	O
@@ -2420,7 +2419,8 @@ OIC	I-ORG
 که	O
 شاه	B-PER
 یکبار	O
-آمده‌بود	O
+آمده	O
+بود	O
 پادگان	B-ORG
 حشمتیه	I-ORG
 بعد	O
@@ -2950,7 +2950,6 @@ OIC	I-ORG
 لسترسیتی	B-ORG
 0	O
 .	O
-ARSLEI	FFF
 
 آره	O
 .	O
@@ -3156,7 +3155,6 @@ ARSLEI	FFF
 تیم	B-PER
 سه	O
 :)))))))))))))))))))	O
-RolandGarros	FFF
 
 آقا	O
 ما	O
@@ -3339,8 +3337,7 @@ RolandGarros	FFF
 و	O
 خشونت	O
 اخلاقی	O
-گسترده	O
-تر	O
+گسترده‌تر	O
 باشد	O
 .	O
 زیگموند	B-PER
@@ -3585,15 +3582,15 @@ RolandGarros	FFF
 ایالت	O
 فلوریدا	B-LOC
 ،	O
-Marco	FFF
-Rubio	FFF
+Marco	B-PER
+Rubio	I-PER
 ،	O
 از	O
 نوید	B-PER
 افکاری	I-PER
 (	O
-Navid	FFF
-Afkari	FFF
+Navid	B-PER
+Afkari	I-PER
 )	O
 ؛	O
 در	O
@@ -3611,8 +3608,8 @@ Afkari	FFF
 همچنین	O
 ،	O
 توییت	O
-Markwayne	FFF
-Mullin	FFF
+Markwayne	B-PER
+Mullin	I-PER
 ،	O
 از	O
 نمایندگان	O
@@ -3646,7 +3643,8 @@ Oklahoma	B-LOC
 شدن	O
 دو	O
 روز	O
-مونده‌بود	O
+مونده	O
+بود	O
 به	O
 عید	B-EVE
 غدیر	I-EVE
@@ -4507,10 +4505,6 @@ Oklahoma	B-LOC
 رسوا‌کننده	O
 مدعیان	O
 حقوق‌بشر	O
-Don	FFF
-'	FFF
-t	O
-brith	O
 
 پیکار	O
 شبانه	O
@@ -4585,9 +4579,8 @@ brith	O
 به	O
 یک	O
 طرفدار	O
-BLM	FFF
+BLM	O
 !	O
-BlaclLivesMatter	O
 
 کافه	O
 ترانزیت	O
@@ -4644,11 +4637,13 @@ BlaclLivesMatter	O
 از	O
 نامه‌ها	O
 روضه	O
-خونده‌بود	O
+خونده	O
+بود	O
 و	O
 به	O
 مخاطب	O
-گفته‌بود	O
+گفته	O
+بود	O
 این	O
 نامه	O
 رو	O
@@ -4933,7 +4928,8 @@ km	O
 83	O
 تازه	O
 ارشد	O
-گرفته‌بودم	O
+گرفته	O
+بودم	O
 و	O
 بلافاصله	O
 در	O
@@ -5802,8 +5798,8 @@ km	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 چیزی	O
 که	O
@@ -5861,7 +5857,8 @@ ngo‌ها	O
 
 سال	O
 2015	O
-رفته‌بودم	O
+رفته	O
+بودم	O
 دکتر	O
 .	O
 دکتر	O
@@ -5910,7 +5907,7 @@ ngo‌ها	O
 بعد	O
 گفتم	O
 :	O
-Next	FFF
+Next	O
 question	O
 :	O
 Why	O
@@ -6330,8 +6327,7 @@ live	O
 و	O
 از	O
 آن	O
-مهم	O
-تر	O
+مهم‌تر	O
 تفکرات	O
 خود	O
 ادامه	O
@@ -6683,7 +6679,6 @@ live	O
 دیگر	O
 بمباران	O
 کرد	O
-KurdPress	FFF
 .	O
 
 اتفاقا	O
@@ -7097,7 +7092,7 @@ KurdPress	FFF
 ،	O
 حزلیات	O
 نظامی	B-PER
-roast	FFF
+roast	O
 میکنه	O
 
 چقدر	O
@@ -7143,8 +7138,8 @@ roast	FFF
 !	O
 !	O
 
-David	FFF
-Childress	FFF
+David	B-PER
+Childress	I-PER
 .	O
 که	O
 این	O
@@ -7452,7 +7447,7 @@ Childress	FFF
 »	O
 می‌گن	O
 :	O
-Turquoise	FFF
+Turquoise	O
 .	O
 ریشه‌ی	O
 کلمه‌ی	O
@@ -7509,8 +7504,7 @@ Turquoise	FFF
 "	O
 تو	O
 مثه	O
-معجزه	O
-ای	O
+معجزه‌ای	O
 من	O
 که	O
 تا	O
@@ -8283,7 +8277,6 @@ Turquoise	FFF
 روزانه	O
 کوالالامپور	B-LOC
 مالزی	I-LOC
-magicryptobulls	FFF
 
 کاملا	O
 صحیح	O
@@ -8752,7 +8745,8 @@ magicryptobulls	FFF
 ؟	O
 منم	O
 که	O
-گرخیده‌بودم	O
+گرخیده	O
+بودم	O
 گفتم	O
 استاد	O
 من	O
@@ -9243,7 +9237,8 @@ iMat	I-EVE
 یه	O
 جا	O
 خوندم	O
-نوشته‌بود	O
+نوشته	O
+بود	O
 فیلترشکنی	O
 که	O
 رو	O
@@ -9506,7 +9501,7 @@ GOT7	O
 خیلی	O
 کوچیکه	O
 
-New	FFF
+New	O
 post	O
 in	O
 خبرگزاری	B-ORG
@@ -9668,7 +9663,8 @@ in	O
 میهن	O
 مان	O
 ،	O
-آمده‌بود	O
+آمده	O
+بود	O
 ،	O
 چه	O
 می‌کردیم	O
@@ -10017,7 +10013,6 @@ in	O
 ازاد	O
 کنید	O
 .	O
-FreeKohi	FFF
 
 پس	O
 ب	O
@@ -10840,7 +10835,7 @@ Pro	O
 خیلی	O
 خوبه	O
 .	O
-Listen	FFF
+Listen	O
 to	O
 Step	O
 Up	O
@@ -11083,8 +11078,7 @@ SoundCloud	O
 طول	O
 دوره	O
 روان‌شناسی	O
-طولانی	O
-تر	O
+طولانی‌تر	O
 و	O
 اغلب	O
 بین	O
@@ -11520,12 +11514,12 @@ SoundCloud	O
 خوب	O
 میکنه	O
 !	O
-.1	O
+1	O
 -	O
 تاک	O
 سیاوش	B-PER
 قمیشی	I-PER
-.2	O
+2	O
 -	O
 کوچ	O
 عاشقانه	O
@@ -11579,7 +11573,8 @@ SoundCloud	O
 عمار	I-ORG
 یاسر	I-ORG
 زرگان	I-ORG
-گذاشته‌بود	O
+گذاشته	O
+بود	O
 که	O
 در	O
 این	O
@@ -12267,7 +12262,8 @@ SoundCloud	O
 در	O
 سطح	O
 شهر	O
-کرده‌بودند	O
+کرده	O
+بودند	O
 دستگیر	O
 شدند	O
 .	O
@@ -12300,7 +12296,8 @@ SoundCloud	O
 .	O
 واسه	O
 کار	O
-اومده‌بودم	O
+اومده	O
+بودم	O
 .	O
 بیمارستان	B-ORG
 بسکی	I-ORG
@@ -13017,8 +13014,8 @@ Elbit	I-ORG
 فکر	O
 کردم	O
 منظورشون	O
-امام	B-PER
-حسینه	I-PER
+امام	O
+حسینه	B-PER
 بعد	O
 فهمیدم	O
 اون	O
@@ -13631,7 +13628,8 @@ Lu	I-PER
 قطعنامه	O
 598	O
 آورده	O
-شده‌بود	O
+شده	O
+بود	O
 که	O
 عراق	B-LOC
 پس	O
@@ -14521,7 +14519,7 @@ Lu	I-PER
 موخیکا	I-PER
 توی	O
 مستند	O
-human	FFF
+human	O
 میکنه	O
 .	O
 
@@ -14610,7 +14608,7 @@ human	FFF
 هررر	O
 هرررر	O
 
-New	FFF
+New	O
 post	O
 in	O
 خبر	B-ORG
@@ -15208,7 +15206,7 @@ in	O
 سیستم	O
 رای‌گیری	O
 شون	O
-Electoral	FFF
+Electoral	O
 college	O
 هست	O
 و	O
@@ -15365,7 +15363,8 @@ college	O
 اشتباه	O
 به	O
 یادم	O
-مونده‌بود	O
+مونده	O
+بود	O
 که	O
 نرم‌افزار	O
 هم	O
@@ -15718,7 +15717,6 @@ college	O
 مرتضیٰ	O
 علیست	O
 .	O
-EmamHasanJan	FFF
 
 زمزمه‌های	O
 توافق	O
@@ -15958,9 +15956,7 @@ EmamHasanJan	FFF
 اسنشیال	O
 یه	O
 نسخه	O
-کم	O
-حجم	O
-تر	O
+کم‌حجم‌تر	O
 از	O
 رفرنس	O
 اصلی	O
@@ -16140,8 +16136,8 @@ EmamHasanJan	FFF
 اینک	O
 به	O
 سوی	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 می‌رود	O
 .	O
 حب	O
@@ -16150,8 +16146,8 @@ EmamHasanJan	FFF
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 
 دیوونه	O
@@ -16389,8 +16385,8 @@ EmamHasanJan	FFF
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 مهم	O
 خروج	O
@@ -16711,7 +16707,7 @@ EmamHasanJan	FFF
 عزیز	O
 و	O
 صد‌البته	O
-privacy	FFF
+privacy	O
 خودش	O
 رو	O
 داره	O
@@ -17124,7 +17120,8 @@ privacy	FFF
 معلمان	O
 به	O
 کرونا	O
-گفته‌بود	O
+گفته	O
+بود	O
 این	O
 موارد	O
 به	O
@@ -17573,7 +17570,6 @@ COVID19	O
 دست	O
 داده‌اند	O
 .	O
-coronavirus	FFF
 
 امروز	O
 داشتم	O
@@ -17927,8 +17923,7 @@ Tay	O
 رو	O
 ببینید	O
 
-قهرمان	O
-ترین	O
+قهرمان‌ترین	O
 شخصیت	O
 داستانی	O
 به	O
@@ -18159,7 +18154,6 @@ Tay	O
 گالاتاسرای	B-ORG
 استانبول	I-ORG
 .	O
-turandursun	FFF
 
 در	O
 مورد	O
@@ -18371,7 +18365,8 @@ turandursun	FFF
 به	O
 باغ	O
 بزنم	O
-شنیده‌بودم	O
+شنیده	O
+بودم	O
 دایی	O
 اونجا	O
 رو	O
@@ -18403,7 +18398,8 @@ turandursun	FFF
 فضای	O
 مجازی	O
 منتشر	O
-شده‌بود	O
+شده	O
+بود	O
 .	O
 ولی	O
 طبق	O
@@ -18416,7 +18412,8 @@ turandursun	FFF
 یه	O
 هفته	O
 پیش	O
-گفته‌بود	O
+گفته	O
+بود	O
 ،	O
 احتمالا	O
 جنگ	O
@@ -18700,7 +18697,7 @@ turandursun	FFF
 باشگاهو	O
 زد	O
 .	O
-You	FFF
+You	O
 wonder	O
 why	O
 ?	O
@@ -19004,8 +19001,7 @@ FinCEN	O
 ز	O
 دیدار	O
 تو	O
-دیوانه	O
-ترم	O
+دیوانه‌ترم	O
 تا	O
 از	O
 ماه	O
@@ -19059,8 +19055,7 @@ FinCEN	O
 کردم	O
 که	O
 زود	O
-ترجمه	O
-ش	O
+ترجمه‌ش	O
 رو	O
 شروع	O
 کنم	O
@@ -19497,7 +19492,8 @@ FinCEN	O
 که	O
 کلی	O
 برنامه‌ریزی	O
-کرده‌بودیم	O
+کرده	O
+بودیم	O
 با	O
 داداشم	O
 عید	O
@@ -19710,8 +19706,8 @@ FinCEN	O
 پیشنهاد	O
 داده	O
 
-امام	B-PER
-خامنه‌ای	I-PER
+امام	O
+خامنه‌ای	B-PER
 عزیز	O
 .	O
 ابوالحسن	B-PER
@@ -19730,8 +19726,8 @@ FinCEN	O
 :	O
 اگر	O
 ایشان	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 (	O
 ره	O
 )	O
@@ -19853,8 +19849,7 @@ FinCEN	O
 شد	O
 ؟	O
 الان	O
-ناراحت	O
-ترین	O
+ناراحت‌ترین	O
 فرد	O
 جهان	O
 ویلان	B-PER
@@ -19941,8 +19936,7 @@ FinCEN	O
 و	O
 حتی	O
 شاید	O
-قبل	O
-تر	O
+قبل‌تر	O
 از	O
 مهرنجان	B-LOC
 (	O
@@ -20766,7 +20760,7 @@ support	O
 
 درسته	O
 نتونستیم	O
-justice4navid	FFF
+justice4navid	O
 رو	O
 نجات	O
 بدیم	O
@@ -20787,7 +20781,6 @@ justice4navid	FFF
 انجامش	O
 بدیم	O
 .	O
-FreeSoheila	FFF
 
 یک	O
 روز	O
@@ -20967,8 +20960,7 @@ FreeSoheila	FFF
 ،	O
 برای	O
 ما	O
-قشنگ	O
-ترینن	O
+قشنگ‌ترینن	O
 ،	O
 بی‌هیچ	O
 افکتی	O
@@ -20977,8 +20969,7 @@ FreeSoheila	FFF
 میخونن	O
 و	O
 صداشون	O
-قشنگ	O
-ترین	O
+قشنگ‌ترین	O
 ملودی	O
 دنیاس	O
 .*	O
@@ -21540,14 +21531,11 @@ GOT7	O
 فکر	O
 میکنم	O
 این	O
-عجیب	O
-ترین	O
+عجیب‌ترین	O
 قسمت	O
 این	O
 آلبومه	O
 (:	O
-sirvankhosravi	FFF
-sirvan	FFF
 سیروان	B-PER
 خسروی	I-PER
 
@@ -21716,7 +21704,6 @@ sirvan	FFF
 تاکید	O
 دارد	O
 .	O
-vvmiran	FFF
 
 زندگی	O
 نرمال	O
@@ -21856,8 +21843,8 @@ vvmiran	FFF
 دفاع	B-EVE
 مقدس	I-EVE
 توسط	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 (	O
 ره	O
 )	O
@@ -22554,7 +22541,7 @@ vvmiran	FFF
 فکر	O
 میکنم	O
 ادمین	O
-USA	FFF
+USA	B-LOC
 در	O
 فارسی	O
 ،	O
@@ -23289,8 +23276,7 @@ G4	O
 .	O
 از	O
 امروز	O
-پرقدرت	O
-تر	O
+پرقدرت‌تر	O
 از	O
 قبل	O
 ،	O
@@ -23745,8 +23731,8 @@ G4	O
 مثلا	O
 رفته	O
 حرم	O
-امام	B-PER
-رضا	I-PER
+امام	O
+رضا	B-PER
 (	O
 ع	O
 )	O
@@ -23857,8 +23843,8 @@ G4	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 فاکتورهای	O
 بیشماری	O
@@ -24472,8 +24458,7 @@ Martínez	O
 
 کشور	O
 چین	B-LOC
-بزرگ	O
-ترین	O
+بزرگ‌ترین	O
 کشتی	O
 «	O
 کنتینر	O
@@ -24532,7 +24517,8 @@ Martínez	O
 .	O
 
 بکی	O
-گفته‌بود	O
+گفته	O
+بود	O
 بهم	O
 پدرم	O
 همه	O
@@ -24684,8 +24670,7 @@ Martínez	O
 چشم	O
 کوردلان	O
 را	O
-تیره	O
-تر	O
+تیره‌تر	O
 ساخته	O
 و	O
 رسوای	O
@@ -25815,7 +25800,8 @@ Martínez	O
 اروپا	O
 باهاش	O
 برخورد	O
-کرده‌بود	O
+کرده	O
+بود	O
 فضاها	O
 رو	O
 می‌بستن	O
@@ -25860,8 +25846,8 @@ Martínez	O
 اینک	O
 به	O
 سوی	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 می‌رود	O
 .	O
 حب	O
@@ -25870,8 +25856,8 @@ Martínez	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 پیش	O
 از	O
@@ -25886,7 +25872,8 @@ Martínez	O
 قدرت‌الله	B-PER
 علیخانی	I-PER
 منتشر	O
-شده‌بود	O
+شده	O
+بود	O
 و	O
 افرادی	O
 چون	O
@@ -26054,8 +26041,7 @@ Martínez	O
 میگفت	O
 .	O
 چون	O
-راحت	O
-تره	O
+راحت‌تره	O
 :))	O
 
 یونهاپ	O
@@ -27394,7 +27380,8 @@ Martínez	O
 ،	O
 همه	O
 چی	O
-ریخته‌بود	O
+ریخته	O
+بود	O
 وسط	O
 اتاق	O
 ،	O
@@ -27709,8 +27696,8 @@ it	O
 موافق	O
 است	O
 
-Oh	FFF
-Hafiz	O
+Oh	O
+Hafiz	B-PER
 :	O
 مگو	O
 دیگر	O
@@ -27760,8 +27747,7 @@ Hafiz	O
 از	O
 نروژ	B-LOC
 هم	O
-بالا	O
-تر	O
+بالاتر	O
 رفت	O
 .	O
 اینهایی	O
@@ -28185,7 +28171,7 @@ Hafiz	O
 از	O
 قطعه	O
 بی‌بدیل	O
-Agadio	FFF
+Agadio	O
 اینقدر	O
 خوب	O
 و	O
@@ -28519,8 +28505,7 @@ Agadio	FFF
 از	O
 تیزترین	O
 و	O
-بی‌پیش‌فرض	O
-ترین‌هائیه	O
+بی‌پیش‌فرض‌ترین‌هائیه	O
 که	O
 دیدم	O
 .	O
@@ -28652,7 +28637,7 @@ Agadio	FFF
 فیلم	O
 آخر	O
 پولانسکی	B-PER
-An	FFF
+An	O
 officer	O
 and	O
 a	O

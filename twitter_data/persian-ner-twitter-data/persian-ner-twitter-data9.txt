@@ -13,8 +13,7 @@
 نیوساینتیست	B-ORG
 ایران	B-LOC
 دارای	O
-سریع	O
-ترین	O
+سریع‌ترین	O
 نرخ	O
 رشد	O
 علمی	O
@@ -341,8 +340,7 @@
 صاحب	O
 یکی	O
 از	O
-بزرگ	O
-ترین	O
+بزرگ‌ترین	O
 ناوگان	O
 تجاری	O
 دنیا	O
@@ -1137,7 +1135,8 @@
 مقاله	O
 خوندم	O
 ک	O
-نوشته‌بود	O
+نوشته	O
+بود	O
 روی	O
 سلولای	O
 گنادی	O
@@ -1899,14 +1898,14 @@ lol	O
 ارجاع	O
 چنین	O
 است	O
-:.	O
+:	O
 کوروش	B-PER
 بزرگ	O
 ،	O
 ژرار	O
 ایسرائل	O
-Gerard	FFF
-Israel	O
+Gerard	B-PER
+Israel	I-PER
 ،	O
 ترجمه	O
 مرتضی	B-PER
@@ -2017,7 +2016,8 @@ Israel	O
 
 کاگ‌ب	B-ORG
 یکپارچه	O
-مانده‌بود	O
+مانده	O
+بود	O
 .	O
 هنوز	O
 یک	O
@@ -3054,10 +3054,10 @@ Ps4	O
 خوبه	O
 .	O
 ایتالیایی	B-NAT
-viva	FFF
-Napoli	O
+viva	B-ORG
+Napoli	I-ORG
 و	O
-mercanti	O
+mercanti	B-ORG
 رو	O
 خیلی	O
 دوست	O
@@ -3304,7 +3304,8 @@ dominos	O
 در	O
 ان	O
 لحاظ	O
-شده‌بود	O
+شده	O
+بود	O
 را	O
 بطرف	O
 مقابل	O
@@ -3381,9 +3382,7 @@ dominos	O
 تا	O
 یه	O
 کوچه	O
-اون	O
-ور	O
-تر	O
+اونورتر	O
 با	O
 جیغ	O
 من	O
@@ -4160,8 +4159,7 @@ dominos	O
 در	O
 بروجرد	B-LOC
 و	O
-خوشمزه	O
-ترین	O
+خوشمزه‌ترین	O
 خربزه	O
 رو	O
 در	O
@@ -4383,8 +4381,8 @@ dominos	O
 تیر	O
 بارون	O
 
-امام	B-PER
-صادق	I-PER
+امام	O
+صادق	B-PER
 علیه‌السلام	O
 می‌فرمایند	O
 :.	O
@@ -5619,7 +5617,8 @@ dominos	O
 در	O
 حقشون	O
 ظلم	O
-شده‌بود	O
+شده	O
+بود	O
 .	O
 صلاح	B-PER
 خودش	O
@@ -5745,11 +5744,11 @@ dominos	O
 بیکاری	O
 رفتم	O
 تو	O
-page	FFF
+page	O
 رسمی	O
 "	O
-ronne	FFF
-colman	O
+ronne	B-PER
+colman	I-PER
 "	O
 واسه	O
 ادامه	O
@@ -5856,8 +5855,8 @@ iMat	I-EVE
 
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER
@@ -6296,7 +6295,7 @@ iMat	I-EVE
 و	O
 بیماران	O
 معتقدم	O
-.1	O
+1	O
 .	O
 به	O
 نظرم	O
@@ -6646,11 +6645,11 @@ X5000	O
 ست	O
 نه	O
 انکار	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 یا	O
-حضرت	B-PER
-عباس	I-PER
+حضرت	O
+عباس	B-PER
 
 خوب	O
 شما	O
@@ -6744,8 +6743,7 @@ X5000	O
 در	O
 اتاق‌های	O
 بوی	O
-چوب	O
-تر	O
+چوب‌تر	O
 دهنده‌ی	O
 تاریک	O
 که	O
@@ -6847,8 +6845,7 @@ X5000	O
 برگشت	O
 به	O
 قدرت	O
-شیرین	O
-ترین	O
+شیرین‌ترین	O
 آرزو	O
 برای	O
 یک	O
@@ -6967,7 +6964,7 @@ A	O
 به	O
 نامبرده	O
 اعطا	O
-‌شده	O
+شده	O
 است	O
 !	O
 !	O
@@ -7783,7 +7780,7 @@ A	O
 دست	O
 داد	O
 .	O
-Kicker	FFF
+Kicker	B-ORG
 
 ماجرا	O
 به	O
@@ -7914,7 +7911,8 @@ Kicker	FFF
 اتوبان	O
 تو	O
 تصادف	O
-مرده‌بود	O
+مرده	O
+بود	O
 از	O
 بالا	O
 دیدم	O
@@ -8482,7 +8480,8 @@ Kicker	FFF
 صنایع	O
 مستظرفه	O
 سفارش	O
-داده‌بودند	O
+داده	O
+بودند	O
 ،	O
 پسند‌	O
 نشده‌	O
@@ -8786,8 +8785,8 @@ Kicker	FFF
 «	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 »	O
 و	O
 اعتقاد	O
@@ -8799,8 +8798,8 @@ Kicker	FFF
 تمسک	O
 به	O
 فرهنگ	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 (	O
 ع	O
 )	O
@@ -8815,8 +8814,8 @@ Kicker	FFF
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 
 رابین	B-PER
 هود	I-PER
@@ -8842,8 +8841,7 @@ Kicker	FFF
 محتوای	O
 تولیدی	O
 رو	O
-زود	O
-تر	O
+زودتر	O
 از	O
 همه	O
 میبینی	O
@@ -9454,7 +9452,7 @@ Kicker	FFF
 چشمم	O
 زدم	O
 
-New	FFF
+New	O
 photo	O
 posted	O
 in	O
@@ -9701,7 +9699,7 @@ qr	O
 میکنه	O
 داره	O
 میگه	O
-can	FFF
+can	O
 take	O
 pictures	O
 یعنی	O
@@ -9803,8 +9801,8 @@ pictures	O
 .	O
 ما	O
 ملت	O
-امام	B-PER
-حسینیم	I-PER
+امام	O
+حسینیم	B-PER
 .	O
 حب	O
 الحسین	B-PER
@@ -9846,8 +9844,8 @@ pictures	O
 رهبری	B-PER
 هم	O
 مثل	O
-امام	B-PER
-خمینی	I-PER
+امام	O
+خمینی	B-PER
 هر	O
 جا	O
 نیاز	O
@@ -9885,7 +9883,7 @@ pictures	O
 سازه	O
 خونه‌ست	O
 .	O
-Condo	FFF
+Condo	O
 یعنی	O
 آپارتمان	O
 مسکونی	O
@@ -9921,8 +9919,8 @@ Condo	FFF
 گدایی	O
 نیستم	O
 .	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 
 موقع	O
 جدایی	O
@@ -10008,7 +10006,7 @@ Condo	FFF
 الان	O
 که	O
 دیر	O
-‌شده	O
+شده	O
 انشالا	O
 بازار	O
 برمیگرده	O
@@ -10430,8 +10428,7 @@ Condo	FFF
 به	O
 ایران	B-LOC
 پادشاهی	O
-اصلی	O
-ترین	O
+اصلی‌ترین	O
 انگیزه	O
 دشمنی	O
 خارجیان	O
@@ -10693,8 +10690,8 @@ RNA	O
 مریم	B-PER
 موید‌پور	I-PER
 چرا	O
-Charles	FFF
-Laughton	O
+Charles	B-PER
+Laughton	I-PER
 را	O
 چارلز	B-PER
 لفتون	I-PER
@@ -11181,7 +11178,7 @@ Laughton	O
 رودخانه	O
 کارون	B-LOC
 جدا	O
-‌شده	O
+شده	O
 و	O
 در	O
 روستای	O
@@ -11786,7 +11783,7 @@ IPC	O
 ،	O
 چند	O
 چند	O
-‌شده‌	O
+شده‌	O
 ،	O
 ثانیه‌ی	O
 دوم	O
@@ -11922,8 +11919,8 @@ IPC	O
 .	O
 
 شهادت	O
-امام	B-PER
-حسن	I-PER
+امام	O
+حسن	B-PER
 مجتبی	I-PER
 (	O
 علیه	O
@@ -13065,8 +13062,8 @@ IPC	O
 امشب	O
 شام	O
 غریبان	O
-امام	B-PER
-حسین	I-PER
+امام	O
+حسین	B-PER
 مسجد	B-LOC
 بردفورد	I-LOC
 شام	O
@@ -14482,8 +14479,8 @@ X	O
 کیپ	B-LOC
 کاناورال	B-LOC
 (	O
-Cape	FFF
-Canaveral	O
+Cape	B-LOC
+Canaveral	I-LOC
 )	O
 انجام	O
 گرفت	O
@@ -14520,7 +14517,8 @@ ULA	I-ORG
 .	O
 ولی	O
 هنوز	O
-مونده‌بود	O
+مونده	O
+بود	O
 انگار	O
 تو	O
 چمن	O
@@ -14586,7 +14584,7 @@ ULA	I-ORG
 .	O
 منظور	O
 از	O
-Liberty	FFF
+Liberty	O
 مفهوم	O
 لغوی	O
 نیست	O
@@ -15328,7 +15326,7 @@ Liberty	FFF
 .	O
 این	O
 سخنان	O
-ebi	FFF
+ebi	B-PER
 هست	O
 .	O
 ابی	B-PER
@@ -15881,8 +15879,7 @@ ebi	FFF
 فهمید	O
 کدوم	O
 روایات	O
-درست	O
-تره	O
+درست‌تره	O
 
 درود	O
 بر	O
@@ -16084,13 +16081,13 @@ ebi	FFF
 -	O
 er	O
 می‌شه	O
-Berliner	FFF
+Berliner	B-LOC
 و	O
 جمله‌ی	O
-Ich	FFF
+Ich	O
 bin	O
 ein	O
-Berliner	O
+Berliner	B-LOC
 یعنی	O
 من	O
 یک	O
@@ -16127,7 +16124,7 @@ Berliner	O
 برلینر	O
 اسمش	O
 هست	O
-Berliner	O
+Berliner	B-LOC
 Pfannkuchen	O
 ،	O
 که	O
@@ -16158,7 +16155,7 @@ Pfannkuchen	O
 !	O
 سورپرایز	O
 !	O
-Pfannkuchen	FFF
+Pfannkuchen	O
 
 ستاری	B-PER
 در	O
@@ -16249,8 +16246,7 @@ Pfannkuchen	FFF
 که	O
 هر	O
 چه	O
-گرسنه	O
-تر	O
+گرسنه‌تر	O
 و	O
 عقب	O
 افتاده‌تر	O
@@ -17303,8 +17299,7 @@ gt	O
 با	O
 همین	O
 کارهای	O
-رسانه	O
-ای	O
+رسانه‌ای	O
 
 به	O
 همه	O
@@ -18270,7 +18265,8 @@ gt	O
 جریان	O
 نزاع	O
 رخ	O
-داده‌بود	O
+داده	O
+بود	O
 .	O
 
 خب	O
@@ -20370,9 +20366,7 @@ payment24	B-ORG
 محمد	B-PER
 بلبلی	I-PER
 که	O
-نیمکت	O
-نشین	O
-تر	O
+نیمکت‌نشین‌تر	O
 نبود	O
 بیچاره	O
 مونده	O
@@ -20873,8 +20867,7 @@ SharmElSheikh	O
 سفر	O
 سیزده	O
 ماهه	O
-قوی	O
-ترین	O
+قوی‌ترین	O
 مرد	O
 حکومت	O
 میجی	B-PER
@@ -20934,7 +20927,8 @@ SharmElSheikh	O
 جبر	O
 روزگار	O
 دورمون	O
-کرده‌بود	O
+کرده	O
+بود	O
 .	O
 گفت	O
 داره	O
@@ -21413,7 +21407,8 @@ SharmElSheikh	O
 در	O
 گوشه	O
 کتابخانه	O
-گذاشته‌بودند	O
+گذاشته	O
+بودند	O
 .	O
 
 آقای	O
@@ -21569,8 +21564,8 @@ SharmElSheikh	O
 سیلوین	B-PER
 سورل	I-PER
 (	O
-Sylvain	FFF
-Saurel	O
+Sylvain	B-PER
+Saurel	I-PER
 )	O
 ؛	O
 یکی	O
@@ -21813,7 +21808,6 @@ Saurel	O
 ادامه	O
 دارد	O
 .	O
-FreeSoheila	FFF
 
 مولوی	O
 عبدالواحد	B-PER
@@ -22004,8 +21998,7 @@ FreeSoheila	FFF
 هرچی	O
 سردتر	O
 و	O
-یخی	O
-تر	O
+یخی‌تر	O
 بهتر	O
 
 ماسک	O
@@ -22538,7 +22531,8 @@ FreeSoheila	FFF
 کرونا	O
 را	O
 تایید	O
-نکرده‌بود	O
+نکرده	O
+بود	O
 .	O
 سندی	O
 که	O
@@ -22858,7 +22852,7 @@ F	O
 -	O
 35A	O
 منظور	O
-‌شده	O
+شده	O
 برای	O
 ترکیه	B-LOC
 را	O
@@ -25125,7 +25119,7 @@ UN	B-ORG
 نمونه	O
 خروار	O
 "	O
-.1	O
+1	O
 .	O
 در	O
 بررسی	O
@@ -25516,7 +25510,7 @@ UN	B-ORG
 اخبار	O
 روزانه	O
 $	O
-ICX	FFF
+ICX	O
 را	O
 به	O
 زبان	O
@@ -25906,7 +25900,8 @@ ICX	FFF
 میلیارد	O
 تومان	O
 ارزشگذاری	O
-شده‌بود	O
+شده	O
+بود	O
 ،	O
 الان	O
 فقط	O
@@ -26731,7 +26726,7 @@ AfD	O
 .	O
 حال	O
 آخوند	O
-‌شده	O
+شده	O
 دبیر	O
 تاریخ	O
 و	O
@@ -26784,8 +26779,7 @@ AfD	O
 .	O
 تازه	O
 گروهای	O
-پرخطر	O
-تر	O
+پرخطرتر	O
 هم	O
 هستند	O
 که	O
@@ -27542,8 +27536,6 @@ Novonix	B-LOC
 بن	B-PER
 افلک	I-PER
 .	O
-Class	FFF
-Act	O
 
 غلامحسین	B-PER
 میرخانی	I-PER
@@ -27635,7 +27627,6 @@ Act	O
 و	O
 بیشتر	O
 ترسیدم	O
-.	O
 !	O
 آلفرد	B-PER
 هیچکاک	I-PER
@@ -27722,7 +27713,8 @@ Act	O
 ملل	I-ORG
 خواهان	O
 آتش‌بس	O
-شده‌است	O
+شده	O
+است	O
 .	O
 ریس‌جمهور	O
 گفته	O
@@ -27748,7 +27740,7 @@ Act	O
 جنگ	O
 طالبان	B-POG
 فعالتر	O
-‌شده	O
+شده	O
 و	O
 خشونتها	O
 را	O
@@ -28098,7 +28090,7 @@ Act	O
 علی	B-PER
 اکبر	I-PER
 امام	O
-رضا	O
+رضا	B-PER
 .	O
 روز	O
 اول	O
@@ -28111,8 +28103,8 @@ Act	O
 جوادمان	O
 کردند	O
 .	O
-امام	B-PER
-جواد	I-PER
+امام	O
+جواد	B-PER
 .	O
 اهل	O
 بیت	O
@@ -28347,8 +28339,7 @@ Act	O
 نموندم	O
 
 اگر	O
-متعصب	O
-ترین‌ها	O
+متعصب‌ترین‌ها	O
 رهبر	O
 انتخاب	O
 شوند	O
