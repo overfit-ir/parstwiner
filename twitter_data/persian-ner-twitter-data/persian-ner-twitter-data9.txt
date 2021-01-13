@@ -1898,14 +1898,14 @@ lol	O
 ارجاع	O
 چنین	O
 است	O
-:.	O
+:	O
 کوروش	B-PER
 بزرگ	O
 ،	O
 ژرار	O
 ایسرائل	O
-Gerard	FFF
-Israel	O
+Gerard	B-PER
+Israel	I-PER
 ،	O
 ترجمه	O
 مرتضی	B-PER
@@ -3054,10 +3054,10 @@ Ps4	O
 خوبه	O
 .	O
 ایتالیایی	B-NAT
-viva	FFF
-Napoli	O
+viva	B-ORG
+Napoli	I-ORG
 و	O
-mercanti	O
+mercanti	B-ORG
 رو	O
 خیلی	O
 دوست	O
@@ -5744,11 +5744,11 @@ dominos	O
 بیکاری	O
 رفتم	O
 تو	O
-page	FFF
+page	O
 رسمی	O
 "	O
-ronne	FFF
-colman	O
+ronne	B-PER
+colman	I-PER
 "	O
 واسه	O
 ادامه	O
@@ -7780,7 +7780,7 @@ A	O
 دست	O
 داد	O
 .	O
-Kicker	FFF
+Kicker	B-ORG
 
 ماجرا	O
 به	O
@@ -9452,7 +9452,7 @@ Kicker	FFF
 چشمم	O
 زدم	O
 
-New	FFF
+New	O
 photo	O
 posted	O
 in	O
@@ -9699,7 +9699,7 @@ qr	O
 میکنه	O
 داره	O
 میگه	O
-can	FFF
+can	O
 take	O
 pictures	O
 یعنی	O
@@ -9883,7 +9883,7 @@ pictures	O
 سازه	O
 خونه‌ست	O
 .	O
-Condo	FFF
+Condo	O
 یعنی	O
 آپارتمان	O
 مسکونی	O
@@ -10690,8 +10690,8 @@ RNA	O
 مریم	B-PER
 موید‌پور	I-PER
 چرا	O
-Charles	FFF
-Laughton	O
+Charles	B-PER
+Laughton	I-PER
 را	O
 چارلز	B-PER
 لفتون	I-PER
@@ -14479,8 +14479,8 @@ X	O
 کیپ	B-LOC
 کاناورال	B-LOC
 (	O
-Cape	FFF
-Canaveral	O
+Cape	B-LOC
+Canaveral	I-LOC
 )	O
 انجام	O
 گرفت	O
@@ -14584,7 +14584,7 @@ ULA	I-ORG
 .	O
 منظور	O
 از	O
-Liberty	FFF
+Liberty	O
 مفهوم	O
 لغوی	O
 نیست	O
@@ -15326,7 +15326,7 @@ Liberty	FFF
 .	O
 این	O
 سخنان	O
-ebi	FFF
+ebi	B-PER
 هست	O
 .	O
 ابی	B-PER
@@ -16081,13 +16081,13 @@ ebi	FFF
 -	O
 er	O
 می‌شه	O
-Berliner	FFF
+Berliner	B-LOC
 و	O
 جمله‌ی	O
-Ich	FFF
+Ich	O
 bin	O
 ein	O
-Berliner	O
+Berliner	B-LOC
 یعنی	O
 من	O
 یک	O
@@ -16124,7 +16124,7 @@ Berliner	O
 برلینر	O
 اسمش	O
 هست	O
-Berliner	O
+Berliner	B-LOC
 Pfannkuchen	O
 ،	O
 که	O
@@ -16155,7 +16155,7 @@ Pfannkuchen	O
 !	O
 سورپرایز	O
 !	O
-Pfannkuchen	FFF
+Pfannkuchen	O
 
 ستاری	B-PER
 در	O
@@ -21564,8 +21564,8 @@ SharmElSheikh	O
 سیلوین	B-PER
 سورل	I-PER
 (	O
-Sylvain	FFF
-Saurel	O
+Sylvain	B-PER
+Saurel	I-PER
 )	O
 ؛	O
 یکی	O
@@ -21808,7 +21808,6 @@ Saurel	O
 ادامه	O
 دارد	O
 .	O
-FreeSoheila	FFF
 
 مولوی	O
 عبدالواحد	B-PER
@@ -25511,7 +25510,7 @@ UN	B-ORG
 اخبار	O
 روزانه	O
 $	O
-ICX	FFF
+ICX	O
 را	O
 به	O
 زبان	O
@@ -27537,8 +27536,6 @@ Novonix	B-LOC
 بن	B-PER
 افلک	I-PER
 .	O
-Class	FFF
-Act	O
 
 غلامحسین	B-PER
 میرخانی	I-PER

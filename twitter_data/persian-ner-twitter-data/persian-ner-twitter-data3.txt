@@ -697,7 +697,7 @@
 این	O
 ترسناکه	O
 
-sleuth	FFF
+sleuth	O
 از	O
 این	O
 فیلمهای	O
@@ -842,13 +842,13 @@ sleuth	FFF
 با	O
 کارایی	O
 بالا	O
-High	FFF
-Performance	FFF
-Computing	FFF
-Act	FFF
-of	FFF
+High	O
+Performance	O
+Computing	O
+Act	O
+of	O
 1991	O
-HPCA	FFF
+HPCA	O
 موسوم	O
 به	O
 «	O
@@ -2572,7 +2572,7 @@ HPCA	FFF
 مهاجرت	O
 ویزا	O
 اقامت	O
-Germany	FFF
+Germany	B-LOC
 جاب	O
 آفر	O
 کاریابی	O
@@ -3515,9 +3515,6 @@ Germany	FFF
 به	O
 اسلام‌آباد	B-LOC
 می‌رود	O
-Afghanistan	FFF
-Iran	FFF
-US	FFF
 
 اول	O
 بر	O
@@ -4161,8 +4158,6 @@ US	FFF
 توافق	O
 رسیده	O
 .	O
-Le	FFF
-Parisien	FFF
 
 امین	B-PER
 شیخی	I-PER
@@ -4612,8 +4607,8 @@ Parisien	FFF
 با	O
 دانلود	O
 برنامه	O
-INITIATIVE	FFF
-Q	FFF
+INITIATIVE	O
+Q	O
 در	O
 گوگل	O
 پلی	O
@@ -5474,9 +5469,6 @@ Q	FFF
 علاقه‌ای	O
 نداریم	O
 .	O
-No	FFF
-thanks	FFF
-...	O
 
 سوالی	O
 که	O
@@ -6278,9 +6270,8 @@ thanks	FFF
 :	O
 30	O
 صبح	O
-تا7	O
-شب09164954254سمیرانجاتی	FFF
-شهروندنمونه	O
+تا	O
+7	O
 
 دلم	O
 پررر	O
@@ -6626,7 +6617,6 @@ thanks	FFF
 عالم‌تاب	O
 .	O
 ایران	B-LOC
-Iran	FFF
 
 "	O
 عدم	O
@@ -6876,7 +6866,7 @@ Iran	FFF
 پاکت	O
 R	O
 برا	O
-Republican	FFF
+Republican	O
 داره	O
 اصن	O
 لازم	O
@@ -7178,7 +7168,7 @@ Republican	FFF
 هیچ	O
 فرم	O
 تزریقی	O
-otc	FFF
+otc	O
 نیست	O
 
 نگویید	O
@@ -7201,35 +7191,6 @@ otc	FFF
 همه	O
 میدونند	O
 .	O
-
-مصرع	O
-اول	O
-بویایی	O
-مصرع	O
-دوم	O
-cock	FFF
-،	O
-pussy	FFF
-مصراع	O
-سوم	O
-هندسه	O
-مصراع	O
-چهارم	O
-همکاری	O
-و	O
-همزمانی	O
-حس‌ها	O
-رو	O
-چنان	O
-در	O
-کنار	O
-هم	O
-آمیختی	O
-که	O
-آی	O
-ورشیپ	O
-یو	O
-:))	O
 
 معاون	O
 وزیر	O
@@ -12661,7 +12622,7 @@ pussy	FFF
 ؟	O
 ناپولی	B-ORG
 تو	O
-pes20	FFF
+pes20	O
 
 شما	O
 سعی	O
@@ -13390,7 +13351,6 @@ pes20	FFF
 و	O
 بمب	O
 اتم	O
-WorldDreamDay	FFF
 
 آب‌شناس	O
 و	O
@@ -16434,7 +16394,7 @@ T	O
 پذیرفته	O
 نشده	O
 
-kwashiorkor	FFF
+kwashiorkor	O
 کمبود	O
 شدید	O
 پروتئین	O
@@ -16536,7 +16496,7 @@ kwashiorkor	FFF
 و	O
 با	O
 یک	O
-MAS	FFF
+MAS	O
 -	O
 38	O
 تیرباران	O
@@ -18150,9 +18110,6 @@ MAS	FFF
 هم	O
 نمیخواد	O
 فهمیدنش	O
-BETTER	FFF
-BY	FFF
-ZAYN	FFF
 
 قشنگ	O
 همینه	O
@@ -20726,8 +20683,8 @@ ZAYN	FFF
 از	O
 شروع	O
 بازی	O
-Ray	FFF
-Clemence	FFF
+Ray	B-PER
+Clemence	I-PER
 ،	O
 دروازه‌بان	O
 لیورپول	B-ORG
@@ -22284,9 +22241,6 @@ Clemence	FFF
 به	O
 جهان	O
 بیاموزد	O
-SaveHaydarGhorbani	FFF
-Freekohi	FFF
-FreeSoheila	FFF
 
 بالاخره	O
 یه	O
@@ -22699,8 +22653,6 @@ FreeSoheila	FFF
 خواهد	O
 کرد	O
 .	O
-Xbox	FFF
-Microsoft	FFF
 
 یا	O
 برای	O
@@ -23234,7 +23186,7 @@ ESI	B-ORG
 مردی	O
 سهیلا	B-PER
 حجاب	I-PER
-FreeSoheila	FFF
+
 
 احساس	O
 میکنم	O
@@ -23750,7 +23702,7 @@ FreeSoheila	FFF
 که	O
 هر	O
 سال	O
-battleground	FFF
+battleground	O
 است	O
 و	O
 با	O
@@ -23842,8 +23794,6 @@ battleground	FFF
 نظر	O
 می‌گیرد	O
 .	O
-Fabrizio	FFF
-Romano	FFF
 
 جونمممممم	O
 پرچم	O
@@ -24542,11 +24492,11 @@ Romano	FFF
 واقعا	O
 ادمها	O
 به	O
-night	FFF
-owl	FFF
+night	O
+owl	O
 و	O
-early	FFF
-bird	FFF
+early	O
+bird	O
 تقسیم	O
 میشن	O
 ،	O
@@ -25284,7 +25234,7 @@ bird	FFF
 
 نسخه	O
 دیجیتالیه	O
-ps5	FFF
+ps5	O
 100	O
 دلار	O
 بیشتر	O
@@ -25330,7 +25280,6 @@ ps5	FFF
 نظر	O
 من	O
 دیجیتالیه	O
-ps5	FFF
 
 اتود‌های	O
 این	O
@@ -26062,9 +26011,6 @@ Feyli	O
 عجل	O
 لولیک	O
 الفرج	O
-Son	FFF
-Of	FFF
-Man	FFF
 
 فک	O
 کنم	O

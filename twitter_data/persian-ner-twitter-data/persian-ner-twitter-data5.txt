@@ -498,7 +498,6 @@ $	O
 ست	O
 نه	O
 پلاستیک	O
-Centurion	FFF
 
 بزرگوارید	O
 دوست	O
@@ -1507,7 +1506,6 @@ SOS	B-ORG
 کارل	B-PER
 مارکس	I-PER
 ماتریالیست	O
-materialsm	FFF
 
 چون	O
 به	O
@@ -2952,7 +2950,6 @@ OIC	I-ORG
 لسترسیتی	B-ORG
 0	O
 .	O
-ARSLEI	FFF
 
 آره	O
 .	O
@@ -3158,7 +3155,6 @@ ARSLEI	FFF
 تیم	B-PER
 سه	O
 :)))))))))))))))))))	O
-RolandGarros	FFF
 
 آقا	O
 ما	O
@@ -3586,15 +3582,15 @@ RolandGarros	FFF
 ایالت	O
 فلوریدا	B-LOC
 ،	O
-Marco	FFF
-Rubio	FFF
+Marco	B-PER
+Rubio	I-PER
 ،	O
 از	O
 نوید	B-PER
 افکاری	I-PER
 (	O
-Navid	FFF
-Afkari	FFF
+Navid	B-PER
+Afkari	I-PER
 )	O
 ؛	O
 در	O
@@ -3612,8 +3608,8 @@ Afkari	FFF
 همچنین	O
 ،	O
 توییت	O
-Markwayne	FFF
-Mullin	FFF
+Markwayne	B-PER
+Mullin	I-PER
 ،	O
 از	O
 نمایندگان	O
@@ -4509,10 +4505,6 @@ Oklahoma	B-LOC
 رسوا‌کننده	O
 مدعیان	O
 حقوق‌بشر	O
-Don	FFF
-'	FFF
-t	O
-brith	O
 
 پیکار	O
 شبانه	O
@@ -4587,9 +4579,8 @@ brith	O
 به	O
 یک	O
 طرفدار	O
-BLM	FFF
+BLM	O
 !	O
-BlaclLivesMatter	O
 
 کافه	O
 ترانزیت	O
@@ -5916,7 +5907,7 @@ ngo‌ها	O
 بعد	O
 گفتم	O
 :	O
-Next	FFF
+Next	O
 question	O
 :	O
 Why	O
@@ -6688,7 +6679,6 @@ live	O
 دیگر	O
 بمباران	O
 کرد	O
-KurdPress	FFF
 .	O
 
 اتفاقا	O
@@ -7102,7 +7092,7 @@ KurdPress	FFF
 ،	O
 حزلیات	O
 نظامی	B-PER
-roast	FFF
+roast	O
 میکنه	O
 
 چقدر	O
@@ -7148,8 +7138,8 @@ roast	FFF
 !	O
 !	O
 
-David	FFF
-Childress	FFF
+David	B-PER
+Childress	I-PER
 .	O
 که	O
 این	O
@@ -7457,7 +7447,7 @@ Childress	FFF
 »	O
 می‌گن	O
 :	O
-Turquoise	FFF
+Turquoise	O
 .	O
 ریشه‌ی	O
 کلمه‌ی	O
@@ -8287,7 +8277,6 @@ Turquoise	FFF
 روزانه	O
 کوالالامپور	B-LOC
 مالزی	I-LOC
-magicryptobulls	FFF
 
 کاملا	O
 صحیح	O
@@ -9512,7 +9501,7 @@ GOT7	O
 خیلی	O
 کوچیکه	O
 
-New	FFF
+New	O
 post	O
 in	O
 خبرگزاری	B-ORG
@@ -10024,7 +10013,6 @@ in	O
 ازاد	O
 کنید	O
 .	O
-FreeKohi	FFF
 
 پس	O
 ب	O
@@ -10847,7 +10835,7 @@ Pro	O
 خیلی	O
 خوبه	O
 .	O
-Listen	FFF
+Listen	O
 to	O
 Step	O
 Up	O
@@ -14531,7 +14519,7 @@ Lu	I-PER
 موخیکا	I-PER
 توی	O
 مستند	O
-human	FFF
+human	O
 میکنه	O
 .	O
 
@@ -14620,7 +14608,7 @@ human	FFF
 هررر	O
 هرررر	O
 
-New	FFF
+New	O
 post	O
 in	O
 خبر	B-ORG
@@ -15218,7 +15206,7 @@ in	O
 سیستم	O
 رای‌گیری	O
 شون	O
-Electoral	FFF
+Electoral	O
 college	O
 هست	O
 و	O
@@ -15729,7 +15717,6 @@ college	O
 مرتضیٰ	O
 علیست	O
 .	O
-EmamHasanJan	FFF
 
 زمزمه‌های	O
 توافق	O
@@ -16720,7 +16707,7 @@ EmamHasanJan	FFF
 عزیز	O
 و	O
 صد‌البته	O
-privacy	FFF
+privacy	O
 خودش	O
 رو	O
 داره	O
@@ -17583,7 +17570,6 @@ COVID19	O
 دست	O
 داده‌اند	O
 .	O
-coronavirus	FFF
 
 امروز	O
 داشتم	O
@@ -18168,7 +18154,6 @@ Tay	O
 گالاتاسرای	B-ORG
 استانبول	I-ORG
 .	O
-turandursun	FFF
 
 در	O
 مورد	O
@@ -18712,7 +18697,7 @@ turandursun	FFF
 باشگاهو	O
 زد	O
 .	O
-You	FFF
+You	O
 wonder	O
 why	O
 ?	O
@@ -20775,7 +20760,7 @@ support	O
 
 درسته	O
 نتونستیم	O
-justice4navid	FFF
+justice4navid	O
 رو	O
 نجات	O
 بدیم	O
@@ -20796,7 +20781,6 @@ justice4navid	FFF
 انجامش	O
 بدیم	O
 .	O
-FreeSoheila	FFF
 
 یک	O
 روز	O
@@ -21552,8 +21536,6 @@ GOT7	O
 این	O
 آلبومه	O
 (:	O
-sirvankhosravi	FFF
-sirvan	FFF
 سیروان	B-PER
 خسروی	I-PER
 
@@ -21722,7 +21704,6 @@ sirvan	FFF
 تاکید	O
 دارد	O
 .	O
-vvmiran	FFF
 
 زندگی	O
 نرمال	O
@@ -22560,7 +22541,7 @@ vvmiran	FFF
 فکر	O
 میکنم	O
 ادمین	O
-USA	FFF
+USA	B-LOC
 در	O
 فارسی	O
 ،	O
@@ -27715,8 +27696,8 @@ it	O
 موافق	O
 است	O
 
-Oh	FFF
-Hafiz	O
+Oh	O
+Hafiz	B-PER
 :	O
 مگو	O
 دیگر	O
@@ -28190,7 +28171,7 @@ Hafiz	O
 از	O
 قطعه	O
 بی‌بدیل	O
-Agadio	FFF
+Agadio	O
 اینقدر	O
 خوب	O
 و	O
@@ -28656,7 +28637,7 @@ Agadio	FFF
 فیلم	O
 آخر	O
 پولانسکی	B-PER
-An	FFF
+An	O
 officer	O
 and	O
 a	O

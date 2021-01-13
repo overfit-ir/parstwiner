@@ -1148,20 +1148,6 @@
 کشیده	O
 بود	O
 
-اصل	O
-ظلم	O
-ظالمان	O
-از	O
-دیو	O
-‌بود	O
-.	O
-mataheri	FFF
-.	O
-cosmointel	FFF
-.	O
-محمدعلی	B-PER
-طاهری	I-PER
-
 هدف	O
 کشته‌سازی	O
 نبوده	O
@@ -3225,10 +3211,6 @@ cosmointel	FFF
 ارسال	O
 عکس	O
 .	O
-@	O
-Tehran	FFF
-،	O
-Iran	O
 
 السلام	O
 علی	O
@@ -15809,7 +15791,7 @@ UI	O
 از	O
 قسمت‌های	O
 مستند	O
-Terrorism	FFF
+Terrorism	O
 close	O
 call	O
 با	O
@@ -17877,16 +17859,16 @@ exposition	O
 شرکت	O
 کردند	O
 .	O
-Iranian	FFF
-Poll	FFF
+Iranian	B-NAT
+Poll	O
 :	O
-Biden	O
+Biden	B-PER
 69	O
 %	O
 (	O
 38	O
 )	O
-Trump	O
+Trump	B-PER
 31	O
 کسانی	O
 که	O
@@ -17901,7 +17883,6 @@ Trump	O
 ایران	B-LOC
 نیستند	O
 .	O
-nevertrump	FFF
 
 من	O
 اینو	O
@@ -18770,8 +18751,8 @@ via	O
 متغییرا	O
 اینجوری	O
 میشد	O
-:.	O
-nearestTeammateToNearestOpponnentNearestToBall	FFF
+:	O
+nearestTeammateToNearestOpponnentNearestToBall	O
 .	O
 ولی	O
 خوبیش	O
@@ -21387,9 +21368,6 @@ AI	O
 »	O
 می‌گیرند	O
 .	O
-Justice4Navid	FFF
-.	O
-BanIRSports4Navid	O
 
 سمت	O
 ما	O
@@ -21436,10 +21414,6 @@ BanIRSports4Navid	O
 اوکی	O
 میشه	O
 !	O
-BETTER	FFF
-BY	O
-ZAYN	O
-.	O
 
 اون‌هایی	O
 که	O
@@ -24071,8 +24045,8 @@ doubt	O
 دیوید	B-PER
 کلی	I-PER
 (	O
-David	FFF
-Kelly	O
+David	B-PER
+Kelly	I-PER
 )	O
 ،	O
 کارشناس	O
@@ -24549,7 +24523,7 @@ Hill	O
 اول	O
 من	O
 همیشه	O
-Quarter	FFF
+Quarter	O
 pounder	O
 مک	B-ORG
 دونالد	I-ORG
@@ -25844,7 +25818,7 @@ B	O
 اوجالان	B-LOC
 در	O
 فریبرگ	O
-Kurdistan	FFF
+Kurdistan	B-LOC
 
 منم	O
 موافقم	O
@@ -26186,8 +26160,8 @@ ICC	O
 یووه	O
 توییت	O
 :	O
-Guardian	FFF
-:.	O
+Guardian	B-ORG
+:	O
 اوله	B-PER
 گونار	I-PER
 سولشر	I-PER
@@ -26430,7 +26404,6 @@ Guardian	FFF
 بین‌الملل	O
 تسنیم	O
 -	O
-Tasnim	FFF
 
 چقدر	O
 فرهنگستان	O
@@ -26568,8 +26541,8 @@ Tasnim	FFF
 نکنید	O
 .	O
 
-Arthur	FFF
-Demarest	O
+Arthur	B-PER
+Demarest	I-PER
 ،	O
 PH	O
 .	O
