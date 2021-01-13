@@ -1439,7 +1439,7 @@ president	O
 سبزوار	B-LOC
 ،	O
 سیاه‌تر	O
-‌شده	O
+شده	O
 است	O
 .	O
 
@@ -6746,7 +6746,7 @@ sin	O
 این	O
 کشور	O
 رد	O
-‌شده‌	O
+شده‌	O
 .	O
 هزاران	O
 برده	O
@@ -7195,7 +7195,7 @@ sin	O
 گشوده	O
 و	O
 بزرگ	O
-‌شده	O
+شده	O
 و	O
 زبان	O
 و	O
@@ -9537,7 +9537,7 @@ Counterintelligence	I-ORG
 00	O
 ببینم	O
 دود	O
-‌شده	O
+شده	O
 رفته	O
 هوا	O
 !	O
@@ -9597,7 +9597,7 @@ Counterintelligence	I-ORG
 زیر	O
 نظرش	O
 صادر	O
-‌شده	O
+شده	O
 است	O
 .	O
 
