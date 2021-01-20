@@ -21606,8 +21606,8 @@ Headquarters	O
 در	O
 ابتدای	O
 حاکمیت	O
-پهلوی	O
-اول	O
+پهلوی	B-PER
+اول	I-PER
 ،	O
 رضاخان	B-PER
 به	O
