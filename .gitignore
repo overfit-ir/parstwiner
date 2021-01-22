@@ -2,3 +2,5 @@
 .DS_Store
 result.json
 LABELS
+twitter_data/test_data/temp.txt
+twitter_data/test_data/temp2.txt
