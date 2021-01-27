@@ -3938,7 +3938,7 @@ speedify	B-ORG
 .	O
 در	O
 راس	O
-اصلاح‌طلبی	P-POG
+اصلاح‌طلبی	B-POG
 افرادی	O
 چون	O
 خاتمی	B-PER
@@ -4680,7 +4680,7 @@ speedify	B-ORG
 ساحه	B-LOC
 شمرق	I-LOC
 پلخمری	I-LOC
-مرکز	Invisible-LOC
+مرکز	I-LOC
 بغلان	I-LOC
 سقوط	O
 کرده	O
@@ -5159,7 +5159,7 @@ Doe	I-PER
 و	O
 قبلش	O
 هفته‌نامه	B-ORG
-بیان	I-PRG
+بیان	I-ORG
 .	O
 پیدا‌شده	O
 در	O
@@ -6453,7 +6453,7 @@ x	O
 اصلاح‌طلبش	B-POG
 آقای	O
 امیر	B-PER
-جهانی	I-PRT
+جهانی	I-PER
 بودند	O
 در	O
 زمانی	O
@@ -14329,7 +14329,7 @@ Viral	O
 در	O
 11	O
 کشور	O
-اروپایی	NAT
+اروپایی	B-NAT
 را	O
 "	O
 پرخطر	O
@@ -18080,7 +18080,7 @@ dirty	O
 شریفی	I-PER
 در	O
 ارتفاعات	B-LOC
-کردکوی	I-LOV
+کردکوی	I-LOC
 گم	O
 شده‌	O
 ،	O

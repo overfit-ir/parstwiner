@@ -19176,7 +19176,7 @@ nearestTeammateToNearestOpponnentNearestToBall	O
 از	O
 سیستان	B-LOC
 و	I-LOC
-بلوچستان	I-LO
+بلوچستان	I-LOC
 به	O
 سمت	O
 گلستان	B-LOC

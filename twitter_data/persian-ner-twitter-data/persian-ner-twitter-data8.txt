@@ -12977,7 +12977,7 @@ Iranelection	B-EVE
 داده	O
 ،	O
 می‌آید	O
-.	o
+.	O
 ‌ای	O
 عجب	O
 !	O

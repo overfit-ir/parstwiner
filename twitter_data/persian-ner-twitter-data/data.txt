@@ -3322,7 +3322,7 @@ I	O
 
 صدای	B-ORG
 آمریکا	I-ORG
-voa	I-ORF
+voa	I-ORG
 فقط	O
 یک	O
 برنامه	O
@@ -4849,7 +4849,7 @@ NFT	O
 خلق	O
 جهان	O
 یابن	O
-فاطمه	B-PWE
+فاطمه	B-PER
 ای	O
 منتهای	O
 آرزوی	O
@@ -5460,7 +5460,7 @@ LUFC	O
 کدیور	I-PER
 تاویستوک	O
 وحید	B-PER
-شریعت	I-PER`
+شریعت	I-PER
 شبنم	B-PER
 نوحه	I-PER
 سرا	I-PER
@@ -7767,7 +7767,7 @@ forgiveness	O
 آیات	O
 ندود	B-PER
 ترزه‌گه	B-PER
-پیرلو	B-POWER
+پیرلو	B-PER
 جناب	O
 جان‌لوکا	B-PER
 زامبروتا	I-PER
@@ -11020,7 +11020,7 @@ PYG	O
 دلیل	O
 تحریم‌های	O
 ایالات	B-LOC
-متحده	I-LOC`
+متحده	I-LOC
 از	O
 بازپس	O
 فرستادن	O
@@ -18767,7 +18767,7 @@ ICT	I-ORG
 
 وزارت	B-ORG
 امور	I-ORG
-خارجه	I-ORG`
+خارجه	I-ORG
 از	O
 نشانی	O
 رونمایی	O
@@ -30908,7 +30908,7 @@ SI	O
 آینت‌هوون	B-ORG
 فاینورد	B-ORG
 سلتیک	B-ORG
-استئائوا	B-RG
+استئائوا	B-ORG
 و	O
 ستاره	B-ORG
 سرخ	B-ORG
@@ -33544,7 +33544,7 @@ blind	O
 سخنرانی	O
 می‌کنند	O
 .	O
-مایک	B-PE
+مایک	B-PER
 پنس	I-PER
 ،	O
 معاون	O
@@ -34938,7 +34938,7 @@ Benkato	I-PER
 فعالیت	O
 بیمارستان	B-ORG
 آیت‌الله	I-ORG
-نبوی	O-ORG
+نبوی	I-ORG
 درحال	O
 تحمل	O
 بار	O
@@ -37745,7 +37745,7 @@ ISI	O
 اعضای	O
 هیات‌امنای	O
 دانشگاه	B-ORG
-پیام	I-PRG
+پیام	I-ORG
 نور	I-ORG
 باید	O
 8	O
@@ -42703,7 +42703,7 @@ Mashkov	I-PER
 میگویم	O
 که	O
 کنکره	B-ORG
-ایرانیان	I-PRG
+ایرانیان	I-ORG
 کانادا	I-ORG
 گوه	O
 خورد	O
@@ -47038,7 +47038,7 @@ Fatima	O
 به	O
 کارگردانی	O
 مارکو	B-PER
-پونتکوروو	I-PER/
+پونتکوروو	I-PER
 محصول	O
 سال	O
 2020	O
@@ -47097,7 +47097,7 @@ Fatima	O
 فلسطین	B-LOC
 مرکز	B-ORG
 تبادل	I-ORG
-کتاب	I-PRG
+کتاب	I-ORG
 هوف	O
 هووووف	O
 کی	O
@@ -56145,7 +56145,7 @@ otc	O
 چند	O
 روز	O
 پیش	O
-تره‌بار	B-LOc
+تره‌بار	B-LOC
 مرکزی	I-LOC
 طاهری	I-LOC
 جهت	O
@@ -80757,7 +80757,7 @@ speedify	B-ORG
 .	O
 در	O
 راس	O
-اصلاح‌طلبی	P-POG
+اصلاح‌طلبی	B-POG
 افرادی	O
 چون	O
 خاتمی	B-PER
@@ -81499,7 +81499,7 @@ speedify	B-ORG
 ساحه	B-LOC
 شمرق	I-LOC
 پلخمری	I-LOC
-مرکز	Invisible-LOC
+مرکز	I-LOC
 بغلان	I-LOC
 سقوط	O
 کرده	O
@@ -81978,7 +81978,7 @@ Doe	I-PER
 و	O
 قبلش	O
 هفته‌نامه	B-ORG
-بیان	I-PRG
+بیان	I-ORG
 .	O
 پیدا‌شده	O
 در	O
@@ -83272,7 +83272,7 @@ x	O
 اصلاح‌طلبش	B-POG
 آقای	O
 امیر	B-PER
-جهانی	I-PRT
+جهانی	I-PER
 بودند	O
 در	O
 زمانی	O
@@ -91148,7 +91148,7 @@ Viral	O
 در	O
 11	O
 کشور	O
-اروپایی	NAT
+اروپایی	B-NAT
 را	O
 "	O
 پرخطر	O
@@ -94899,7 +94899,7 @@ dirty	O
 شریفی	I-PER
 در	O
 ارتفاعات	B-LOC
-کردکوی	I-LOV
+کردکوی	I-LOC
 گم	O
 شده‌	O
 ،	O
@@ -128420,7 +128420,7 @@ oncologist	O
 مستقیما	O
 در	O
 آتلیه	B-ORG
-هرژه	U-ORG
+هرژه	I-ORG
 انجام	O
 می‌شود	O
 .	O
@@ -143354,7 +143354,7 @@ afc	B-ORG
 بزرگوار	O
 جناب	O
 تسوتوما	B-PER
-یاماگوچی	I-OER
+یاماگوچی	I-PER
 هستند	O
 .	O
 کسی	O
@@ -167330,7 +167330,7 @@ nearestTeammateToNearestOpponnentNearestToBall	O
 از	O
 سیستان	B-LOC
 و	I-LOC
-بلوچستان	I-LO
+بلوچستان	I-LOC
 به	O
 سمت	O
 گلستان	B-LOC
@@ -188915,7 +188915,7 @@ Iranelection	B-EVE
 داده	O
 ،	O
 می‌آید	O
-.	o
+.	O
 ‌ای	O
 عجب	O
 !	O
@@ -214336,7 +214336,7 @@ IPC	O
 وارد	O
 مجلس	B-ORG
 نمایندگان	I-ORG
-آمریکا	I-Original
+آمریکا	I-ORG
 شد	O
 اعضای	O
 مجلس	O
@@ -221268,7 +221268,7 @@ payment24	B-ORG
 
 براساس	O
 این	O
-گزارش	o
+گزارش	O
 ،	O
 فراماسون‌های	O
 روسیه	B-LOC
@@ -233021,7 +233021,7 @@ president	O
 گل	O
 کوچیک	O
 شامل	O
-2	o
+2	O
 تا	O
 دروازه	O
 ک	O

@@ -3322,7 +3322,7 @@ I	O
 
 صدای	B-ORG
 آمریکا	I-ORG
-voa	I-ORF
+voa	I-ORG
 فقط	O
 یک	O
 برنامه	O
@@ -4849,7 +4849,7 @@ NFT	O
 خلق	O
 جهان	O
 یابن	O
-فاطمه	B-PWE
+فاطمه	B-PER
 ای	O
 منتهای	O
 آرزوی	O
@@ -5460,7 +5460,7 @@ LUFC	O
 کدیور	I-PER
 تاویستوک	O
 وحید	B-PER
-شریعت	I-PER`
+شریعت	I-PER
 شبنم	B-PER
 نوحه	I-PER
 سرا	I-PER
@@ -7767,7 +7767,7 @@ forgiveness	O
 آیات	O
 ندود	B-PER
 ترزه‌گه	B-PER
-پیرلو	B-POWER
+پیرلو	B-PER
 جناب	O
 جان‌لوکا	B-PER
 زامبروتا	I-PER
@@ -11020,7 +11020,7 @@ PYG	O
 دلیل	O
 تحریم‌های	O
 ایالات	B-LOC
-متحده	I-LOC`
+متحده	I-LOC
 از	O
 بازپس	O
 فرستادن	O
@@ -18767,7 +18767,7 @@ ICT	I-ORG
 
 وزارت	B-ORG
 امور	I-ORG
-خارجه	I-ORG`
+خارجه	I-ORG
 از	O
 نشانی	O
 رونمایی	O
