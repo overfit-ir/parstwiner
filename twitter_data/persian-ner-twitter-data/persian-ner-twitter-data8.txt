@@ -18724,7 +18724,7 @@ Headquarters	O
 مربیگری	O
 کارلو	B-PER
 آنچلوتی	I-PER
-بود		O
+بود	O
 (	O
 22	O
 بازی	O

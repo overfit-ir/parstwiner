@@ -10335,7 +10335,7 @@ Condo	O
 ؛	O
 اما	O
 وزارت	B-ORG
-نفت	I-ORG`
+نفت	I-ORG
 به	O
 این	O
 ظرفیت	O

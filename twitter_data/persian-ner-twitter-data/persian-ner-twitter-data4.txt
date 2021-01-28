@@ -4940,7 +4940,7 @@ coronavirus	O
 سال‌ها	O
 به‌نام	O
 جرج	B-PER
-الیوت	I-PER/
+الیوت	I-PER
 می‌نوشت	O
 که	O
 مثلا	O
