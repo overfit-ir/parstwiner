@@ -19149,7 +19149,7 @@ payment24	B-ORG
 ،	O
 ،	O
 سخن	O
-مطهری	B
+مطهری	B-PER
 آیه	O
 نیست	O
 ،	O
