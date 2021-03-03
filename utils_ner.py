@@ -29,6 +29,7 @@ from transformers import (
     is_torch_available, 
     TFPreTrainedModel,
     TFTrainer,
+    PretrainedConfig,
 )
 
 
@@ -289,10 +290,10 @@ if is_tf_available():
             Setting MultitaskModel up as a PretrainedModel allows us
             to take better advantage of Trainer features
             """
-            super().__init__(transformers.PretrainedConfig())
+            super().__init__(PretrainedConfig())
 
             self.encoder = encoder
-            self.taskmodels_dict = nn.ModuleDict(taskmodels_dict)
+            self.taskmodels_dict = taskmodels_dict
 
         @classmethod
         def create(cls, model_name, model_type_dict, model_config_dict):
@@ -324,11 +325,11 @@ if is_tf_available():
             This method lets us get the name of the encoder attribute
             """
             model_class_name = model.__class__.__name__
-            if model_class_name.startswith("Bert"):
+            if model_class_name.startswith("TFBert"):
                 return "bert"
-            elif model_class_name.startswith("Roberta"):
+            elif model_class_name.startswith("TFRoberta"):
                 return "roberta"
-            elif model_class_name.startswith("Albert"):
+            elif model_class_name.startswith("TFAlbert"):
                 return "albert"
             else:
                 raise KeyError(f"Add support for new model {model_class_name}")

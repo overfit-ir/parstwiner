@@ -35,7 +35,7 @@ from transformers import (
     TFTrainingArguments,
 )
 from transformers.utils import logging as hf_logging
-from utils_ner import Split, TFTokenClassificationDataset, TokenClassificationTask
+from utils_ner import Split, TFTokenClassificationDataset, TokenClassificationTask, MultitaskModel, MultitaskTrainer
 
 
 hf_logging.set_verbosity_info()
@@ -174,27 +174,27 @@ def main():
         multitask_model = MultitaskModel.create(
             model_name=model_args.model_name_or_path,
             model_type_dict={
-                "twitter": transformers.AutoModelForTokenClassification,
-                "arman": transformers.AutoModelForTokenClassification,
-                "peyma": transformers.AutoModelForTokenClassification,
+                "twitter": TFAutoModelForTokenClassification,
+                "arman": TFAutoModelForTokenClassification,
+                "peyma": TFAutoModelForTokenClassification,
             },
             model_config_dict={
-                "twitter": transformers.AutoConfig.from_pretrained(
-                'bert-base-parsbert-uncased',
+                "twitter": AutoConfig.from_pretrained(
+                model_args.config_name if model_args.config_name else model_args.model_name_or_path,
                 num_labels=num_labels,
                 id2label=label_map,
                 label2id={label: i for i, label in enumerate(labels)},
                 cache_dir=model_args.cache_dir,
                 ),
-                "arman": transformers.AutoConfig.from_pretrained(
-                'bert-base-parsbert-uncased',
+                "arman": AutoConfig.from_pretrained(
+                model_args.config_name if model_args.config_name else model_args.model_name_or_path,
                 num_labels=num_labels,
                 id2label=label_map,
                 label2id={label: i for i, label in enumerate(labels)},
                 cache_dir=model_args.cache_dir,
                 ),
-                "peyma": transformers.AutoConfig.from_pretrained(
-                'bert-base-parsbert-uncased',
+                "peyma": AutoConfig.from_pretrained(
+                model_args.config_name if model_args.config_name else model_args.model_name_or_path,
                 num_labels=num_labels,
                 id2label=label_map,
                 label2id={label: i for i, label in enumerate(labels)},
