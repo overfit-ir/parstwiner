@@ -150,13 +150,13 @@ def main():
     # The .from_pretrained methods guarantee that only one local process can concurrently
     # download model & vocab.
 
-    config = AutoConfig.from_pretrained(
-        model_args.config_name if model_args.config_name else model_args.model_name_or_path,
-        num_labels=num_labels,
-        id2label=label_map,
-        label2id={label: i for i, label in enumerate(labels)},
-        cache_dir=model_args.cache_dir,
-    )
+    # config = AutoConfig.from_pretrained(
+    #     model_args.config_name if model_args.config_name else model_args.model_name_or_path,
+    #     num_labels=num_labels,
+    #     id2label=label_map,
+    #     label2id={label: i for i, label in enumerate(labels)},
+    #     cache_dir=model_args.cache_dir,
+    # )
     tokenizer = AutoTokenizer.from_pretrained(
         model_args.tokenizer_name if model_args.tokenizer_name else model_args.model_name_or_path,
         cache_dir=model_args.cache_dir,
@@ -164,12 +164,12 @@ def main():
     )
 
     with training_args.strategy.scope():
-        model = TFAutoModelForTokenClassification.from_pretrained(
-            model_args.model_name_or_path,
-            from_pt=bool(".bin" in model_args.model_name_or_path),
-            config=config,
-            cache_dir=model_args.cache_dir,
-        )
+        # model = TFAutoModelForTokenClassification.from_pretrained(
+        #     model_args.model_name_or_path,
+        #     from_pt=bool(".bin" in model_args.model_name_or_path),
+        #     config=config,
+        #     cache_dir=model_args.cache_dir,
+        # )
 
         multitask_model = MultitaskModel.create(
             model_name=model_args.model_name_or_path,
