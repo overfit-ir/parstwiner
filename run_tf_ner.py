@@ -157,28 +157,7 @@ def main():
     #     label2id={label: i for i, label in enumerate(labels)},
     #     cache_dir=model_args.cache_dir,
     # )
-    tokenizer = AutoTokenizer.from_pretrained(
-        model_args.tokenizer_name if model_args.tokenizer_name else model_args.model_name_or_path,
-        cache_dir=model_args.cache_dir,
-        use_fast=model_args.use_fast,
-    )
-
-    with training_args.strategy.scope():
-        # model = TFAutoModelForTokenClassification.from_pretrained(
-        #     model_args.model_name_or_path,
-        #     from_pt=bool(".bin" in model_args.model_name_or_path),
-        #     config=config,
-        #     cache_dir=model_args.cache_dir,
-        # )
-
-        multitask_model = MultitaskModel.create(
-            model_name=model_args.model_name_or_path,
-            model_type_dict={
-                "twitter": TFAutoModelForTokenClassification,
-                "arman": TFAutoModelForTokenClassification,
-                "peyma": TFAutoModelForTokenClassification,
-            },
-            model_config_dict={
+    config_dict = {
                 "twitter": AutoConfig.from_pretrained(
                 model_args.config_name if model_args.config_name else model_args.model_name_or_path,
                 num_labels=num_labels,
@@ -200,7 +179,30 @@ def main():
                 label2id={label: i for i, label in enumerate(labels)},
                 cache_dir=model_args.cache_dir,
                 ),
+            }
+
+    tokenizer = AutoTokenizer.from_pretrained(
+        model_args.tokenizer_name if model_args.tokenizer_name else model_args.model_name_or_path,
+        cache_dir=model_args.cache_dir,
+        use_fast=model_args.use_fast,
+    )
+
+    with training_args.strategy.scope():
+        # model = TFAutoModelForTokenClassification.from_pretrained(
+        #     model_args.model_name_or_path,
+        #     from_pt=bool(".bin" in model_args.model_name_or_path),
+        #     config=config,
+        #     cache_dir=model_args.cache_dir,
+        # )
+
+        multitask_model = MultitaskModel.create(
+            model_name=model_args.model_name_or_path,
+            model_type_dict={
+                "twitter": TFAutoModelForTokenClassification,
+                "arman": TFAutoModelForTokenClassification,
+                "peyma": TFAutoModelForTokenClassification,
             },
+            model_config_dict=config_dict,
         )
 
     # Get datasets
@@ -210,7 +212,7 @@ def main():
             data_dir=data_args.data_dir,
             tokenizer=tokenizer,
             labels=labels,
-            model_type=config.model_type,
+            model_type=config_dict['twitter'].model_type,
             max_seq_length=data_args.max_seq_length,
             overwrite_cache=data_args.overwrite_cache,
             mode=Split.train,
@@ -224,7 +226,7 @@ def main():
             data_dir=data_args.data_dir,
             tokenizer=tokenizer,
             labels=labels,
-            model_type=config.model_type,
+            model_type=config_dict['twitter'].model_type,
             max_seq_length=data_args.max_seq_length,
             overwrite_cache=data_args.overwrite_cache,
             mode=Split.dev,
@@ -233,6 +235,7 @@ def main():
         else None
     )
 
+    dataset = dict()
     dataset['train'] = train_dataset
     dataset['validation'] = eval_dataset
 
@@ -265,15 +268,15 @@ def main():
             "f1": f1_score(out_label_list, preds_list),
         }
 
-    train_dataset = {
-        task_name: dataset["train"] 
+    train_datasets = {
+        task_name: dataset["train"].get_dataset() 
         for task_name, dataset in dataset_dict.items()
     }
     # Initialize our Trainer
     trainer = MultitaskTrainer(
         model=multitask_model,
         args=training_args,
-        train_dataset=train_dataset,
+        train_dataset=train_datasets,
         eval_dataset=eval_dataset.get_dataset() if eval_dataset else None,
         compute_metrics=compute_metrics,
     )
