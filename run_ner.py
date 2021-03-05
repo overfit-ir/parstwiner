@@ -75,28 +75,55 @@ class ModelArguments:
 
 
 @dataclass
-class DataTrainingArguments:
+class DataTrainingArgumentsTwitter:
     """
     Arguments pertaining to what data we are going to input our model for training and eval.
     """
 
-    data_dir: str = field(
+    data_dir_twitter: str = field(
         metadata={
             "help": "The input data dir. Should contain the .txt files for a CoNLL-2003-formatted task."}
     )
-    labels: Optional[str] = field(
+    labels_twitter: Optional[str] = field(
         default=None,
         metadata={
             "help": "Path to a file containing all labels. If not specified, CoNLL-2003 labels are used."},
     )
-    max_seq_length: int = field(
+    max_seq_length_twitter: int = field(
         default=128,
         metadata={
             "help": "The maximum total input sequence length after tokenization. Sequences longer "
             "than this will be truncated, sequences shorter will be padded."
         },
     )
-    overwrite_cache: bool = field(
+    overwrite_cache_twitter: bool = field(
+        default=False, metadata={"help": "Overwrite the cached training and evaluation sets"}
+    )
+
+
+@dataclass
+class DataTrainingArgumentsPeyma:
+    """
+    Arguments pertaining to what data we are going to input our model for training and eval.
+    """
+
+    data_dir_peyma: str = field(
+        metadata={
+            "help": "The input data dir. Should contain the .txt files for a CoNLL-2003-formatted task."}
+    )
+    labels_peyma: Optional[str] = field(
+        default=None,
+        metadata={
+            "help": "Path to a file containing all labels. If not specified, CoNLL-2003 labels are used."},
+    )
+    max_seq_length_peyma: int = field(
+        default=128,
+        metadata={
+            "help": "The maximum total input sequence length after tokenization. Sequences longer "
+            "than this will be truncated, sequences shorter will be padded."
+        },
+    )
+    overwrite_cache_peyma: bool = field(
         default=False, metadata={"help": "Overwrite the cached training and evaluation sets"}
     )
 
@@ -107,14 +134,18 @@ def main():
     # We now keep distinct sets of args, for a cleaner separation of concerns.
 
     parser = HfArgumentParser(
-        (ModelArguments, DataTrainingArguments, TrainingArguments))
+        (ModelArguments,
+         DataTrainingArgumentsTwitter,
+         DataTrainingArgumentsPeyma,
+         TrainingArguments)
+    )
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         # If we pass only one argument to the script and it's the path to a json file,
         # let's parse it to get our arguments.
         model_args, data_args, training_args = parser.parse_json_file(
             json_file=os.path.abspath(sys.argv[1]))
     else:
-        model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+        model_args, data_args_twitter, data_args_peyma, training_args = parser.parse_args_into_dataclasses()
 
     if (
         os.path.exists(training_args.output_dir)
@@ -129,7 +160,8 @@ def main():
     module = import_module("tasks")
     try:
         token_classification_task_clazz = getattr(module, model_args.task_type)
-        token_classification_task: TokenClassificationTask = token_classification_task_clazz()
+        token_classification_task_twitter: TokenClassificationTask = token_classification_task_clazz()
+        token_classification_task_peyma: TokenClassificationTask = token_classification_task_clazz()
     except AttributeError:
         raise ValueError(
             f"Task {model_args.task_type} needs to be defined as a TokenClassificationTask subclass in {module}. "
@@ -162,10 +194,17 @@ def main():
     set_seed(training_args.seed)
 
     # Prepare CONLL-2003 task
-    labels = token_classification_task.get_labels(data_args.labels)
-    label_map: Dict[int, str] = {i: label for i, label in enumerate(labels)}
-    num_labels = len(labels)
+    labels_twitter = token_classification_task_twitter.get_labels(
+        data_args_twitter.labels_twitter)
+    label_map_twitter: Dict[int, str] = {
+        i: label for i, label in enumerate(labels_twitter)}
+    num_labels_twitter = len(labels_twitter)
 
+    labels_peyma = token_classification_task_peyma.get_labels(
+        data_args_peyma.labels_peyma)
+    label_map_peyma: Dict[int, str] = {
+        i: label for i, label in enumerate(labels_peyma)}
+    num_labels_peyma = len(labels_peyma)
     # Load pretrained model and tokenizer
     #
     # Distributed training:
@@ -182,23 +221,16 @@ def main():
     config_dict = {
         "twitter": AutoConfig.from_pretrained(
             model_args.config_name if model_args.config_name else model_args.model_name_or_path,
-            num_labels=num_labels,
-            id2label=label_map,
-            label2id={label: i for i, label in enumerate(labels)},
-            cache_dir=model_args.cache_dir,
-        ),
-        "arman": AutoConfig.from_pretrained(
-            model_args.config_name if model_args.config_name else model_args.model_name_or_path,
-            num_labels=num_labels,
-            id2label=label_map,
-            label2id={label: i for i, label in enumerate(labels)},
+            num_labels=num_labels_twitter,
+            id2label=label_map_twitter,
+            label2id={label: i for i, label in enumerate(labels_twitter)},
             cache_dir=model_args.cache_dir,
         ),
         "peyma": AutoConfig.from_pretrained(
             model_args.config_name if model_args.config_name else model_args.model_name_or_path,
-            num_labels=num_labels,
-            id2label=label_map,
-            label2id={label: i for i, label in enumerate(labels)},
+            num_labels=num_labels_peyma,
+            id2label=label_map_peyma,
+            label2id={label: i for i, label in enumerate(labels_peyma)},
             cache_dir=model_args.cache_dir,
         ),
     }
@@ -217,21 +249,34 @@ def main():
         model_name=model_args.model_name_or_path,
         model_type_dict={
             "twitter": AutoModelForTokenClassification,
-            "arman": AutoModelForTokenClassification,
             "peyma": AutoModelForTokenClassification,
         },
         model_config_dict=config_dict,
     )
     # Get datasets
-    train_dataset = (
+    train_dataset_twitter = (
         TokenClassificationDataset(
-            token_classification_task=token_classification_task,
-            data_dir=data_args.data_dir,
+            token_classification_task=token_classification_task_twitter,
+            data_dir=data_args_twitter.data_dir_twitter,
             tokenizer=tokenizer,
-            labels=labels,
+            labels=labels_twitter,
             model_type=config_dict['twitter'].model_type,
-            max_seq_length=data_args.max_seq_length,
-            overwrite_cache=data_args.overwrite_cache,
+            max_seq_length=data_args_twitter.max_seq_length_twitter,
+            overwrite_cache=data_args_twitter.overwrite_cache_twitter,
+            mode=Split.train,
+        )
+        if training_args.do_train
+        else None
+    )
+    train_dataset_peyma = (
+        TokenClassificationDataset(
+            token_classification_task=token_classification_task_peyma,
+            data_dir=data_args_peyma.data_dir_peyma,
+            tokenizer=tokenizer,
+            labels=labels_peyma,
+            model_type=config_dict['peyma'].model_type,
+            max_seq_length=data_args_peyma.max_seq_length_peyma,
+            overwrite_cache=data_args_peyma.overwrite_cache_peyma,
             mode=Split.train,
         )
         if training_args.do_train
@@ -239,13 +284,13 @@ def main():
     )
     eval_dataset = (
         TokenClassificationDataset(
-            token_classification_task=token_classification_task,
-            data_dir=data_args.data_dir,
+            token_classification_task=token_classification_task_twitter,
+            data_dir=data_args_twitter.data_dir_twitter,
             tokenizer=tokenizer,
-            labels=labels,
+            labels=labels_twitter,
             model_type=config_dict['twitter'].model_type,
-            max_seq_length=data_args.max_seq_length,
-            overwrite_cache=data_args.overwrite_cache,
+            max_seq_length=data_args_twitter.max_seq_length_twitter,
+            overwrite_cache=data_args_twitter.overwrite_cache_twitter,
             mode=Split.dev,
         )
         if training_args.do_eval
@@ -278,24 +323,15 @@ def main():
             "f1": f1_score(out_label_list, preds_list),
         }
 
-    dataset = dict()
-    dataset['train'] = train_dataset
-    dataset['validation'] = eval_dataset
-
     dataset_dict = {
-        'twitter': dataset,
-        'arman': dataset,
-        'peyma': dataset,
+        'twitter': train_dataset_twitter,
+        'peyma': train_dataset_peyma,
     }
 
     # Data collator
     data_collator = DataCollatorWithPadding(
         tokenizer, pad_to_multiple_of=8) if training_args.fp16 else None
 
-    train_datasets = {
-        task_name: dataset["train"]
-        for task_name, dataset in dataset_dict.items()
-    }
     # Initialize our Trainer
     # trainer = Trainer(
     #     model=model,
@@ -309,7 +345,7 @@ def main():
     trainer = MultitaskTrainer(
         model=multitask_model,
         args=training_args,
-        train_dataset=train_datasets,
+        train_dataset=dataset_dict,
         eval_dataset=eval_dataset,
         compute_metrics=compute_metrics,
         data_collator=data_collator,
