@@ -282,7 +282,7 @@ def main():
         if training_args.do_train
         else None
     )
-    eval_dataset = (
+    eval_dataset_twitter = (
         TokenClassificationDataset(
             token_classification_task=token_classification_task_twitter,
             data_dir=data_args_twitter.data_dir_twitter,
@@ -291,6 +291,21 @@ def main():
             model_type=config_dict['twitter'].model_type,
             max_seq_length=data_args_twitter.max_seq_length_twitter,
             overwrite_cache=data_args_twitter.overwrite_cache_twitter,
+            mode=Split.dev,
+        )
+        if training_args.do_eval
+        else None
+    )
+
+    eval_dataset_peyma = (
+        TokenClassificationDataset(
+            token_classification_task=token_classification_task_peyma,
+            data_dir=data_args_peyma.data_dir_peyma,
+            tokenizer=tokenizer,
+            labels=labels_peyma,
+            model_type=config_dict['peyma'].model_type,
+            max_seq_length=data_args_peyma.max_seq_length_peyma,
+            overwrite_cache=data_args_peyma.overwrite_cache_peyma,
             mode=Split.dev,
         )
         if training_args.do_eval
@@ -323,9 +338,14 @@ def main():
             "f1": f1_score(out_label_list, preds_list),
         }
 
-    dataset_dict = {
+    train_dataset_dict = {
         'twitter': train_dataset_twitter,
         'peyma': train_dataset_peyma,
+    }
+
+    eval_dataset_dict = {
+        'twitter': eval_dataset_twitter,
+        'peyma': eval_dataset_peyma,
     }
 
     # Data collator
@@ -345,8 +365,8 @@ def main():
     trainer = MultitaskTrainer(
         model=multitask_model,
         args=training_args,
-        train_dataset=dataset_dict,
-        eval_dataset=eval_dataset,
+        train_dataset=train_dataset_dict,
+        eval_dataset=eval_dataset_dict,
         compute_metrics=compute_metrics,
         data_collator=data_collator,
     )

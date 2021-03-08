@@ -231,6 +231,8 @@ if is_torch_available():
     from torch.utils.data.sampler import RandomSampler
     from typing import List, Union, Dict
     import numpy as np
+    from transformers.training_args import is_tpu_available
+    from transformers.trainer import get_tpu_sampler
 
     class MultitaskModel(PreTrainedModel):
 
@@ -368,6 +370,8 @@ if is_torch_available():
             """
             if self.train_dataset is None:
                 raise ValueError("Trainer: training requires a train_dataset.")
+            if is_tpu_available():
+                train_sampler = get_tpu_sampler(train_dataset)
             else:
                 train_sampler = (
                     RandomSampler(train_dataset)
@@ -384,6 +388,11 @@ if is_torch_available():
                     collate_fn=self.data_collator,
                 ),
             )
+            
+            if is_tpu_available():
+                data_loader = pl.ParallelLoader(
+                    data_loader, [self.args.device]
+                ).per_device_loader(self.args.device)
 
             return data_loader
 
