@@ -244,13 +244,13 @@ if is_torch_available():
             super().__init__(PretrainedConfig())
 
             self.encoder = encoder
-            self.taskmodels_dict = taskmodels_dict
+            self.taskmodels_dict = nn.ModuleDict(taskmodels_dict)
 
         @classmethod
         def create(cls, model_name, model_type_dict, model_config_dict):
             """
             This creates a MultitaskModel using the model class and config objects
-            from single-task models. 
+            from single-task models.
 
             We do this by creating each single-task model, and having them share
             the same encoder transformer.
@@ -338,6 +338,7 @@ if is_torch_available():
                 len(dataloader.dataset)
                 for dataloader in self.dataloader_dict.values()
             )
+            self.batch_size = 8
 
         def __len__(self):
             return sum(self.num_batches_dict.values())
@@ -389,7 +390,40 @@ if is_torch_available():
                     collate_fn=self.data_collator,
                 ),
             )
-            
+
+            # if is_tpu_available():
+            #     data_loader = pl.ParallelLoader(
+            #         data_loader, [self.args.device]
+            #     ).per_device_loader(self.args.device)
+
+            return data_loader
+
+        def get_single_eval_dataloader(self, task_name, eval_dataset):
+            """
+            Create a single-task data loader that also yields task names
+            """
+            if self.eval_dataset is None:
+                raise ValueError(
+                    "Trainer: evaluation requires a eval_dataset.")
+            # if is_tpu_available():
+            #     train_sampler = get_tpu_sampler(train_dataset)
+            else:
+                eval_sampler = (
+                    RandomSampler(eval_dataset)
+                    if self.args.local_rank == -1
+                    else DistributedSampler(eval_dataset)
+                )
+
+            data_loader = DataLoaderWithTaskname(
+                task_name=task_name,
+                data_loader=DataLoader(
+                    eval_dataset,
+                    batch_size=self.args.train_batch_size,
+                    sampler=eval_sampler,
+                    collate_fn=self.data_collator,
+                ),
+            )
+
             # if is_tpu_available():
             #     data_loader = pl.ParallelLoader(
             #         data_loader, [self.args.device]
@@ -400,7 +434,7 @@ if is_torch_available():
         def get_train_dataloader(self):
             """
             Returns a MultitaskDataloader, which is not actually a Dataloader
-            but an iterable that returns a generator that samples from each 
+            but an iterable that returns a generator that samples from each
             task Dataloader
             """
             return MultitaskDataloader({
@@ -408,6 +442,33 @@ if is_torch_available():
                     task_name, task_dataset)
                 for task_name, task_dataset in self.train_dataset.items()
             })
+
+        def get_eval_dataloader(self, _):
+            """
+            Returns a MultitaskDataloader, which is not actually a Dataloader
+            but an iterable that returns a generator that samples from each
+            task Dataloader
+            """
+            if self.eval_dataset is None:
+                raise ValueError(
+                    "Trainer: evaluation requires a eval_dataset.")
+            # if is_tpu_available():
+            #     train_sampler = get_tpu_sampler(train_dataset)
+            else:
+                eval_sampler = (
+                    RandomSampler(self.eval_dataset)
+                    if self.args.local_rank == -1
+                    else DistributedSampler(self.eval_dataset)
+                )
+            return DataLoaderWithTaskname(
+                task_name='twitter',
+                data_loader=DataLoader(
+                    self.eval_dataset,
+                    batch_size=self.args.train_batch_size,
+                    sampler=eval_sampler,
+                    collate_fn=self.data_collator,
+                ),
+            )
 
     class TokenClassificationDataset(Dataset):
         """
