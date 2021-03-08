@@ -253,6 +253,7 @@ def main():
         },
         model_config_dict=config_dict,
     )
+    multitask_model.to('cuda')
     # Get datasets
     train_dataset_twitter = (
         TokenClassificationDataset(
@@ -345,7 +346,6 @@ def main():
 
     eval_dataset_dict = {
         'twitter': eval_dataset_twitter,
-        'peyma': eval_dataset_peyma,
     }
 
     # Data collator
