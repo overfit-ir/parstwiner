@@ -324,7 +324,8 @@ def main():
         for i in range(batch_size):
             for j in range(seq_len):
                 if label_ids[i, j] != nn.CrossEntropyLoss().ignore_index:
-                    out_label_list[i].append(label_map_twitter[label_ids[i][j]])
+                    out_label_list[i].append(
+                        label_map_twitter[label_ids[i][j]])
                     preds_list[i].append(label_map_twitter[preds[i][j]])
 
         return preds_list, out_label_list
@@ -405,13 +406,13 @@ def main():
     # Predict
     if training_args.do_predict:
         test_dataset = TokenClassificationDataset(
-            token_classification_task=token_classification_task,
-            data_dir=data_args.data_dir,
+            token_classification_task=token_classification_task_twitter,
+            data_dir=data_args_twitter.data_dir_twitter,
             tokenizer=tokenizer,
-            labels=labels,
-            model_type=config.model_type,
-            max_seq_length=data_args.max_seq_length,
-            overwrite_cache=data_args.overwrite_cache,
+            labels=labels_twitter,
+            model_type=config_dict['twitter'].model_type,
+            max_seq_length=data_args_twitter.max_seq_length_twitter,
+            overwrite_cache=data_args_twitter.overwrite_cache_twitter,
             mode=Split.test,
         )
 
@@ -431,8 +432,8 @@ def main():
             training_args.output_dir, "test_predictions.txt")
         if trainer.is_world_process_zero():
             with open(output_test_predictions_file, "w") as writer:
-                with open(os.path.join(data_args.data_dir, "test.txt"), "r") as f:
-                    token_classification_task.write_predictions_to_file(
+                with open(os.path.join(data_args_twitter.data_dir_twitter, "test.txt"), "r") as f:
+                    token_classification_task_twitter.write_predictions_to_file(
                         writer, f, preds_list)
 
     return results

@@ -470,6 +470,33 @@ if is_torch_available():
                 ),
             )
 
+        def get_test_dataloader(self, test_dataset):
+            """
+            Returns a MultitaskDataloader, which is not actually a Dataloader
+            but an iterable that returns a generator that samples from each
+            task Dataloader
+            """
+            if test_dataset is None:
+                raise ValueError(
+                    "Trainer: evaluation requires a eval_dataset.")
+            # if is_tpu_available():
+            #     train_sampler = get_tpu_sampler(train_dataset)
+            else:
+                test_sampler = (
+                    RandomSampler(test_dataset)
+                    if self.args.local_rank == -1
+                    else DistributedSampler(test_dataset)
+                )
+            return DataLoaderWithTaskname(
+                task_name='twitter',
+                data_loader=DataLoader(
+                    test_dataset,
+                    batch_size=self.args.train_batch_size,
+                    sampler=test_sampler,
+                    collate_fn=self.data_collator,
+                ),
+            )
+
     class TokenClassificationDataset(Dataset):
         """
         This will be superseded by a framework-agnostic approach
