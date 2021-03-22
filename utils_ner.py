@@ -26,7 +26,7 @@ from filelock import FileLock
 from transformers import (
     PreTrainedTokenizer,
     is_tf_available,
-    is_torch_available, 
+    is_torch_available,
     TFPreTrainedModel,
     TFTrainer,
     PretrainedConfig,
@@ -112,7 +112,8 @@ class TokenClassificationTask:
         features = []
         for (ex_index, example) in enumerate(examples):
             if ex_index % 10_000 == 0:
-                logger.info("Writing example %d of %d", ex_index, len(examples))
+                logger.info("Writing example %d of %d",
+                            ex_index, len(examples))
 
             tokens = []
             label_ids = []
@@ -123,13 +124,15 @@ class TokenClassificationTask:
                 if len(word_tokens) > 0:
                     tokens.extend(word_tokens)
                     # Use the real label id for the first token of the word, and padding ids for the remaining tokens
-                    label_ids.extend([label_map[label]] + [pad_token_label_id] * (len(word_tokens) - 1))
+                    label_ids.extend(
+                        [label_map[label]] + [pad_token_label_id] * (len(word_tokens) - 1))
 
             # Account for [CLS] and [SEP] with "- 2" and with "- 3" for RoBERTa.
             special_tokens_count = tokenizer.num_special_tokens_to_add()
             if len(tokens) > max_seq_length - special_tokens_count:
                 tokens = tokens[: (max_seq_length - special_tokens_count)]
-                label_ids = label_ids[: (max_seq_length - special_tokens_count)]
+                label_ids = label_ids[: (
+                    max_seq_length - special_tokens_count)]
 
             # The convention in BERT is:
             # (a) For sequence pairs:
@@ -176,12 +179,15 @@ class TokenClassificationTask:
             padding_length = max_seq_length - len(input_ids)
             if pad_on_left:
                 input_ids = ([pad_token] * padding_length) + input_ids
-                input_mask = ([0 if mask_padding_with_zero else 1] * padding_length) + input_mask
-                segment_ids = ([pad_token_segment_id] * padding_length) + segment_ids
+                input_mask = ([0 if mask_padding_with_zero else 1]
+                              * padding_length) + input_mask
+                segment_ids = ([pad_token_segment_id] *
+                               padding_length) + segment_ids
                 label_ids = ([pad_token_label_id] * padding_length) + label_ids
             else:
                 input_ids += [pad_token] * padding_length
-                input_mask += [0 if mask_padding_with_zero else 1] * padding_length
+                input_mask += [0 if mask_padding_with_zero else 1] * \
+                    padding_length
                 segment_ids += [pad_token_segment_id] * padding_length
                 label_ids += [pad_token_label_id] * padding_length
 
@@ -194,10 +200,14 @@ class TokenClassificationTask:
                 logger.info("*** Example ***")
                 logger.info("guid: %s", example.guid)
                 logger.info("tokens: %s", " ".join([str(x) for x in tokens]))
-                logger.info("input_ids: %s", " ".join([str(x) for x in input_ids]))
-                logger.info("input_mask: %s", " ".join([str(x) for x in input_mask]))
-                logger.info("segment_ids: %s", " ".join([str(x) for x in segment_ids]))
-                logger.info("label_ids: %s", " ".join([str(x) for x in label_ids]))
+                logger.info("input_ids: %s", " ".join(
+                    [str(x) for x in input_ids]))
+                logger.info("input_mask: %s", " ".join(
+                    [str(x) for x in input_mask]))
+                logger.info("segment_ids: %s", " ".join(
+                    [str(x) for x in segment_ids]))
+                logger.info("label_ids: %s", " ".join(
+                    [str(x) for x in label_ids]))
 
             if "token_type_ids" not in tokenizer.model_input_names:
                 segment_ids = None
@@ -240,7 +250,8 @@ if is_torch_available():
             # Load data features from cache or dataset file
             cached_features_file = os.path.join(
                 data_dir,
-                "cached_{}_{}_{}".format(mode.value, tokenizer.__class__.__name__, str(max_seq_length)),
+                "cached_{}_{}_{}".format(
+                    mode.value, tokenizer.__class__.__name__, str(max_seq_length)),
             )
 
             # Make sure only the first process in distributed training processes the dataset,
@@ -249,11 +260,14 @@ if is_torch_available():
             with FileLock(lock_path):
 
                 if os.path.exists(cached_features_file) and not overwrite_cache:
-                    logger.info(f"Loading features from cached file {cached_features_file}")
+                    logger.info(
+                        f"Loading features from cached file {cached_features_file}")
                     self.features = torch.load(cached_features_file)
                 else:
-                    logger.info(f"Creating features from dataset file at {data_dir}")
-                    examples = token_classification_task.read_examples_from_file(data_dir, mode)
+                    logger.info(
+                        f"Creating features from dataset file at {data_dir}")
+                    examples = token_classification_task.read_examples_from_file(
+                        data_dir, mode)
                     # TODO clean up all this to leverage built-in features of tokenizers
                     self.features = token_classification_task.convert_examples_to_features(
                         examples,
@@ -263,7 +277,8 @@ if is_torch_available():
                         cls_token_at_end=bool(model_type in ["xlnet"]),
                         # xlnet has a cls token at the end
                         cls_token=tokenizer.cls_token,
-                        cls_token_segment_id=2 if model_type in ["xlnet"] else 0,
+                        cls_token_segment_id=2 if model_type in [
+                            "xlnet"] else 0,
                         sep_token=tokenizer.sep_token,
                         sep_token_extra=False,
                         # roberta uses an extra separator b/w pairs of sentences, cf. github.com/pytorch/fairseq/commit/1684e166e3da03f5b600dbb7855cb98ddfcd0805
@@ -272,7 +287,8 @@ if is_torch_available():
                         pad_token_segment_id=tokenizer.pad_token_type_id,
                         pad_token_label_id=self.pad_token_label_id,
                     )
-                    logger.info(f"Saving features into cached file {cached_features_file}")
+                    logger.info(
+                        f"Saving features into cached file {cached_features_file}")
                     torch.save(self.features, cached_features_file)
 
         def __len__(self):
@@ -284,6 +300,7 @@ if is_torch_available():
 
 if is_tf_available():
     import tensorflow as tf
+
     class MultitaskModel(TFPreTrainedModel):
         def __init__(self, encoder, taskmodels_dict):
             """
@@ -308,13 +325,15 @@ if is_tf_available():
             taskmodels_dict = {}
             for task_name, model_type in model_type_dict.items():
                 model = model_type.from_pretrained(
-                    model_name, 
+                    model_name,
                     config=model_config_dict[task_name],
                 )
                 if shared_encoder is None:
-                    shared_encoder = getattr(model, cls.get_encoder_attr_name(model))
+                    shared_encoder = getattr(
+                        model, cls.get_encoder_attr_name(model))
                 else:
-                    setattr(model, cls.get_encoder_attr_name(model), shared_encoder)
+                    setattr(model, cls.get_encoder_attr_name(
+                        model), shared_encoder)
                 taskmodels_dict[task_name] = model
             return cls(encoder=shared_encoder, taskmodels_dict=taskmodels_dict)
 
@@ -343,14 +362,15 @@ if is_tf_available():
         value, but we need to pass in an additional `task_name` string.
         This prevents it from throwing an error
         """
+
         def to(self, device):
             return self
-
 
     class DataLoaderWithTaskname:
         """
         Wrapper around a DataLoader to also yield a task name
         """
+
         def __init__(self, task_name, data_loader):
             self.task_name = task_name
             self.data_loader = data_loader
@@ -360,27 +380,27 @@ if is_tf_available():
 
         def __len__(self):
             return len(self.data_loader)
-        
+
         def __iter__(self):
             for batch in self.data_loader:
                 batch["task_name"] = StrIgnoreDevice(self.task_name)
                 yield batch
-
 
     class MultitaskDataloader:
         """
         Data loader that combines and samples from multiple single-task
         data loaders.
         """
+
         def __init__(self, dataloader_dict):
             self.dataloader_dict = dataloader_dict
             self.num_batches_dict = {
-                task_name: len(dataloader) 
+                task_name: len(dataloader)
                 for task_name, dataloader in self.dataloader_dict.items()
             }
             self.task_name_list = list(self.dataloader_dict)
             self.dataset = [None] * sum(
-                len(dataloader.dataset) 
+                len(dataloader.dataset)
                 for dataloader in self.dataloader_dict.values()
             )
 
@@ -401,12 +421,12 @@ if is_tf_available():
             task_choice_list = np.array(task_choice_list)
             np.random.shuffle(task_choice_list)
             dataloader_iter_dict = {
-                task_name: iter(dataloader) 
+                task_name: iter(dataloader)
                 for task_name, dataloader in self.dataloader_dict.items()
             }
             for task_choice in task_choice_list:
                 task_name = self.task_name_list[task_choice]
-                yield next(dataloader_iter_dict[task_name])    
+                yield next(dataloader_iter_dict[task_name])
 
     class MultitaskTrainer(TFTrainer):
 
@@ -416,8 +436,6 @@ if is_tf_available():
             """
             if self.train_dataset is None:
                 raise ValueError("Trainer: training requires a train_dataset.")
-            if is_tpu_available():
-                train_sampler = get_tpu_sampler(train_dataset)
             else:
                 train_sampler = (
                     RandomSampler(train_dataset)
@@ -428,17 +446,13 @@ if is_tf_available():
             data_loader = DataLoaderWithTaskname(
                 task_name=task_name,
                 data_loader=DataLoader(
-                train_dataset,
-                batch_size=self.args.train_batch_size,
-                sampler=train_sampler,
-                collate_fn=self.data_collator.collate_batch,
+                    train_dataset,
+                    batch_size=self.args.train_batch_size,
+                    sampler=train_sampler,
+                    collate_fn=self.data_collator,
                 ),
             )
 
-            if is_tpu_available():
-                data_loader = pl.ParallelLoader(
-                    data_loader, [self.args.device]
-                ).per_device_loader(self.args.device)
             return data_loader
 
         def get_train_tfdataset(self):
@@ -448,10 +462,65 @@ if is_tf_available():
             task Dataloader
             """
             return MultitaskDataloader({
-                task_name: self.get_single_train_dataloader(task_name, task_dataset)
+                task_name: self.get_single_train_dataloader(
+                    task_name, task_dataset)
                 for task_name, task_dataset in self.train_dataset.items()
             })
-        
+
+        def get_eval_tfdataset(self, _):
+            """
+            Returns a MultitaskDataloader, which is not actually a Dataloader
+            but an iterable that returns a generator that samples from each
+            task Dataloader
+            """
+            if self.eval_dataset is None:
+                raise ValueError(
+                    "Trainer: evaluation requires a eval_dataset.")
+            # if is_tpu_available():
+            #     train_sampler = get_tpu_sampler(train_dataset)
+            else:
+                eval_sampler = (
+                    RandomSampler(self.eval_dataset)
+                    if self.args.local_rank == -1
+                    else DistributedSampler(self.eval_dataset)
+                )
+            return DataLoaderWithTaskname(
+                task_name='twitter',
+                data_loader=DataLoader(
+                    self.eval_dataset,
+                    batch_size=self.args.train_batch_size,
+                    sampler=eval_sampler,
+                    collate_fn=self.data_collator,
+                ),
+            )
+
+        def get_test_tfdataset(self, test_dataset):
+            """
+            Returns a MultitaskDataloader, which is not actually a Dataloader
+            but an iterable that returns a generator that samples from each
+            task Dataloader
+            """
+            if test_dataset is None:
+                raise ValueError(
+                    "Trainer: evaluation requires a eval_dataset.")
+            # if is_tpu_available():
+            #     train_sampler = get_tpu_sampler(train_dataset)
+            else:
+                test_sampler = (
+                    RandomSampler(test_dataset)
+                    if self.args.local_rank == -1
+                    else DistributedSampler(test_dataset)
+                )
+            return DataLoaderWithTaskname(
+                task_name='twitter',
+                data_loader=DataLoader(
+                    test_dataset,
+                    batch_size=self.args.train_batch_size,
+                    sampler=test_sampler,
+                    collate_fn=self.data_collator,
+                ),
+            )
+
     class TFTokenClassificationDataset:
         """
         This will be superseded by a framework-agnostic approach
@@ -474,7 +543,8 @@ if is_tf_available():
             overwrite_cache=False,
             mode: Split = Split.train,
         ):
-            examples = token_classification_task.read_examples_from_file(data_dir, mode)
+            examples = token_classification_task.read_examples_from_file(
+                data_dir, mode)
             # TODO clean up all this to leverage built-in features of tokenizers
             self.features = token_classification_task.convert_examples_to_features(
                 examples,
@@ -498,7 +568,8 @@ if is_tf_available():
                 for ex in self.features:
                     if ex.token_type_ids is None:
                         yield (
-                            {"input_ids": ex.input_ids, "attention_mask": ex.attention_mask},
+                            {"input_ids": ex.input_ids,
+                                "attention_mask": ex.attention_mask},
                             ex.label_ids,
                         )
                     else:
@@ -516,14 +587,16 @@ if is_tf_available():
                     gen,
                     ({"input_ids": tf.int32, "attention_mask": tf.int32}, tf.int64),
                     (
-                        {"input_ids": tf.TensorShape([None]), "attention_mask": tf.TensorShape([None])},
+                        {"input_ids": tf.TensorShape(
+                            [None]), "attention_mask": tf.TensorShape([None])},
                         tf.TensorShape([None]),
                     ),
                 )
             else:
                 self.dataset = tf.data.Dataset.from_generator(
                     gen,
-                    ({"input_ids": tf.int32, "attention_mask": tf.int32, "token_type_ids": tf.int32}, tf.int64),
+                    ({"input_ids": tf.int32, "attention_mask": tf.int32,
+                      "token_type_ids": tf.int32}, tf.int64),
                     (
                         {
                             "input_ids": tf.TensorShape([None]),
@@ -535,7 +608,8 @@ if is_tf_available():
                 )
 
         def get_dataset(self):
-            self.dataset = self.dataset.apply(tf.data.experimental.assert_cardinality(len(self.features)))
+            self.dataset = self.dataset.apply(
+                tf.data.experimental.assert_cardinality(len(self.features)))
 
             return self.dataset
 
