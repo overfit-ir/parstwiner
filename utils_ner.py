@@ -441,7 +441,7 @@ if is_tf_available():
                 ).per_device_loader(self.args.device)
             return data_loader
 
-        def get_train_dataloader(self):
+        def get_train_tfdataset(self):
             """
             Returns a MultitaskDataloader, which is not actually a Dataloader
             but an iterable that returns a generator that samples from each 
