@@ -300,6 +300,11 @@ if is_torch_available():
 
 if is_tf_available():
     import tensorflow as tf
+    from tensorflow.data import Dataset
+    import numpy as np
+    import math
+    from transformers.trainer_utils import PredictionOutput, EvalPrediction
+    from typing import Callable, Dict, Optional, Tuple
 
     class MultitaskModel(TFPreTrainedModel):
         def __init__(self, encoder, taskmodels_dict):
@@ -316,7 +321,7 @@ if is_tf_available():
         def create(cls, model_name, model_type_dict, model_config_dict):
             """
             This creates a MultitaskModel using the model class and config objects
-            from single-task models. 
+            from single-task models.
 
             We do this by creating each single-task model, and having them share
             the same encoder transformer.
@@ -353,8 +358,8 @@ if is_tf_available():
             else:
                 raise KeyError(f"Add support for new model {model_class_name}")
 
-        def forward(self, task_name, **kwargs):
-            return self.taskmodels_dict[task_name](**kwargs)
+        def __call__(self, task_name, *args, **kwargs):
+            return self.taskmodels_dict[task_name](*args, **kwargs)
 
     class StrIgnoreDevice(str):
         """
@@ -366,43 +371,47 @@ if is_tf_available():
         def to(self, device):
             return self
 
-    class DataLoaderWithTaskname:
+    class TFDatasetWithTaskname:
         """
         Wrapper around a DataLoader to also yield a task name
         """
 
-        def __init__(self, task_name, data_loader):
+        def __init__(self, task_name, tf_dataset, length):
             self.task_name = task_name
-            self.data_loader = data_loader
-
-            self.batch_size = data_loader.batch_size
-            self.dataset = data_loader.dataset
+            self.tf_dataset = tf_dataset
+            self.length = length
+            # self.batch_size = tf_dataset.batch_size
+            # self.dataset = tf_dataset.dataset
 
         def __len__(self):
-            return len(self.data_loader)
+            return self.length
 
         def __iter__(self):
-            for batch in self.data_loader:
-                batch["task_name"] = StrIgnoreDevice(self.task_name)
-                yield batch
+            for batch in self.tf_dataset:
+                # batch["task_name"] = self.task_name
+                batch_dict = {}
+                batch_dict['batch'] = batch
+                batch_dict['task_name'] = self.task_name
+                yield batch_dict
 
-    class MultitaskDataloader:
+    class MultitaskTFDataset:
         """
         Data loader that combines and samples from multiple single-task
         data loaders.
         """
 
-        def __init__(self, dataloader_dict):
+        def __init__(self, dataloader_dict, batch_size, approx):
             self.dataloader_dict = dataloader_dict
+
             self.num_batches_dict = {
-                task_name: len(dataloader)
+                task_name: approx(len(dataloader) / batch_size)
                 for task_name, dataloader in self.dataloader_dict.items()
             }
             self.task_name_list = list(self.dataloader_dict)
-            self.dataset = [None] * sum(
-                len(dataloader.dataset)
-                for dataloader in self.dataloader_dict.values()
-            )
+            # self.dataset = [None] * sum(
+            #     len(dataloader.dataset)
+            #     for dataloader in self.dataloader_dict.values()
+            # )
 
         def __len__(self):
             return sum(self.num_batches_dict.values())
@@ -430,30 +439,235 @@ if is_tf_available():
 
     class MultitaskTrainer(TFTrainer):
 
-        def get_single_train_dataloader(self, task_name, train_dataset):
+        def run_model(self, features, labels, task_name, training):
             """
-            Create a single-task data loader that also yields task names
+            Computes the loss of the given features and labels pair.
+            Subclass and override this method if you want to inject some custom behavior.
+            Args:
+                features (:obj:`tf.Tensor`): A batch of input features.
+                labels (:obj:`tf.Tensor`): A batch of labels.
+                training (:obj:`bool`): Whether or not to run the model in training mode.
+            Returns:
+                A tuple of two :obj:`tf.Tensor`: The loss and logits.
             """
-            if self.train_dataset is None:
-                raise ValueError("Trainer: training requires a train_dataset.")
-            else:
-                train_sampler = (
-                    RandomSampler(train_dataset)
-                    if self.args.local_rank == -1
-                    else DistributedSampler(train_dataset)
-                )
 
-            data_loader = DataLoaderWithTaskname(
-                task_name=task_name,
-                data_loader=DataLoader(
-                    train_dataset,
-                    batch_size=self.args.train_batch_size,
-                    sampler=train_sampler,
-                    collate_fn=self.data_collator,
-                ),
+            if self.args.past_index >= 0 and getattr(self, "_past", None) is not None:
+                features["mems"] = self._past
+
+            if isinstance(labels, (dict)):
+                outputs = self.model(task_name, features,
+                                     training=training, **labels)[:2]
+            else:
+                outputs = self.model(task_name, features,
+                                     labels=labels, training=training)[:2]
+
+            loss, logits = outputs[:2]
+
+            if self.args.past_index >= 0:
+                self._past = outputs[self.args.past_index]
+
+            return loss, logits
+
+        def training_step(self, features, labels, nb_instances_in_global_batch, task_name):
+            """
+            Perform a training step on features and labels.
+            Subclass and override to inject some custom behavior.
+            """
+            per_example_loss, _ = self.run_model(
+                features, labels, task_name, True)
+            scaled_loss = per_example_loss / \
+                tf.cast(nb_instances_in_global_batch,
+                        dtype=per_example_loss.dtype)
+            gradients = tf.gradients(
+                scaled_loss, self.model.trainable_variables)
+            gradients = [
+                g if g is not None else tf.zeros_like(v) for g, v in zip(gradients, self.model.trainable_variables)
+            ]
+
+            if self.args.gradient_accumulation_steps > 1:
+                self.gradient_accumulator(gradients)
+
+            self.train_loss.update_state(scaled_loss)
+
+            if self.args.gradient_accumulation_steps == 1:
+                return gradients
+
+        def apply_gradients(self, features, labels, nb_instances_in_global_batch, task_name):
+            if self.args.gradient_accumulation_steps == 1:
+                gradients = self.training_step(
+                    features, labels, nb_instances_in_global_batch, task_name)
+
+                self.optimizer.apply_gradients(
+                    list(zip(gradients, self.model.trainable_variables)))
+            else:
+                raise NotImplementedError(
+                    'gradient_accumulation_steps must be equal to 1')
+
+        @tf.function
+        def distributed_training_steps(self, batch):
+            with self.args.strategy.scope():
+
+                nb_instances_in_batch = self._compute_nb_instances(
+                    batch['batch'])
+                batch_inputs = self._get_step_inputs(
+                    batch['batch'], nb_instances_in_batch)
+                task_name = batch['task_name']
+                features, labels, nb_instances = batch_inputs
+                inputs = features, labels, nb_instances, task_name
+
+                self.args.strategy.run(self.apply_gradients, inputs)
+
+        @tf.function
+        def distributed_prediction_steps(self, batch):
+
+            nb_instances_in_batch = self._compute_nb_instances(batch['batch'])
+            batch_inputs = self._get_step_inputs(
+                batch['batch'], nb_instances_in_batch)
+            features, labels, nb_instances = batch_inputs
+            task_name = batch['task_name']
+            inputs = features, labels, nb_instances, task_name
+
+            logits = self.args.strategy.run(self.prediction_step, inputs)
+
+            return logits
+
+        def prediction_step(
+            self, features: tf.Tensor, labels: tf.Tensor, nb_instances_in_global_batch: tf.Tensor, task_name
+        ) -> tf.Tensor:
+            """
+            Compute the prediction on features and update the loss with labels.
+            Subclass and override to inject some custom behavior.
+            """
+            per_example_loss, logits = self.run_model(
+                features, labels, task_name, False)
+            scaled_loss = per_example_loss / \
+                tf.cast(nb_instances_in_global_batch,
+                        dtype=per_example_loss.dtype)
+
+            self.eval_loss.update_state(scaled_loss)
+
+            return logits
+
+        def prediction_loop(
+            self,
+            dataset: tf.data.Dataset,
+            steps: int,
+            num_examples: int,
+            description: str,
+            prediction_loss_only: Optional[bool] = None,
+        ) -> PredictionOutput:
+            """
+            Prediction/evaluation loop, shared by :func:`~transformers.TFTrainer.evaluate` and
+            :func:`~transformers.TFTrainer.predict`.
+            Works both with or without labels.
+            """
+
+            prediction_loss_only = (
+                prediction_loss_only if prediction_loss_only is not None else self.args.prediction_loss_only
             )
 
-            return data_loader
+            logger.info("***** Running %s *****", description)
+            logger.info("  Num examples in dataset = %d", num_examples)
+            if description == "Evaluation":
+                logger.info("  Num examples in used in evaluation = %d",
+                            self.args.eval_batch_size * steps)
+            logger.info("  Batch size = %d", self.args.eval_batch_size)
+
+            label_ids: np.ndarray = None
+            preds: np.ndarray = None
+            self.eval_loss.reset_states()
+
+            # Reset the past mems state at the beginning of the evaluation if necessary.
+            if self.args.past_index >= 0:
+                self._past = None
+
+            for step, batch in enumerate(dataset):
+                logits = self.distributed_prediction_steps(batch)
+                _, labels = batch['batch']
+
+                if not prediction_loss_only:
+                    if isinstance(logits, tuple):
+                        logits = logits[0]
+
+                    if isinstance(labels, tuple):
+                        labels = labels[0]
+
+                    if self.args.n_replicas > 1:
+                        for val in logits.values:
+                            if preds is None:
+                                preds = val.numpy()
+                            else:
+                                preds = np.append(preds, val.numpy(), axis=0)
+
+                        for val in labels.values:
+                            if label_ids is None:
+                                label_ids = val.numpy()
+                            else:
+                                label_ids = np.append(
+                                    label_ids, val.numpy(), axis=0)
+                    else:
+                        if preds is None:
+                            preds = logits.numpy()
+                        else:
+                            preds = np.append(preds, logits.numpy(), axis=0)
+
+                        if label_ids is None:
+                            label_ids = labels.numpy()
+                        else:
+                            label_ids = np.append(
+                                label_ids, labels.numpy(), axis=0)
+
+                    if step == steps - 1:
+                        break
+
+            if self.compute_metrics is not None and preds is not None and label_ids is not None:
+                metrics = self.compute_metrics(EvalPrediction(
+                    predictions=preds, label_ids=label_ids))
+            else:
+                metrics = {}
+
+            metrics["eval_loss"] = self.eval_loss.result().numpy() / steps
+
+            for key in list(metrics.keys()):
+                if not key.startswith("eval_"):
+                    metrics[f"eval_{key}"] = metrics.pop(key)
+
+            if self.args.past_index and hasattr(self, "_past"):
+                # Clean the state at the end of training
+                delattr(self, "_past")
+
+            return PredictionOutput(predictions=preds, label_ids=label_ids, metrics=metrics)
+
+        def get_single_train_tfdataset(self, task_name, train_dataset):
+            """
+            Create a single-task data loader that also yields task names
+                """
+            if self.train_dataset is None:
+                raise ValueError("Trainer: training requires a train_dataset.")
+
+            # self.total_train_batch_size = self.args.train_batch_size * \
+            #     self.args.gradient_accumulation_steps
+            num_train_examples = train_dataset.cardinality().numpy()
+
+            if self.num_train_examples < 0:
+                raise ValueError(
+                    "The training dataset must have an asserted cardinality")
+
+            ds = (
+                train_dataset.repeat()
+                .shuffle(num_train_examples, seed=self.args.seed)
+                .batch(self.total_train_batch_size, drop_remainder=self.args.dataloader_drop_last)
+                .prefetch(tf.data.experimental.AUTOTUNE)
+            )
+
+            dataset = TFDatasetWithTaskname(
+                task_name=task_name,
+                tf_dataset=self.args.strategy.experimental_distribute_dataset(
+                    ds),
+                length=num_train_examples,
+            )
+
+            return dataset
 
         def get_train_tfdataset(self):
             """
@@ -461,65 +675,87 @@ if is_tf_available():
             but an iterable that returns a generator that samples from each 
             task Dataloader
             """
-            return MultitaskDataloader({
-                task_name: self.get_single_train_dataloader(
-                    task_name, task_dataset)
-                for task_name, task_dataset in self.train_dataset.items()
-            })
+            self.total_train_batch_size = self.args.train_batch_size * \
+                self.args.gradient_accumulation_steps
 
-        def get_eval_tfdataset(self, _):
+            num_train_examples = 0
+            for _, task_dataset in self.train_dataset.items():
+                num_train_examples += task_dataset.get_dataset().cardinality().numpy()
+
+            self.num_train_examples = num_train_examples
+            approx = math.floor if self.args.dataloader_drop_last else math.ceil
+
+            return MultitaskTFDataset({
+                task_name: self.get_single_train_tfdataset(
+                    task_name, task_dataset.get_dataset())
+                for task_name, task_dataset in self.train_dataset.items()
+            }, self.args.train_batch_size, approx)
+
+        def get_eval_tfdataset(self, eval_dataset):
             """
             Returns a MultitaskDataloader, which is not actually a Dataloader
             but an iterable that returns a generator that samples from each
             task Dataloader
             """
-            if self.eval_dataset is None:
+            if eval_dataset is None and self.eval_dataset is None:
                 raise ValueError(
-                    "Trainer: evaluation requires a eval_dataset.")
-            # if is_tpu_available():
-            #     train_sampler = get_tpu_sampler(train_dataset)
-            else:
-                eval_sampler = (
-                    RandomSampler(self.eval_dataset)
-                    if self.args.local_rank == -1
-                    else DistributedSampler(self.eval_dataset)
-                )
-            return DataLoaderWithTaskname(
-                task_name='twitter',
-                data_loader=DataLoader(
-                    self.eval_dataset,
-                    batch_size=self.args.train_batch_size,
-                    sampler=eval_sampler,
-                    collate_fn=self.data_collator,
-                ),
+                    "Trainer: evaluation requires an eval_dataset.")
+
+            eval_dataset = eval_dataset if eval_dataset is not None else self.eval_dataset
+            num_examples = eval_dataset.cardinality().numpy()
+
+            if num_examples < 0:
+                raise ValueError(
+                    "The training dataset must have an asserted cardinality")
+
+            approx = math.floor if self.args.dataloader_drop_last else math.ceil
+            steps = approx(num_examples / self.args.eval_batch_size)
+
+            ds = (
+                eval_dataset.repeat()
+                .batch(self.args.eval_batch_size, drop_remainder=self.args.dataloader_drop_last)
+                .prefetch(tf.data.experimental.AUTOTUNE)
             )
+
+            dataset = TFDatasetWithTaskname(
+                task_name='twitter',
+                tf_dataset=self.args.strategy.experimental_distribute_dataset(
+                    ds),
+                length=num_examples,
+            )
+            return dataset, steps, num_examples
 
         def get_test_tfdataset(self, test_dataset):
             """
-            Returns a MultitaskDataloader, which is not actually a Dataloader
-            but an iterable that returns a generator that samples from each
-            task Dataloader
+            Returns a test :class:`~tf.data.Dataset`.
+            Args:
+                test_dataset (:class:`~tf.data.Dataset`):
+                    The dataset to use. The dataset should yield tuples of ``(features, labels)`` where ``features`` is a
+                    dict of input features and ``labels`` is the labels. If ``labels`` is a tensor, the loss is calculated
+                    by the model by calling ``model(features, labels=labels)``. If ``labels`` is a dict, such as when using
+                    a QuestionAnswering head model with multiple targets, the loss is instead calculated by calling
+                    ``model(features, **labels)``.
+            Subclass and override this method if you want to inject some custom behavior.
             """
-            if test_dataset is None:
+
+            num_examples = test_dataset.cardinality().numpy()
+
+            if num_examples < 0:
                 raise ValueError(
-                    "Trainer: evaluation requires a eval_dataset.")
-            # if is_tpu_available():
-            #     train_sampler = get_tpu_sampler(train_dataset)
-            else:
-                test_sampler = (
-                    RandomSampler(test_dataset)
-                    if self.args.local_rank == -1
-                    else DistributedSampler(test_dataset)
-                )
-            return DataLoaderWithTaskname(
+                    "The training dataset must have an asserted cardinality")
+
+            steps = math.ceil(num_examples / self.args.eval_batch_size)
+            ds = test_dataset.batch(self.args.eval_batch_size).prefetch(
+                tf.data.experimental.AUTOTUNE)
+
+            dataset = TFDatasetWithTaskname(
                 task_name='twitter',
-                data_loader=DataLoader(
-                    test_dataset,
-                    batch_size=self.args.train_batch_size,
-                    sampler=test_sampler,
-                    collate_fn=self.data_collator,
-                ),
+                tf_dataset=self.args.strategy.experimental_distribute_dataset(
+                    ds),
+                length=num_examples,
             )
+
+            return dataset, steps, num_examples
 
     class TFTokenClassificationDataset:
         """

@@ -309,8 +309,8 @@ def main():
         for i in range(batch_size):
             for j in range(seq_len):
                 if label_ids[i, j] != -100:
-                    out_label_list[i].append(label_map[label_ids[i][j]])
-                    preds_list[i].append(label_map[preds[i][j]])
+                    out_label_list[i].append(label_map_twitter[label_ids[i][j]])
+                    preds_list[i].append(label_map_twitter[preds[i][j]])
 
         return preds_list, out_label_list
 
@@ -338,7 +338,7 @@ def main():
         model=multitask_model,
         args=training_args,
         train_dataset=train_dataset_dict,
-        eval_dataset=eval_dataset_twitter,
+        eval_dataset=eval_dataset_twitter.get_dataset(),
         compute_metrics=compute_metrics,
     )
 
