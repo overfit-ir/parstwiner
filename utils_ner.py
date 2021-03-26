@@ -433,6 +433,10 @@ if is_tf_available():
                 task_name: iter(dataloader)
                 for task_name, dataloader in self.dataloader_dict.items()
             }
+            print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+            print(task_choice_list)
+            print(self.task_name_list)
+            print(self.dataloader_dict)
             for task_choice in task_choice_list:
                 task_name = self.task_name_list[task_choice]
                 yield next(dataloader_iter_dict[task_name])
