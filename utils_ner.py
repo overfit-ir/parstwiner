@@ -434,7 +434,7 @@ if is_tf_available():
                 for task_name, dataloader in self.dataloader_dict.items()
             }
             print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-            print(task_choice_list)
+            print(len(task_choice_list), sum(task_choice_list))
             print(self.task_name_list)
             print(self.dataloader_dict)
             for task_choice in task_choice_list:
