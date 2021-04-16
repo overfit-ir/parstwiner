@@ -361,15 +361,40 @@ if is_tf_available():
         def __call__(self, task_name, *args, **kwargs):
             return self.taskmodels_dict[task_name](*args, **kwargs)
 
-        def save_model(self, output_dir: Optional[str] = None):
-            utput_dir = output_dir if output_dir is not None else self.args.output_dir
+        def save_pretrained(self, save_directory, saved_model=False, version=1):
+            """
+            Save a model and its configuration file to a directory, so that it can be re-loaded using the
+            :func:`~transformers.TFPreTrainedModel.from_pretrained` class method.
 
-            logger.info("Saving model in {}".format(output_dir))
+            Arguments:
+                save_directory (:obj:`str`):
+                    Directory to which to save. Will be created if it doesn't exist.
+                saved_model (:obj:`bool`, `optional`, defaults to :obj:`False`):
+                    If the model has to be saved in saved model format as well or not.
+                version (:obj:`int`, `optional`, defaults to 1):
+                    The version of the saved model. A saved model needs to be versioned in order to be properly loaded by
+                    TensorFlow Serving as detailed in the official documentation
+                    https://www.tensorflow.org/tfx/serving/serving_basic
+            """
+            if os.path.isfile(save_directory):
+                logger.error(f"Provided path ({save_directory}) should be a directory, not a file")
+                return
+            os.makedirs(save_directory, exist_ok=True)
 
-            if not isinstance(self.model, TFPreTrainedModel):
-                raise ValueError("Trainer.model appears to not be a PreTrainedModel")
-            for task_name, _ in taskmodels_dict.items():
-                self.model.save_pretrained(output_dir + '/' + task_name)
+            if saved_model:
+                for taskname, model in self.taskmodels_dict.items():
+                    saved_model_dir = os.path.join(save_directory, "saved_model", taskname, str(version))
+                    model.save(saved_model_dir, include_optimizer=False, signatures=self.serving)
+                    logger.info(f"Saved model created in {saved_model_dir}")
+
+            # Save configuration file
+            self.config.save_pretrained(save_directory)
+
+            # If we save using the predefined names, we can load using `from_pretrained`
+            for taskname, model in self.taskmodels_dict.items():
+                output_model_file = os.path.join(save_directory, 'tf_model_' + taskname + '.h5')
+                model.save_weights(output_model_file)
+                logger.info(f"Model weights saved in {output_model_file}")
 
     class StrIgnoreDevice(str):
         """
