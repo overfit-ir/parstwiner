@@ -361,6 +361,16 @@ if is_tf_available():
         def __call__(self, task_name, *args, **kwargs):
             return self.taskmodels_dict[task_name](*args, **kwargs)
 
+        def save_model(self, output_dir: Optional[str] = None):
+            utput_dir = output_dir if output_dir is not None else self.args.output_dir
+
+            logger.info("Saving model in {}".format(output_dir))
+
+            if not isinstance(self.model, TFPreTrainedModel):
+                raise ValueError("Trainer.model appears to not be a PreTrainedModel")
+            for task_name, _ in taskmodels_dict.items():
+                self.model.save_pretrained(output_dir + '/' + task_name)
+
     class StrIgnoreDevice(str):
         """
         This is a hack. The Trainer is going call .to(device) on every input
