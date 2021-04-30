@@ -307,15 +307,22 @@ if is_tf_available():
     from typing import Callable, Dict, Optional, Tuple
 
     class MultitaskModel(TFPreTrainedModel):
-        def __init__(self, encoder, taskmodels_dict):
+        def __init__(self, taskmodels_dict):
             """
             Setting MultitaskModel up as a PretrainedModel allows us
             to take better advantage of Trainer features
             """
             super().__init__(PretrainedConfig())
 
-            self.encoder = encoder
+            # self.encoder = encoder
             self.taskmodels_dict = taskmodels_dict
+
+        def get_task_encoders(self):
+            encoders = []
+            for task_name, model in self.taskmodels_dict.items():
+                encoder = getattr(model, self.get_encoder_attr_name(model))
+                encoders.append(encoder)
+            return encoders[0], encoders[1]
 
         @classmethod
         def create(cls, model_name, model_type_dict, model_config_dict):
@@ -333,14 +340,14 @@ if is_tf_available():
                     model_name,
                     config=model_config_dict[task_name],
                 )
-                if shared_encoder is None:
-                    shared_encoder = getattr(
-                        model, cls.get_encoder_attr_name(model))
-                else:
-                    setattr(model, cls.get_encoder_attr_name(
-                        model), shared_encoder)
+                # if shared_encoder is None:
+                #     shared_encoder = getattr(
+                #         model, cls.get_encoder_attr_name(model))
+                # else:
+                #     setattr(model, cls.get_encoder_attr_name(
+                #         model), shared_encoder)
                 taskmodels_dict[task_name] = model
-            return cls(encoder=shared_encoder, taskmodels_dict=taskmodels_dict)
+            return cls(taskmodels_dict=taskmodels_dict)
 
         @classmethod
         def get_encoder_attr_name(cls, model):
@@ -377,14 +384,17 @@ if is_tf_available():
                     https://www.tensorflow.org/tfx/serving/serving_basic
             """
             if os.path.isfile(save_directory):
-                logger.error(f"Provided path ({save_directory}) should be a directory, not a file")
+                logger.error(
+                    f"Provided path ({save_directory}) should be a directory, not a file")
                 return
             os.makedirs(save_directory, exist_ok=True)
 
             if saved_model:
                 for taskname, model in self.taskmodels_dict.items():
-                    saved_model_dir = os.path.join(save_directory, "saved_model", taskname, str(version))
-                    model.save(saved_model_dir, include_optimizer=False, signatures=self.serving)
+                    saved_model_dir = os.path.join(
+                        save_directory, "saved_model", taskname, str(version))
+                    model.save(saved_model_dir, include_optimizer=False,
+                               signatures=self.serving)
                     logger.info(f"Saved model created in {saved_model_dir}")
 
             # Save configuration file
@@ -392,7 +402,8 @@ if is_tf_available():
 
             # If we save using the predefined names, we can load using `from_pretrained`
             for taskname, model in self.taskmodels_dict.items():
-                output_model_file = os.path.join(save_directory, 'tf_model_' + taskname + '.h5')
+                output_model_file = os.path.join(
+                    save_directory, 'tf_model_' + taskname + '.h5')
                 model.save_weights(output_model_file)
                 logger.info(f"Model weights saved in {output_model_file}")
 
@@ -513,8 +524,20 @@ if is_tf_available():
             scaled_loss = per_example_loss / \
                 tf.cast(nb_instances_in_global_batch,
                         dtype=per_example_loss.dtype)
+            encoder1, encoder2 = self.model.get_task_encoders()
+            print('*********************')
+            print(scaled_loss)
+            norms = []
+            for i in range(len(encoder1.trainable_variables)):
+                norms.append(tf.math.reduce_euclidean_norm(
+                    tf.math.subtract(
+                        encoder1.trainable_variables[i], encoder2.trainable_variables[i], name=None
+                    ), axis=None, keepdims=False, name=None
+                ))
+            l2_norm_loss = tf.reduce_mean(norms)
+            added_loss = tf.add_n([scaled_loss]+[l2_norm_loss])
             gradients = tf.gradients(
-                scaled_loss, self.model.trainable_variables)
+                added_loss, self.model.trainable_variables)
             gradients = [
                 g if g is not None else tf.zeros_like(v) for g, v in zip(gradients, self.model.trainable_variables)
             ]
@@ -522,7 +545,7 @@ if is_tf_available():
             if self.args.gradient_accumulation_steps > 1:
                 self.gradient_accumulator(gradients)
 
-            self.train_loss.update_state(scaled_loss)
+            self.train_loss.update_state(added_loss)
 
             if self.args.gradient_accumulation_steps == 1:
                 return gradients
