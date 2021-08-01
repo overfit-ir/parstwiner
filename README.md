@@ -1,47 +1,46 @@
-<h1 dir='rtl'>تعیین اسامی خاص در توییتر فارسی</h1>
-<p dir='rtl'>
-در تهیه دادگان پیش رو از شیوه نامه‌های معتبر MUC و CoNLL استفاده شده است. برچسب‌های مورد استفاده شامل PER برای اشخاص ، LOC برای مکان ، ORG برای سازمان‌ها ، EVE برای رویداد‌ها و اتفاقات، POG برای احزاب سیاسی و گروهک‌ها و سلسله‌های تاریخی و NAT برای ملیت‌ها و اقوام استفاده شده است. برای جداسازی لغات از ابزار <a href="https://github.com/ICTRC/Parsivar">parsivar</a> استفاده شده است. قبل از جداسازی کلمات، تمامی شکلک‌ها و همچنین لینک‌ها و آیدی‌ها حذف شده و علامت هشتگ نیز برداشته شده است. سپس با استفاده از ابزار <a href="https://github.com/ICTRC/Parsivar">parsivar</a> نرمال‌سازی انجام شده و بعد برخی علامات شامل _, + , [ , ] نیز حذف شده‌اند که جزییات آن در فایل <a href="https://github.com/overfit-ir/persian-twitter-ner/blob/master/tokenizer.ipynb">tokenizer</a> قابل مشاهده است. سپس عامل انسانی با استفاده از نکات زیر عملیات جداسازی را بازبینی کرده است.
-</p>
+# Persian Twitter NER (ParsTwiner)
 
-<p dir='rtl'>
-۱. صفات که داخل کلمات هستند برچسب موجودیت می‌گیرند مانند "خلیج همیشگی فارس" که کلمه همیشگی برچسب موجودیت می‌گیرد.
-</p>
-<p dir='rtl'>
-۲.  شاخص های اول اسم‌ها برچسب موجودیت نمی‌گیرند مثلا در "دکتر ظریف" نباید "دکتر" برچسب بگیرد. تنها در صورتی شاخص اول کلمات برچسب می‌گیرد که حذف آن شاخص موجب شود کلمات باقی‌مانده معنی اسامی خاص ندهند. مثلا در کلمه "امام زمان" باید کلمه "امام" هم برچسب PER بگیرد.
-</p>
-<p dir='rtl'>
-۳. سلسله‌های تاریخی مانند اشکانیان یا قاجار برچسب POG می‌گیرند.
-</p>
-<p dir='rtl'>
-۴. در صورتی که ضمایر یا اضافات به کلمات اسامی خاص چسبیده بودند کل کلمه برچسب می‌خورد مثلا کلمه "ایرانیم" برچسب NAT می‌گیرد.
-</p>
-<p dir='rtl'>
-۵. تمامی هشتگ‌ها با فاصله جایگذاری شده‌اند.
-</p>
-<p dir='rtl'>
-۶. اسامی دانشگاه و مدرسه و زندان ها به عنوان سازمان در نظر گرفته می‌شود.
-</p>
-<p dir='rtl'>
-۷.  کلمه‌هایی همچون یزدی، اصفهانی، کرمانی و... هم برچسب NAT می‌خورند.
-</p>
-<p dir='rtl'>
-۸. ادات جمع مانند "ها" و غیره جزو کلمه محسوب می‌شوند.
-</p>
-<p dir='rtl'>
-۹. رشته توییت ها یا آخرین جمله ناقص آنها حذف شده و یا اگر نقص زیادی داشتند اولین جمله توییت بعدی به آنها اضافه شده است.
-</p>
-<p dir='rtl'>
-۱۰. در بین توییت‌ها برخی شامل اشعار هستند که همانند بقیه توییت‌ها با آن‌ها برخورد شده است.
-</p>
-<p dir='rtl'>
-۱۱. علایم سجاوندی هر یک به تنهایی به عنوان یک توکن در نظر گرفته می‌شوند مگر در حالاتی که چند توکن معنی یک شکلک بدهد. مثلا علامت :( به عنوان یک توکن در نظر گرفته شده است.
-</p>
-<p dir='rtl'>
-۱۲.  کلمات انگلیسی اگر در آخر توییت باشند مثلا به عنوان هشتگ یا غیره پاک می‌شوند اما چنانچه در وسط متن باشند بدون تغییر باقی می‌مانند و چنانچه به موجودیت خاص اشاره کنند برچسب هم می‌گیرند.
-</p>
-<p dir='rtl'>
-۱۳. افعالی مانند "بوده است" یا "شده بود" به صورت کلمات جدا در نظر گرفته شده‌اند.
-</p>
-<p dir='rtl'>
-۱۴. لفظ‌های "تر" و "ترین" هم جزیی از کلمه متبوع خودشان لحاظ شده‌اند.
-</p>
+An open, broad-coverage corpus for informal Persian named entity recognition collected from Twitter.
+
+![Example of ParsTwiNER corpus annotation](https://github.com/overfit-ir/persian-twitter-ner/raw/master/docs/example.png)
+
+## Releases
+
+Version 1.0:
+
+* zip package: [ParsTwiNER-v1.0.zip](https://github.com/overfit-ir/persian-twitter-ner/releases/download/v1.0.0/ParsTwiNER.zip)
+
+Recommended. This is the first complete, stable release of the corpus and the version used in our experiments with the data.
+
+## Quickstart
+
+A version of the corpus data is found in CoNLL-like format in the following files:
+
+* `twitter_data/persian-ner-twitter-data/train.txt`: training data
+* `twitter_data/persian-ner-twitter-data/dev.txt`: development data
+* `twitter_data/persian-ner-twitter-data/test.txt`: test data
+
+These files are in a simple two-column tab-separated format with IOB2 tags:
+
+```
+این	O
+تاج‌الدین	B-PER
+همونه	O
+که	O
+دخترش	O
+دور	O
+قبل	O
+نماینده	O
+اصفهان	B-LOC
+بود	O
+```
+
+The corpus annotation marks mentions of person (`PER`), organization (`ORG`), location (`LOC`), nations (`NAT`), political groups (`POG`), and event (`EVENT`) names.
+
+
+## Guidelines
+
+The [ParsTwiNER annotations instructions](https://github.com/overfit-ir/persian-twitter-ner/blob/master/docs/README.md) are available in MD format.
+
+## Reference
+
