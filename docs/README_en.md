@@ -1,15 +1,18 @@
-<h1>تعیین اسامی خاص در توییتر فارسی</h1>
-<p>  
+<h1>Persian Twitter NER (ParsTwiner)</h1>
+
+<p> 
+
 In the preparation of the present data, MUC and CoNLL methods have been used. 
 Entity mentions are annotated as continuous, non-overlapping spans of text that are assigned
 exactly one type from the following categories:
-- PER: person
-- LOC: location, 
-- ORG: organizations
-- EVE: events
-- POG: political groups and historical dynasties
-- NAT: nationalities and ethnicities.
-The <a href="https://github.com/ICTRC/Parsivar">Parsivar</a> tool is used to tokenize words. Before tokenizing the words, all the emojis and the links and the usernames, and the hashtag sign (#) have been removed. Then tweets were normalized using the Parsivar tool, and then some symbols including _ , + , ] , [  were removed, the details of which are given in the <a href="https://github.com/overfit-ir/persian-twitter-ner/blob/master/tokenizer.ipynb">tokenizer</a> file can be viewed. The human agent then reviews the tokenizing operation using the following points.
+- PER: Person
+- LOC: Location
+- ORG: Organizations
+- EVE: Events
+- POG: Political groups and historical dynasties
+- NAT: Nationalities and ethnicities.
+  
+The <a href="https://github.com/ICTRC/Parsivar">Parsivar</a> tool is used to tokenize words. Before tokenizing the words, all the emojis and the links and the usernames, and the hashtag sign (#) have been removed. Then tweets were normalized using the Parsivar tool, and then some symbols including _ , + , ] , [  were removed, the details of which are given in the <a href="https://github.com/overfit-ir/persian-twitter-ner/blob/master/tokenizer.ipynb">tokenizer</a> file can be viewed. The human agent then reviews the tokenizing operation using the following points:
 </p>
 
 <p>
@@ -45,11 +48,11 @@ The <a href="https://github.com/ICTRC/Parsivar">Parsivar</a> tool is used to tok
 </p>
 
 <p>
-۹. رشته توییت ها یا آخرین جمله ناقص آنها حذف شده و یا اگر نقص زیادی داشتند اولین جمله توییت بعدی به آنها اضافه شده است.
+9. For the threads of tweets, their last incomplete sentence is deleted, or if it is needed, the first sentence of the next tweet is added to them.
 </p>
 
 <p>
-10. Some of the tweets include poets and they have been considered as any other tweet.
+10. Some of the tweets include poems and they have been considered as any other tweet.
 </p>
 
 <p>
