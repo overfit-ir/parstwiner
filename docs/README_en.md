@@ -49,21 +49,21 @@ The <a href="https://github.com/ICTRC/Parsivar">Parsivar</a> tool is used to tok
 </p>
 
 <p>
-۱۰. در بین توییت‌ها برخی شامل اشعار هستند که همانند بقیه توییت‌ها با آن‌ها برخورد شده است.
+10. Some of the tweets include poets and they have been considered as any other tweet.
 </p>
 
 <p>
-۱۱. علایم سجاوندی هر یک به تنهایی به عنوان یک توکن در نظر گرفته می‌شوند مگر در حالاتی که چند توکن معنی یک شکلک بدهد. مثلا علامت :( به عنوان یک توکن در نظر گرفته شده است.
+11.Each of The punctuation marks is considered as a single token, except in cases where multiple tokens mean an emoji. For example, the symbol :) is considered as one token.
 </p>
 
 <p>
-۱۲.  کلمات انگلیسی اگر در آخر توییت باشند مثلا به عنوان هشتگ یا غیره پاک می‌شوند اما چنانچه در وسط متن باشند بدون تغییر باقی می‌مانند و چنانچه به موجودیت خاص اشاره کنند برچسب هم می‌گیرند.
+12. English words are deleted if they are at the end of a tweet, for example as a hashtag, etc., but if they are in the middle of the text, they remain unchanged, and if they refer to a specific entity, they are also labeled.
 </p>
 
 <p>
-۱۳. افعالی مانند "بوده است" یا "شده بود" به صورت کلمات جدا در نظر گرفته شده‌اند.
+13. Verbs such as "بوده است" (had p.p.) or "شده بود" (have p.p.) are considered as separate words.
 </p>
 
 <p>
-۱۴. لفظ‌های "تر" و "ترین" هم جزیی از کلمه متبوع خودشان لحاظ شده‌اند.
+14. The suffixes "تر" (-er like in bigger) and "ترین" (-est like in the biggest) are also part of their own word.
 </p>
