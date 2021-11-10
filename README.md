@@ -43,7 +43,7 @@ The corpus annotation marks mentions of person (`PER`), organization (`ORG`), lo
 The [ParsTwiNER annotations instructions](https://github.com/overfit-ir/persian-twitter-ner/blob/master/docs/README.md) are available in MD format.
 
 ## Reference
-Please cite the following paper in your publication if you are using ParsBERT in your research:
+Please cite the following paper in your publication if you are using ParsTwiNER in your research:
 ```
 @inproceedings{aghajani-etal-2021-parstwiner,
     title = "{P}ars{T}wi{NER}: A Corpus for Named Entity Recognition at Informal {P}ersian",
